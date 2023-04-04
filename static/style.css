@@ -47,10 +47,26 @@
   object-fit: cover;
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
 .preview {
   width: 100vw;
   height: 100vh;
   padding: 20px;
+
+  animation: pulse 1s ease-in-out infinite alternate-reverse;
+}
+
+.preview.loaded {
+  animation: none;
 }
 
 .preview img {
@@ -58,6 +74,10 @@
   height: 100%;
   object-fit: contain;
   display: block;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .preview.full {
