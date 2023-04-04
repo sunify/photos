@@ -1,0 +1,13 @@
+{% extends "layout.j2" %}
+
+{% block content %}
+<div class="grid">
+  {% for item in items %}
+  <a href="{{ item.id }}.html" class="item">
+    <div class="image-container {% if item.size.width > item.size.height %}-h{% else %}-v{% endif %}">
+      <img src="images/thumbs/{{ item.id }}.jpg" alt="">
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}
