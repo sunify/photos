@@ -61,10 +61,13 @@
 }
 
 .preview.full {
+  width: auto;
   height: auto;
+  padding: 0;
 }
 
 .preview.full img {
-  width: 100%;
+  width: auto;
   height: auto;
+  padding: 20px;
 }
