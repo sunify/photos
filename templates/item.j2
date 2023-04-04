@@ -2,6 +2,6 @@
 
 {% block content %}
   <div class="preview">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="images/full/{{ item.id }}.jpg"  style="background-image: url(images/thumbs/{{ item.id }}.jpg)" alt="">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="images/full/{{ item.id }}.jpg"  style="background-image: url(images/thumbs/{{ item.id }}.jpg)"  alt="{{ item.title }}">
   </div>
 {% endblock %}

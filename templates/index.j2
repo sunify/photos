@@ -5,7 +5,7 @@
   {% for item in items %}
   <a href="{{ item.id }}.html" class="item">
     <div class="image-container {% if item.size.width > item.size.height %}-h{% else %}-v{% endif %}">
-      <img src="images/thumbs/{{ item.id }}.jpg" alt="">
+      <img src="images/thumbs/{{ item.id }}.jpg" style="background-color: {{ item.color }};" loading="lazy" alt="{{ item.title }}">
     </div>
   </a>
   {% endfor %}

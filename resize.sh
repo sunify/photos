@@ -1,3 +1,4 @@
+rm -r images
 mkdir -p images
 mkdir -p images/thumbs
 mkdir -p images/full
