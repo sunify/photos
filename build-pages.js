@@ -2,22 +2,51 @@ const fs = require('fs/promises');
 const nunjucks = require('nunjucks');
 const sizeOf = require('image-size');
 const ColorThief = require('colorthief');
+const { ExifImage } = require('exif');
 
 const rawItems = require('./items.json');
 
-nunjucks.configure('templates', { autoescape: true });
+const env = nunjucks.configure('templates', { autoescape: true });
+env.addGlobal('formatExposure', (exposureTime) => {
+  if (exposureTime < 1) {
+    return `1/${1/exposureTime}`;
+  } else {
+    return exposureTime;
+  }
+});
+env.addGlobal('formatModel', (model) => {
+  const replacements = {
+    'RICOH GR III': 'GRIII'
+  };
+  return replacements[model] || model;
+});
+
+function getExif(image) {
+  return new Promise((resolve, reject) => {
+    new ExifImage({ image }, (err, exif) => {
+      if (err) {
+        return reject(err);
+      }
+
+      resolve(exif);
+    });
+  });
+}
 
 function prepareItem(rawItem) {
   const thumbPath = `images/thumbs/${rawItem.file}`;
 
-  return ColorThief.getColor(thumbPath).then((color) => {
-    return {
-      ...rawItem,
-      id: rawItem.file.replace('.jpg', ''),
-      color: `rgb(${color[0]}, ${color[1]}, ${color[2]})`,
-      size: sizeOf(thumbPath),
-    };
-  });
+  return Promise.all([ColorThief.getColor(thumbPath), getExif(thumbPath)]).then(
+    ([color, exif]) => {
+      return {
+        ...rawItem,
+        id: rawItem.file.replace('.jpg', ''),
+        color: `rgb(${color[0]}, ${color[1]}, ${color[2]})`,
+        exif,
+        size: sizeOf(thumbPath),
+      };
+    }
+  );
 }
 
 Promise.all(rawItems.map(prepareItem))

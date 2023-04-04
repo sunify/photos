@@ -1,7 +1,19 @@
-{% extends "layout.j2" %}
+{% extends "layout.j2" %} {% block content %}
+<div class="preview">
+  <img
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+    data-src="images/full/{{ item.id }}.jpg"
+    data-aspect="{{ item.size.width/item.size.height }}"
+    alt="{{ item.title }}"
+  />
+  <div class="preview-placeholder" style="aspect-ratio: {{ item.size.width/item.size.height }}; background-color: {{ item.color }}"></div>
+</div>
+<div class="exif">
+  <div class="exif-model">{{ formatModel(item.exif.image.Model) }}</div>
+  <div class="exif-focal-length">{{ item.exif.exif.FocalLengthIn35mmFormat }}</div>
+  <div class="exif-exposure">{{ formatExposure(item.exif.exif.ExposureTime) }}</div>
+  <div class="exif-fstop">{{ item.exif.exif.FNumber }}</div>
+  <div class="exif-iso">{{ item.exif.exif.ISO }}</div>
+</div>
 
-{% block content %}
-  <div class="preview">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="images/full/{{ item.id }}.jpg"  style="background-image: url(images/thumbs/{{ item.id }}.jpg)"  alt="{{ item.title }}">
-  </div>
 {% endblock %}
