@@ -1,7 +1,7 @@
 {% extends "layout.j2" %}
 
 {% block content %}
-<div class="cover">
+<header class="cover">
   <div class="cover-box" tabindex="0">
     <div class="cover-box-item" tabindex="-1"></div>
     <div class="cover-box-item" tabindex="-1"></div>
@@ -27,7 +27,7 @@
   </div>
 
   <div class="cover-shutter"></div>
-</div>
+</header>
 <div class="grid">
   {% for item in items %}
   <a href="{{ item.id }}.html" tabindex="0" class="item">
@@ -37,4 +37,8 @@
   </a>
   {% endfor %}
 </div>
+
+<footer class="footer">
+  <a href="https://instagram.com/sunify" target="_blank" noreferrer noopener>instagram.com/sunify</a>
+</footer>
 {% endblock %}

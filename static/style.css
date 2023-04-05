@@ -375,6 +375,21 @@ html, body {
   opacity: 1;
 }
 
+.footer {
+  padding: 150px 0;
+  font-size: 46px;
+  text-align: center;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: blue;
+}
+
 @media screen and (max-width: 640px) {
   .grid {
     margin: 15px;
