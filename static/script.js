@@ -31,7 +31,7 @@
         if (preview.classList.contains('full')) {
           preview.classList.remove('full');
         } else {
-          window.location = '..';
+          window.location = '.';
         }
       }
     })
