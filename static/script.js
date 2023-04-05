@@ -54,9 +54,6 @@
   if (coverBox) {
     let selectedPiece = null;
     const pieces = coverBox.querySelectorAll('.cover-box-item');
-    const nums = Array.from({ length: pieces.length }, (_, i) => i + 1).sort(
-      () => 0.5 - Math.random()
-    );
 
     function areYaWinningSon() {
       let winning = true;
@@ -70,6 +67,14 @@
       return winning;
     }
 
+    const shutter = document.querySelector('.cover-shutter');
+    function releaseShutter() {
+      shutter.classList.add('cheese');
+      setTimeout(() => {
+        shutter.classList.remove('cheese');
+      }, 300)
+    }
+
     let sawWinMessage = false;
     function handlePieceClick(e) {
       const currentPiece = e.target;
@@ -80,7 +85,9 @@
         selectedPiece = null;
         if (areYaWinningSon() && !sawWinMessage) {
           setTimeout(() => {
-            alert('yay');
+            releaseShutter();
+            randomizePieces();
+            sawWinMessage = false;
           }, 500);
           sawWinMessage = true;
         }
@@ -89,12 +96,20 @@
       }
     }
 
-    pieces.forEach((piece, i) => {
-      piece.style.animationDelay = `${400 + nums[i] * 50}ms`;
-      piece.style.animationPlayState = 'running';
-      piece.dataset.num = nums[i];
-      piece.dataset.pos = i + 1;
+    function randomizePieces() {
+      const nums = Array.from({ length: pieces.length }, (_, i) => i + 1).sort(
+        () => 0.5 - Math.random()
+      );
+      pieces.forEach((piece, i) => {
+        piece.style.animationDelay = `${400 + nums[i] * 50}ms`;
+        piece.style.animationPlayState = 'running';
+        piece.dataset.num = nums[i];
+        piece.dataset.pos = i + 1;
+      });
+    }
 
+    randomizePieces();
+    pieces.forEach((piece, i) => {
       piece.addEventListener('click', handlePieceClick);
     });
   }
