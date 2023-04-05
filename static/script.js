@@ -51,11 +51,29 @@
     });
   }
 
+  let selectedPiece = null;
+  function handlePieceClick(e) {
+    const currentPiece = e.target;
+    if (selectedPiece) {
+      const selectedPos = selectedPiece.dataset.pos;
+      selectedPiece.dataset.pos = currentPiece.dataset.pos;
+      currentPiece.dataset.pos = selectedPos;
+      selectedPiece = null;
+    } else {
+      selectedPiece = currentPiece;
+    }
+  }
+
   if (coverBox) {
     const pieces = coverBox.querySelectorAll('.cover-box-item');
     const nums = Array.from({ length: pieces.length }, (_, i) => i + 1).sort(() => 0.5 - Math.random());
     pieces.forEach((piece, i) => {
-      piece.classList.add(`_${nums[i]}`);
-    })
+      piece.style.animationDelay = `${400 + nums[i] * 50}ms`;
+      piece.style.animationPlayState = 'running';
+      piece.dataset.num = nums[i];
+      piece.dataset.pos = i + 1;
+
+      piece.addEventListener('click', handlePieceClick);
+    });
   }
 })();
