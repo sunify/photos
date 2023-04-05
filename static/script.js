@@ -83,6 +83,7 @@
         selectedPiece.dataset.pos = currentPiece.dataset.pos;
         currentPiece.dataset.pos = selectedPos;
         selectedPiece = null;
+        coverBox.querySelector(`[data-pos="${posAtCoords(...pos)}"]`).focus();
         if (areYaWinningSon() && !sawWinMessage) {
           setTimeout(() => {
             releaseShutter();
@@ -116,6 +117,53 @@
           handlePieceClick(e);
         }
       });
+    });
+
+    let pos = [0, 0];
+    function posAtCoords(x, y) {
+      return 1 + x + y * 3;
+    }
+    coverBox.addEventListener('focus', () => {
+      coverBox.querySelector(`[data-pos="${posAtCoords(...pos)}"]`).focus();
+    });
+
+    function clamp(n, from, to) {
+      if (n > to) {
+        return from;
+      } else if (n < from) {
+        return to;
+      }
+      return n;
+    }
+
+    function moveCursor(x, y) {
+      console.log('moveCursor', x, y);
+      pos[0] = clamp(pos[0] + x, 0, 2);
+      pos[1] = clamp(pos[1] + y, 0, 2);
+      console.log(pos);
+
+      coverBox.querySelector(`[data-pos="${posAtCoords(...pos)}"]`).focus();
+    }
+
+    coverBox.addEventListener('keydown', (e) => {
+      const directions = ['ArrowUp', 'ArrowRight', 'ArrowDown', 'ArrowLeft'];
+      if (directions.includes(e.key)) {
+        e.preventDefault();
+        switch (e.key) {
+          case 'ArrowUp':
+            moveCursor(0, -1);
+            break;
+          case 'ArrowDown':
+            moveCursor(0, 1);
+            break;
+          case 'ArrowLeft':
+            moveCursor(-1, 0);
+            break;
+          case 'ArrowRight':
+            moveCursor(1, 0);
+            break;
+        }
+      }
     });
   }
 })();
