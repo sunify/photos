@@ -250,9 +250,17 @@ html, body {
   animation: appear 0.4s ease-in-out 0s;
   animation-play-state: paused;
   animation-fill-mode: both;
+  transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
-.cover-box-item span {
+.cover-box-letter {
+  position: absolute;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  pointer-events: none;
+}
+
+.cover-box-letter span {
   color: #FFF;
   font-size: calc(var(--cell-size) / 2.5);
   line-height: calc(var(--cell-size) / 2.5);
@@ -299,48 +307,57 @@ html, body {
   background-position: calc(var(--cell-size) * -2) calc(var(--cell-size) * -2);
 }
 
-.cover-box-item:nth-child(1) {
+.cover-box-item[data-pos="1"],
+.cover-box-letter:nth-child(1) {
   left: 0;
   top: 0;
 }
 
-.cover-box-item:nth-child(2) {
+.cover-box-item[data-pos="2"],
+.cover-box-letter:nth-child(2) {
   left: calc(var(--cell-size) + var(--gap-size));
   top: 0;
 }
 
-.cover-box-item:nth-child(3) {
+.cover-box-item[data-pos="3"],
+.cover-box-letter:nth-child(3) {
   left: calc(var(--cell-size) * 2 + var(--gap-size) * 2);
   top: 0;
 }
 
-.cover-box-item:nth-child(4) {
+.cover-box-item[data-pos="4"],
+.cover-box-letter:nth-child(4) {
   left: 0;
   top: calc(var(--cell-size) + var(--gap-size));
 }
 
-.cover-box-item:nth-child(5) {
+.cover-box-item[data-pos="5"],
+.cover-box-letter:nth-child(5) {
   left: calc(var(--cell-size) + var(--gap-size));
   top: calc(var(--cell-size) + var(--gap-size));
 }
 
-.cover-box-item:nth-child(6) {
+.cover-box-item[data-pos="6"],
+.cover-box-letter:nth-child(6) {
   left: calc(var(--cell-size) * 2 + var(--gap-size) * 2);
   top: calc(var(--cell-size) + var(--gap-size));
 }
 
 
-.cover-box-item:nth-child(7) {
+.cover-box-item[data-pos="7"],
+.cover-box-letter:nth-child(7) {
   left: 0;
   top: calc(var(--cell-size) * 2 + var(--gap-size) * 2);
 }
 
-.cover-box-item:nth-child(8) {
+.cover-box-item[data-pos="8"],
+.cover-box-letter:nth-child(8) {
   left: calc(var(--cell-size) + var(--gap-size));
   top: calc(var(--cell-size) * 2 + var(--gap-size) * 2);
 }
 
-.cover-box-item:nth-child(9) {
+.cover-box-item[data-pos="9"],
+.cover-box-letter:nth-child(9) {
   left: calc(var(--cell-size) * 2 + var(--gap-size) * 2);
   top: calc(var(--cell-size) * 2 + var(--gap-size) * 2);
 }
