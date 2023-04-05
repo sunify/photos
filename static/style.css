@@ -405,11 +405,11 @@ html, body {
   }
 
   .cover {
-    padding: 40px 0;
+    height: 350px;
   }
 
   .cover-box {
-    --cell-size: 50px;
+    --cell-size: 75px;
     --gap-size: 10px;
   }
 
