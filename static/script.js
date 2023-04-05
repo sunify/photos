@@ -2,6 +2,7 @@
   const preview = document.querySelector('.preview');
 
   if (preview) {
+    const backButton = document.querySelector('.back');
     const previewImg = preview.querySelector('img');
     const previewPlaceholder = preview.querySelector('.preview-placeholder');
     const preloadImg = new Image();
@@ -22,18 +23,30 @@
     window.addEventListener('resize', handleResize, { passive: true });
 
     preview.addEventListener('click', () => {
-      preview.classList.toggle('full');
+      document.documentElement.classList.toggle('full');
       handleResize();
     });
 
+    function goBack(fallbackLocation) {
+      window.history.back();
+      setTimeout(() => {
+        window.location = fallbackLocation;
+      }, 50);
+    }
+
     window.addEventListener('keyup', (e) => {
-      if(e.key === 'Escape') {
-        if (preview.classList.contains('full')) {
-          preview.classList.remove('full');
+      if (e.key === 'Escape') {
+        if (document.documentElement.classList.contains('full')) {
+          document.documentElement.classList.remove('full');
         } else {
-          window.location = '.';
+          goBack('.')
         }
       }
-    })
+    });
+
+    backButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      goBack(e.target.href);
+    });
   }
 })();
