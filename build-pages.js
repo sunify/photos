@@ -33,6 +33,10 @@ function getExif(image) {
   });
 }
 
+function rgb([r, g, b]) {
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
 function prepareItem(rawItem) {
   const thumbPath = `images/thumbs/${rawItem.file}`;
 
@@ -41,7 +45,7 @@ function prepareItem(rawItem) {
       return {
         ...rawItem,
         id: rawItem.file.replace('.jpg', ''),
-        color: `rgb(${color[0]}, ${color[1]}, ${color[2]})`,
+        color: rgb(color),
         exif,
         size: sizeOf(thumbPath),
       };
