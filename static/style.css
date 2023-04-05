@@ -55,9 +55,11 @@ html, body {
   height: 100%;
   object-fit: cover;
   transition: transform 0.2s ease-in-out;
+  font-size: 0;
 }
 
-.item:hover img {
+.item:hover img,
+.item:focus-visible img {
   transform: scale(0.95);
 }
 
