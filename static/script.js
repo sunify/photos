@@ -23,7 +23,7 @@
     handleResize();
     window.addEventListener('resize', handleResize, { passive: true });
 
-    preview.addEventListener('click', () => {
+    previewImg.addEventListener('click', () => {
       document.documentElement.classList.toggle('full');
       handleResize();
     });
@@ -83,7 +83,7 @@
         selectedPiece.dataset.pos = currentPiece.dataset.pos;
         currentPiece.dataset.pos = selectedPos;
         selectedPiece = null;
-        coverBox.querySelector(`[data-pos="${posAtCoords(...pos)}"]`).focus();
+        updateCursor();
         if (areYaWinningSon() && !sawWinMessage) {
           setTimeout(() => {
             releaseShutter();
@@ -119,12 +119,9 @@
       });
     });
 
-    let pos = [0, 0];
-    function posAtCoords(x, y) {
-      return 1 + x + y * 3;
-    }
+    const coords = [0, 0];
     coverBox.addEventListener('focus', () => {
-      coverBox.querySelector(`[data-pos="${posAtCoords(...pos)}"]`).focus();
+      updateCursor();
     });
 
     function clamp(n, from, to) {
@@ -136,13 +133,16 @@
       return n;
     }
 
-    function moveCursor(x, y) {
-      console.log('moveCursor', x, y);
-      pos[0] = clamp(pos[0] + x, 0, 2);
-      pos[1] = clamp(pos[1] + y, 0, 2);
-      console.log(pos);
+    function updateCursor() {
+      const [x, y] = coords;
+      const pos = 1 + x + y * 3;
+      coverBox.querySelector(`[data-pos="${pos}"]`).focus();
+    }
 
-      coverBox.querySelector(`[data-pos="${posAtCoords(...pos)}"]`).focus();
+    function moveCursor(x, y) {
+      coords[0] = clamp(coords[0] + x, 0, 2);
+      coords[1] = clamp(coords[1] + y, 0, 2);
+      updateCursor();
     }
 
     coverBox.addEventListener('keydown', (e) => {
