@@ -20,6 +20,8 @@
     alt="{{ item.title }}"
   />
   <div class="preview-placeholder" style="aspect-ratio: {{ item.size.width/item.size.height }}; background-color: {{ item.color }}"></div>
+
+  <a href="." class="back"></a>
 </div>
 <div class="exif">
   <div class="exif-model">{{ formatModel(item.exif.image.Model) }}</div>
@@ -28,6 +30,4 @@
   <div class="exif-fstop">{{ item.exif.exif.FNumber }}</div>
   <div class="exif-iso">{{ item.exif.exif.ISO }}</div>
 </div>
-
-<a href="." class="back"></a>
 {% endblock %}
