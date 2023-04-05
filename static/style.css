@@ -17,7 +17,7 @@ body {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 25px;
+  margin: 35px;
 }
 
 .item {
@@ -68,7 +68,7 @@ body {
 .preview {
   width: 100vw;
   height: 100vh;
-  padding: 20px 20px 50px 20px;
+  padding: 40px 40px 50px 40px;
 
   animation: pulse 1s ease-in-out infinite alternate-reverse;
 }
@@ -112,16 +112,16 @@ body {
 .preview-placeholder.-v {
   position: absolute;
   left: 50%;
-  top: 20px;
+  top: 40px;
   bottom: 50px;
   transform: translateX(-50%);
 }
 
 .preview-placeholder.-h {
   position: absolute;
-  top: calc(50% - 15px);
-  left: 20px;
-  right: 20px;
+  top: calc(50% - 5px);
+  left: 40px;
+  right: 40px;
   transform: translateY(-50%);
 }
 
@@ -161,5 +161,37 @@ body {
 }
 
 .preview.full ~ .exif {
+  display: none;
+}
+
+.back {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 40px;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.back::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border: 2px solid;
+  border-top: 0;
+  border-left: 0;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.back:hover {
+  color: blue;
+}
+
+.preview.full ~ .back {
   display: none;
 }

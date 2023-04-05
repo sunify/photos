@@ -25,5 +25,15 @@
       preview.classList.toggle('full');
       handleResize();
     });
+
+    window.addEventListener('keyup', (e) => {
+      if(e.key === 'Escape') {
+        if (preview.classList.contains('full')) {
+          preview.classList.remove('full');
+        } else {
+          window.location = '..';
+        }
+      }
+    })
   }
 })();
