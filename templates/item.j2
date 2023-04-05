@@ -1,4 +1,13 @@
-{% extends "layout.j2" %} {% block content %}
+{% extends "layout.j2" %}
+
+{% block meta %}
+<meta property="og:image" content="https://sunify.github.io/photos/images/thumbs/{{ item.id }}.jpg">
+<meta property="og:image:width" content="{{ item.size.width }}">
+<meta property="og:image:height" content="{{ item.size.height }}">
+<meta name="twitter:card" content="summary_large_image">
+{% endblock %}
+
+{% block content %}
 <div class="preview">
   <img
     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
@@ -17,5 +26,4 @@
 </div>
 
 <a href=".." class="back"></a>
-
 {% endblock %}
