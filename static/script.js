@@ -67,12 +67,15 @@
       return winning;
     }
 
+    const shutterSound = new Audio('static/shutter-sound.mp3');
     const shutter = document.querySelector('.cover-shutter');
     function releaseShutter() {
       shutter.classList.add('cheese');
+      coverBox.style.setProperty('--gap-size', '0px');
+      shutterSound.play().catch(() => {});
       setTimeout(() => {
         shutter.classList.remove('cheese');
-      }, 300)
+      }, 500)
     }
 
     let sawWinMessage = false;
@@ -87,13 +90,21 @@
         if (areYaWinningSon() && !sawWinMessage) {
           setTimeout(() => {
             releaseShutter();
-            randomizePieces();
-            sawWinMessage = false;
+            pieces.forEach((piece, i) => {
+              piece.removeEventListener('click', handlePieceClick);
+              piece.removeEventListener('keyup', handlePieceKeyup);
+            });
           }, 500);
           sawWinMessage = true;
         }
       } else {
         selectedPiece = currentPiece;
+      }
+    }
+
+    function handlePieceKeyup(e) {
+      if (e.key === 'Enter') {
+        handlePieceClick(e);
       }
     }
 
@@ -112,11 +123,7 @@
     randomizePieces();
     pieces.forEach((piece, i) => {
       piece.addEventListener('click', handlePieceClick);
-      piece.addEventListener('keyup', (e) => {
-        if (e.key === 'Enter') {
-          handlePieceClick(e);
-        }
-      });
+      piece.addEventListener('keyup', handlePieceKeyup);
     });
 
     const coords = [0, 0];
@@ -139,30 +146,18 @@
       coverBox.querySelector(`[data-pos="${pos}"]`).focus();
     }
 
-    function moveCursor(x, y) {
-      coords[0] = clamp(coords[0] + x, 0, 2);
-      coords[1] = clamp(coords[1] + y, 0, 2);
-      updateCursor();
-    }
-
     coverBox.addEventListener('keydown', (e) => {
-      const directions = ['ArrowUp', 'ArrowRight', 'ArrowDown', 'ArrowLeft'];
-      if (directions.includes(e.key)) {
+      const direction = {
+        'ArrowUp': [0, -1],
+        'ArrowDown': [0, 1],
+        'ArrowLeft': [-1, 0],
+        'ArrowRight': [1, 0],
+      }[e.key];
+      if (direction) {
         e.preventDefault();
-        switch (e.key) {
-          case 'ArrowUp':
-            moveCursor(0, -1);
-            break;
-          case 'ArrowDown':
-            moveCursor(0, 1);
-            break;
-          case 'ArrowLeft':
-            moveCursor(-1, 0);
-            break;
-          case 'ArrowRight':
-            moveCursor(1, 0);
-            break;
-        }
+        coords[0] = clamp(coords[0] + direction[0], 0, 2);
+        coords[1] = clamp(coords[1] + direction[1], 0, 2);
+        updateCursor();
       }
     });
   }
