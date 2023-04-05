@@ -55,7 +55,9 @@
     const pieces = coverBox.querySelectorAll('.cover-box-item');
     const nums = Array.from({ length: pieces.length }, (_, i) => i + 1).sort(() => 0.5 - Math.random());
     pieces.forEach((piece, i) => {
-      piece.classList.add(`_${nums[i]}`);
+      piece.style.animationDelay = `${400 + nums[i] * 50}ms`;
+      piece.style.animationPlayState = 'running';
+      piece.dataset.num = nums[i];
     })
   }
 })();
