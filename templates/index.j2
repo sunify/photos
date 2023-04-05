@@ -3,15 +3,15 @@
 {% block content %}
 <div class="cover">
   <div class="cover-box">
-    <div class="cover-box-item"></div>
-    <div class="cover-box-item"></div>
-    <div class="cover-box-item"></div>
-    <div class="cover-box-item"></div>
-    <div class="cover-box-item"></div>
-    <div class="cover-box-item"></div>
-    <div class="cover-box-item"></div>
-    <div class="cover-box-item"></div>
-    <div class="cover-box-item"></div>
+    <div class="cover-box-item" tabindex="0"></div>
+    <div class="cover-box-item" tabindex="0"></div>
+    <div class="cover-box-item" tabindex="0"></div>
+    <div class="cover-box-item" tabindex="0"></div>
+    <div class="cover-box-item" tabindex="0"></div>
+    <div class="cover-box-item" tabindex="0"></div>
+    <div class="cover-box-item" tabindex="0"></div>
+    <div class="cover-box-item" tabindex="0"></div>
+    <div class="cover-box-item" tabindex="0"></div>
 
     <div>
       <div class="cover-box-letter"><span>a</span></div>
@@ -30,9 +30,9 @@
 </div>
 <div class="grid">
   {% for item in items %}
-  <a href="{{ item.id }}.html" class="item">
+  <a href="{{ item.id }}.html" tabindex="0" class="item">
     <div class="image-container {% if item.size.width > item.size.height %}-h{% else %}-v{% endif %}">
-      <img src="images/thumbs/{{ item.id }}.jpg" style="background-color: {{ item.color }};" loading="lazy" alt="{{ item.title }}">
+      <img src="images/thumbs/{{ item.id }}.jpg" style="background-color: {{ item.color }};" {% if loop.index > 5 %}loading="lazy"{% endif %} alt="{{ item.title }}">
     </div>
   </a>
   {% endfor %}

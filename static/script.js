@@ -111,6 +111,11 @@
     randomizePieces();
     pieces.forEach((piece, i) => {
       piece.addEventListener('click', handlePieceClick);
+      piece.addEventListener('keyup', (e) => {
+        if (e.key === 'Enter') {
+          handlePieceClick(e);
+        }
+      });
     });
   }
 })();
