@@ -1,5 +1,6 @@
 (() => {
   const preview = document.querySelector('.preview');
+  const coverBox = document.querySelector('.cover-box');
 
   if (preview) {
     const backButton = document.querySelector('.back');
@@ -48,5 +49,13 @@
       e.preventDefault();
       goBack(e.target.href);
     });
+  }
+
+  if (coverBox) {
+    const pieces = coverBox.querySelectorAll('.cover-box-item');
+    const nums = Array.from({ length: pieces.length }, (_, i) => i + 1).sort(() => 0.5 - Math.random());
+    pieces.forEach((piece, i) => {
+      piece.classList.add(`_${nums[i]}`);
+    })
   }
 })();
