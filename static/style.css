@@ -46,7 +46,7 @@ html, body {
 }
 
 .item.-h {
-  aspect-ratio: 4/3;
+  /* aspect-ratio: 4/3; */
 }
 
 .image-container.-v {
