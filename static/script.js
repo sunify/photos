@@ -19,6 +19,7 @@
       const isTaller = ogAspectRatio < previewImg.width / previewImg.height;
       previewPlaceholder.classList.toggle('-v', isTaller);
       previewPlaceholder.classList.toggle('-h', !isTaller);
+      previewPlaceholder.style.display = 'block';
     }
     handleResize();
     window.addEventListener('resize', handleResize, { passive: true });

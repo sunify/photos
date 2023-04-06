@@ -93,6 +93,7 @@ html, body {
 
 .preview-placeholder {
   animation: pulse 1s ease-in-out infinite alternate-reverse;
+  display: none;
 }
 
 .loaded .preview-placeholder {
