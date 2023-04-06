@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Merriweather';
 }
 
 html, body {
@@ -154,7 +154,6 @@ html, body {
 }
 
 .exif {
-  font-weight: 500;
   font-size: 14px;
   display: flex;
   gap: 15px;
