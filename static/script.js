@@ -53,7 +53,31 @@
 
   if (coverBox) {
     let selectedPiece = null;
-    const pieces = coverBox.querySelectorAll('.cover-box-item');
+    // const pieces = coverBox.querySelectorAll('.cover-box-item');
+    const boxPieces = coverBox.querySelector('.cover-box-pieces');
+    const pieces = Array.from({ length: 9 }, (_, i) => {
+      const piece = document.createElement('div');
+      piece.classList.add('cover-box-item');
+      piece.tabIndex = '-1';
+      piece.dataset.num = i + 1;
+      piece.dataset.pos = i + 1;
+      boxPieces.appendChild(piece);
+
+      return piece;
+    });
+
+    function randomizePieces() {
+      const nums = Array.from({ length: pieces.length }, (_, i) => i + 1).sort(
+        () => 0.5 - Math.random()
+      );
+      pieces.forEach((piece, i) => {
+        piece.dataset.pos = nums[i];
+      });
+    }
+
+    setTimeout(() => {
+      randomizePieces();
+    }, 300);
 
     function areYaWinningSon() {
       let winning = true;
@@ -75,7 +99,7 @@
       shutterSound.play().catch(() => {});
       setTimeout(() => {
         shutter.classList.remove('cheese');
-      }, 500)
+      }, 500);
     }
 
     let sawWinMessage = false;
@@ -108,19 +132,6 @@
       }
     }
 
-    function randomizePieces() {
-      const nums = Array.from({ length: pieces.length }, (_, i) => i + 1).sort(
-        () => 0.5 - Math.random()
-      );
-      pieces.forEach((piece, i) => {
-        piece.style.animationDelay = `${400 + nums[i] * 50}ms`;
-        piece.style.animationPlayState = 'running';
-        piece.dataset.num = nums[i];
-        piece.dataset.pos = i + 1;
-      });
-    }
-
-    randomizePieces();
     pieces.forEach((piece, i) => {
       piece.addEventListener('click', handlePieceClick);
       piece.addEventListener('keyup', handlePieceKeyup);
@@ -148,10 +159,10 @@
 
     coverBox.addEventListener('keydown', (e) => {
       const direction = {
-        'ArrowUp': [0, -1],
-        'ArrowDown': [0, 1],
-        'ArrowLeft': [-1, 0],
-        'ArrowRight': [1, 0],
+        ArrowUp: [0, -1],
+        ArrowDown: [0, 1],
+        ArrowLeft: [-1, 0],
+        ArrowRight: [1, 0],
       }[e.key];
       if (direction) {
         e.preventDefault();
