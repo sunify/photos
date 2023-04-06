@@ -25,19 +25,28 @@ html, body {
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
   margin: 35px;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+}
+
 .item {
-  width: 33.333%;
-  aspect-ratio: 4/3;
   padding: 5px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.item.-v {
+  aspect-ratio: 3/4;
+}
+
+.item.-h {
+  aspect-ratio: 4/3;
 }
 
 .image-container.-v {
@@ -382,8 +391,12 @@ html, body {
     margin: 15px;
   }
 
+  .row {
+    display: block;
+  }
+
   .item {
-    width: 100%;
+    width: 100% !important;
   }
 
   .preview {
