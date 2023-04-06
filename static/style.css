@@ -28,6 +28,11 @@ html, body {
   margin: 35px;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+}
+
 .item {
   padding: 5px;
 
@@ -381,18 +386,17 @@ html, body {
   color: blue;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-}
-
 @media screen and (max-width: 640px) {
   .grid {
     margin: 15px;
   }
 
+  .row {
+    display: block;
+  }
+
   .item {
-    width: 100%;
+    width: 100% !important;
   }
 
   .preview {
