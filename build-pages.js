@@ -48,15 +48,19 @@ function prepareItem(rawItem) {
         color: rgb(color),
         exif,
         size: sizeOf(thumbPath),
+        created: new Date(exif.exif.CreateDate.replace(/(\d+):(\d+):(\d+)\s(.*)/, '$1/$2/$3 $4'))
       };
     }
   );
 }
 
 Promise.all(rawItems.map(prepareItem))
+  .then((items) => items.sort((a, b) => {
+    return b.created - a.created;
+  }))
   .then((items) => {
     const promises = [
-      fs.writeFile('build/index.html', nunjucks.render('index.j2', { items }), {
+      fs.writeFile('build/index.html', nunjucks.render('index.j2', { items, grid: makeGrid(items) }), {
         encoding: 'utf-8',
       }),
     ];
@@ -75,3 +79,40 @@ Promise.all(rawItems.map(prepareItem))
     return Promise.all(promises);
   })
   .then(() => console.log('done'));
+
+function makeGrid(items) {
+  const MAX_ROW_LENGTH = 2.8;
+  const grid = [];
+  let currentRow = [];
+  let currentRowLength = 0;
+
+  function postProcessRow(row) {
+    const getItemSize = (item) => item.isVertical ? 0.565 : 1
+    const rowSize = Math.max(row.map(getItemSize).reduce((a, b) => a + b, 0), MAX_ROW_LENGTH);
+    row.forEach((item) => {
+      item.gridSize = getItemSize(item) / rowSize * 100;
+    });
+  }
+
+  for (const item of items) {
+    const isVertical = item.size.width < item.size.height;
+    const itemSize = isVertical ? 0.565 : 1;
+    item.isVertical = isVertical;
+    currentRow.push(item);
+    currentRowLength += itemSize;
+
+    if (currentRowLength >= MAX_ROW_LENGTH) {
+      grid.push(currentRow);
+      postProcessRow(currentRow);
+      currentRow = [];
+      currentRowLength = 0;
+    }
+  }
+
+  if (currentRow.length) {
+    grid.push(currentRow);
+    postProcessRow(currentRow);
+  }
+
+  return grid;
+}

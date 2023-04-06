@@ -22,12 +22,17 @@
   <div class="cover-shutter"></div>
 </header>
 <div class="grid">
-  {% for item in items %}
-  <a href="{{ item.id }}.html" tabindex="0" class="item">
-    <div class="image-container {% if item.size.width > item.size.height %}-h{% else %}-v{% endif %}">
-      <img src="images/thumbs/{{ item.id }}.jpg" style="background-color: {{ item.color }};" {% if loop.index > 5 %}loading="lazy"{% endif %} alt="{{ item.title }}">
+  {% for row in grid %}
+    {% set rowI = loop.index %}
+    <div class="row">
+      {% for item in row %}
+        <a href="{{ item.id }}.html" tabindex="0" class="item  {% if item.isVertical %}-v{% else %}-h{% endif %}" style="width: {{ item.gridSize }}%">
+          <div class="image-container {% if item.isVertical %}-v{% else %}-h{% endif %}">
+            <img src="images/thumbs/{{ item.id }}.jpg" style="background-color: {{ item.color }};" {% if rowI > 2 %}loading="lazy"{% endif %} alt="{{ item.title }}">
+          </div>
+        </a>
+      {% endfor %}
     </div>
-  </a>
   {% endfor %}
 </div>
 
