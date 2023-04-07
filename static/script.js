@@ -57,6 +57,7 @@
       if (e.key === 'Escape') {
         if (document.documentElement.classList.contains('full')) {
           document.documentElement.classList.remove('full');
+          handleResize();
         } else {
           goBack('.');
         }
