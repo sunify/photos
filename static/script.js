@@ -24,7 +24,24 @@
     handleResize();
     window.addEventListener('resize', handleResize, { passive: true });
 
-    previewImg.addEventListener('click', () => {
+    previewImg.addEventListener('click', (e) => {
+      const willBeFull = !document.documentElement.classList.contains('full');
+
+      if (willBeFull) {
+        const rect = previewPlaceholder.getBoundingClientRect();
+        const x = e.pageX - rect.x;
+        const y = e.pageY - rect.y;
+        setTimeout(() => {
+          const maxScrollX = document.documentElement.scrollWidth - window.innerWidth;
+          const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+          const roundPercents = (p) => Math.round(p * 100) / 100;
+          window.scrollTo(
+            maxScrollX * roundPercents(x / rect.width),
+            maxScrollY * roundPercents(y / rect.height)
+          );
+        });
+      }
+
       document.documentElement.classList.toggle('full');
       handleResize();
     });
