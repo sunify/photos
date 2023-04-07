@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Merriweather', serif;
+  color: #000;
+  background-color: #fff;
 }
 
 html, body {
@@ -39,14 +41,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.item.-v {
-  /* aspect-ratio: 3/4; */
-}
-
-.item.-h {
-  /* aspect-ratio: 4/3; */
 }
 
 .image-container.-v {
@@ -222,7 +216,7 @@ html, body {
 .cover {
   --cell-size: 100px;
   --gap-size: 20px;
-  --over-size: 35vh;
+  --over-size: 25vh;
 
   display: flex;
   justify-content: center;
@@ -414,5 +408,16 @@ html, body {
   .footer {
     font-size: 20px;
     padding: 50px 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #151316;
+    color: #fff;
+  }
+
+  .cover-shutter {
+    background-color: #151316;
   }
 }
