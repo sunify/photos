@@ -411,7 +411,7 @@ html, body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: #151316;
     color: #fff;
@@ -420,4 +420,4 @@ html, body {
   .cover-shutter {
     background-color: #151316;
   }
-}
+} */
