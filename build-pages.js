@@ -81,7 +81,7 @@ Promise.all(rawItems.map(prepareItem))
   .then(() => console.log('done'));
 
 function makeGrid(items) {
-  const MAX_ROW_LENGTH = 2.8;
+  const MAX_ROW_LENGTH = 2.1;
   const grid = [];
   let currentRow = [];
   let currentRowLength = 0;
