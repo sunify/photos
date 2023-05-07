@@ -65,10 +65,14 @@ Promise.all(rawItems.map(prepareItem))
       }),
     ];
     promises.push(
-      ...items.map((item) => {
+      ...items.map((item, index) => {
         return fs.writeFile(
           `build/${item.id}.html`,
-          nunjucks.render('item.j2', { item }),
+          nunjucks.render('item.j2', {
+            item,
+            prevItem: items[index - 1],
+            nextItem: items[index + 1]
+          }),
           {
             encoding: 'utf-8',
           }

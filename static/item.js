@@ -45,10 +45,11 @@
   });
 
   function goBack(fallbackLocation) {
-    window.history.back();
-    setTimeout(() => {
-      window.location = fallbackLocation;
-    }, 50);
+    window.location = fallbackLocation;
+  }
+
+  function goToPhotoId(photoId) {
+    window.location.href = `./${photoId}.html`;
   }
 
   window.addEventListener('keyup', (e) => {
@@ -59,6 +60,16 @@
       } else {
         goBack('.');
       }
+    }
+
+    if (e.key === 'ArrowLeft') {
+      if (preview.dataset.prev) {
+        goToPhotoId(preview.dataset.prev);
+      }
+    }
+
+    if (e.key === 'ArrowRight') {
+      goToPhotoId(preview.dataset.next);
     }
   });
 

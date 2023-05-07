@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="preview">
+<div class="preview" {% if prevItem %}data-prev="{{ prevItem.id }}"{% endif %} {% if nextItem %}data-next="{{ nextItem.id }}"{% endif %}>
   <img
     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
     data-src="images/full/{{ item.id }}.jpg"
