@@ -38,9 +38,10 @@ function rgb([r, g, b]) {
 }
 
 function prepareItem(rawItem) {
+  const fullPath = `images/full/${rawItem.file}`;
   const thumbPath = `images/thumbs/${rawItem.file}`;
 
-  return Promise.all([ColorThief.getColor(thumbPath), getExif(thumbPath)]).then(
+  return Promise.all([ColorThief.getColor(thumbPath), getExif(fullPath)]).then(
     ([color, exif]) => {
       return {
         ...rawItem,
