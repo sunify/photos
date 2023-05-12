@@ -45,11 +45,15 @@
   });
 
   function goBack(fallbackLocation) {
-    window.location = fallbackLocation;
+    window.history.back();
+    setTimeout(() => {
+      window.location = fallbackLocation;
+    }, 50);
   }
 
   function goToPhotoId(photoId) {
-    window.location.href = `./${photoId}.html`;
+    window.history.replaceState(null, null, `./${photoId}.html`);
+    window.location.reload();
   }
 
   window.addEventListener('keyup', (e) => {
