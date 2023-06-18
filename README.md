@@ -1,4 +1,3 @@
 # Photo lab
 
-- resize.sh – prepares images for the web
-- build.sh – builds static pages based in items.json file
+- npm run build – builds static pages based in items.json file
