@@ -20,15 +20,15 @@ const thumbIMParams = `${commonIMParams} -resize 900x900 -quality 80`;
 const BASE_PATH = 'public/images';
 
 async function getNewPhotos() {
-  const [allPhotos, resizedPhotos] = await Promise.all([
+  const [allPhotos, addedItems] = await Promise.all([
     glob('photos/*.jpg'),
-    glob(`${BASE_PATH}/full/*.jpg`).then((photos) =>
-      photos.map((photo) => photo.replace(`${BASE_PATH}/full/`, ''))
+    glob('src/content/photos/*.json').then((photos) =>
+      photos.map((photo) => photo.replace(`src/content/photos/`, '').replace('.json', ''))
     ),
   ]);
 
   return allPhotos.filter(
-    (photo) => !resizedPhotos.includes(photo.replace('photos/', ''))
+    (photo) => !addedItems.includes(photo.replace('photos/', '').replace('.jpg', ''))
   );
 }
 
