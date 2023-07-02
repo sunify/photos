@@ -1,5 +1,6 @@
 ---
 import PuzzleHeader from '../components/PuzzleHeader.svelte';
+import Grid from '../components/Grid.svelte';
 
 import BaseHead from '../components/BaseHead.astro';
 
@@ -20,14 +21,6 @@ const photos = (await getCollection('photos')).sort(
   <body>
     <PuzzleHeader client:load />
 
-    <ul>
-      {
-        photos.map((photo) => (
-          <li>
-            <a href={photo.id}>{photo.data.title}</a>
-          </li>
-        ))
-      }
-    </ul>
+    <Grid photos={photos} />
   </body>
 </html>

@@ -6,14 +6,14 @@
 
   let positions = Array.from({ length: 9 }, (_, i) => i + 1);
   let inPlaying = false;
-  let gapSize = 20;
+  let gapSize = 'inherit';
   let shutterSound = null;
 
   $: isWon = !positions.some((n, i, arr) => n > arr[i + 1]) && inPlaying && !isServer();
   $: {
     if (isWon) {
       setTimeout(() => {
-        gapSize = 0;
+        gapSize = '0px';
 
         try {
           shutterSound.play();
@@ -47,8 +47,8 @@
   });
 </script>
 
-<header class="cover" style="--gap-size: {gapSize}px">
-  <div class="cover-box">
+<header class="cover">
+  <div class="cover-box" style="--gap-size: {gapSize}">
     <div class="pieces">
       {#each positions as pos, i}
         <div
@@ -239,5 +239,13 @@
   opacity: 0;
   animation: shutter 0.5s;
   animation-delay: 300ms;
+}
+
+@media screen and (max-width: 640px) {
+  .cover {
+    --cell-size: 75px;
+    --gap-size: 10px;
+    --over-size: 20vh;
+  }
 }
 </style>
