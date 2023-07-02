@@ -1,11 +1,22 @@
-export function makeGrid(items) {
+import type { CollectionEntry } from 'astro:content';
+
+type GridItem<T> = {
+  item: T;
+  isVertical: boolean;
+  gridSize: number;
+};
+
+type GridRow<T> = GridItem<T>[];
+type Grid<T> = GridRow<T>[];
+
+export function makeGrid<T extends CollectionEntry<'photos'>>(items: T[]): Grid<T> {
   const MAX_ROW_LENGTH = 2.1;
   const grid = [];
   let currentRow = [];
   let currentRowLength = 0;
 
-  function postProcessRow(row) {
-    const getItemSize = (item) => item.isVertical ? 0.565 : 1
+  function postProcessRow(row: GridRow<T>) {
+    const getItemSize = (item: GridItem<T>) => item.isVertical ? 0.565 : 1
     const rowSize = Math.max(row.map(getItemSize).reduce((a, b) => a + b, 0), MAX_ROW_LENGTH);
     row.forEach((item) => {
       item.gridSize = getItemSize(item) / rowSize * 100;
@@ -15,8 +26,12 @@ export function makeGrid(items) {
   for (const item of items) {
     const isVertical = item.data.size.width < item.data.size.height;
     const itemSize = isVertical ? 0.565 : 1;
-    item.isVertical = isVertical;
-    currentRow.push(item);
+    const newItem: GridItem<T> = {
+      item,
+      isVertical,
+      gridSize: 0
+    }
+    currentRow.push(newItem);
     currentRowLength += itemSize;
 
     if (currentRowLength >= MAX_ROW_LENGTH) {

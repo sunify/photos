@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   import { isServer } from '../helpers/is-server';
 
@@ -7,7 +7,7 @@
   let positions = Array.from({ length: 9 }, (_, i) => i + 1);
   let inPlaying = false;
   let gapSize = 'inherit';
-  let shutterSound = null;
+  let shutterSound: HTMLAudioElement | null = null;
 
   $: isWon = !positions.some((n, i, arr) => n > arr[i + 1]) && inPlaying && !isServer();
   $: {
@@ -16,14 +16,14 @@
         gapSize = '0px';
 
         try {
-          shutterSound.play();
+          shutterSound?.play();
         } catch (e) {}
       }, 300);
     }
   }
 
-  let selectedPosition = null;
-  function handlePieceClick(i) {
+  let selectedPosition: number | null = null;
+  function handlePieceClick(i: number) {
     if (isWon) {
       return;
     }
