@@ -85,7 +85,6 @@ async function prepareItem(fileName) {
 
 async function run() {
   const newPhotos = await getNewPhotos();
-  console.log(newPhotos);
 
   await resizePhotos(newPhotos);
   await Promise.all(
