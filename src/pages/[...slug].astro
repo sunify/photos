@@ -1,5 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import PhotoPreview from '../components/PhotoPreview.svelte';
+import Exif from '../components/Exif.svelte';
 import { SITE_TITLE } from '../consts';
 
 import { getCollection } from 'astro:content';
@@ -11,7 +13,7 @@ export async function getStaticPaths() {
     props: { photo },
   }));
 }
-// 2. When it's time to render, you can get the entry directly from the prop
+
 const { photo } = Astro.props;
 ---
 
@@ -21,7 +23,25 @@ const { photo } = Astro.props;
     <BaseHead title={SITE_TITLE} />
   </head>
   <body>
-    <h1>{photo.data.title}</h1>
-    {JSON.stringify(photo.data, null, 2)}
+    <PhotoPreview {photo} client:load />
+
+    <div class="exif">
+      <Exif
+        fNumber={photo.data.exif.exif.FNumber}
+        iso={photo.data.exif.exif.ISO}
+        exposureTime={photo.data.exif.exif.ExposureTime}
+        focalLength={photo.data.exif.exif.FocalLengthIn35mmFormat}
+        camera={photo.data.exif.image.Model}
+      />
+    </div>
   </body>
 </html>
+
+<style>
+  .exif {
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 15px;
+  }
+</style>
