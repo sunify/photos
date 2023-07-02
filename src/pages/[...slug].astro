@@ -1,0 +1,33 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.svelte';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const photos = await getCollection('photos');
+  return photos.map((photo) => ({
+    params: { slug: photo.id },
+    props: { photo },
+  }));
+}
+// 2. When it's time to render, you can get the entry directly from the prop
+const { photo } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+
+    <h1>{photo.data.title}</h1>
+    {JSON.stringify(photo.data, null, 2)}
+
+    <Footer client:load />
+  </body>
+</html>

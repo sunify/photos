@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.svelte';
+import { SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+
+const photos = (await getCollection('photos'));
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} />
+  </head>
+  <body>
+
+    <ul>
+      {
+        photos.map((photo) => (
+          <li>
+            <a href={photo.id}>{photo.id}</a>
+          </li>
+        ))
+      }
+    </ul>
+
+
+    <Footer client:load />
+  </body>
+</html>
