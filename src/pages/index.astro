@@ -1,5 +1,8 @@
 ---
+import PuzzleHeader from '../components/PuzzleHeader.svelte';
+
 import BaseHead from '../components/BaseHead.astro';
+
 import { SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
 
@@ -15,6 +18,8 @@ const photos = (await getCollection('photos')).sort(
     <BaseHead title={SITE_TITLE} />
   </head>
   <body>
+    <PuzzleHeader />
+
     <ul>
       {
         photos.map((photo) => (
