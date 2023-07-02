@@ -14,7 +14,10 @@
     "@astrojs/rss": "^2.4.3",
     "@astrojs/svelte": "^3.1.0",
     "astro": "^2.7.2",
+    "colorthief": "^2.4.0",
+    "exif": "^0.6.0",
     "glob": "^10.3.1",
+    "image-size": "^1.0.2",
     "svelte": "^4.0.1"
   }
 }

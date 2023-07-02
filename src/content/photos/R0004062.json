@@ -1,0 +1,70 @@
+{
+  "id": "R0004062",
+  "title": "",
+  "color": "rgb(29, 153, 144)",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:04:07 18:43:48",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 8246
+    },
+    "exif": {
+      "ExposureTime": 0.0015625,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:04:02 16:33:37",
+      "CreateDate": "2023:04:02 16:33:37",
+      "ShutterSpeedValue": 9.321928,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 2,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 1,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 50,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 2
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "created": "2023-04-02T14:33:37.000Z"
+}
