@@ -1,7 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.svelte';
 import { SITE_TITLE } from '../consts';
 
 import { getCollection } from 'astro:content';
@@ -23,11 +21,7 @@ const { photo } = Astro.props;
     <BaseHead title={SITE_TITLE} />
   </head>
   <body>
-    <Header title={SITE_TITLE} />
-
     <h1>{photo.data.title}</h1>
     {JSON.stringify(photo.data, null, 2)}
-
-    <Footer client:load />
   </body>
 </html>

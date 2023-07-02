@@ -1,10 +1,12 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.svelte';
 import { SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
 
-const photos = (await getCollection('photos'));
+const photos = (await getCollection('photos')).sort(
+  (a, b) =>
+    new Date(b.data.created).getTime() - new Date(a.data.created).getTime()
+);
 ---
 
 <!DOCTYPE html>
@@ -13,18 +15,14 @@ const photos = (await getCollection('photos'));
     <BaseHead title={SITE_TITLE} />
   </head>
   <body>
-
     <ul>
       {
         photos.map((photo) => (
           <li>
-            <a href={photo.id}>{photo.id}</a>
+            <a href={photo.id}>{photo.data.title}</a>
           </li>
         ))
       }
     </ul>
-
-
-    <Footer client:load />
   </body>
 </html>

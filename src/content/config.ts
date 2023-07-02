@@ -7,6 +7,11 @@ const photos = defineCollection({
     id: z.string(),
     title: z.string(),
     color: z.string(),
+    size: z.object({
+      width: z.number(),
+      height: z.number(),
+    }),
+    created: z.string(),
     exif: z.object({
       image: z.object({
         Make: z.string(),
