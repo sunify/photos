@@ -1,8 +1,8 @@
 ---
+import BaseHead from '../components/BaseHead.astro';
 import PuzzleHeader from '../components/PuzzleHeader.svelte';
 import Grid from '../components/Grid.svelte';
-
-import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.svelte';
 
 import { SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
@@ -22,5 +22,7 @@ const photos = (await getCollection('photos')).sort(
     <PuzzleHeader client:load />
 
     <Grid photos={photos} />
+
+    <Footer />
   </body>
 </html>
