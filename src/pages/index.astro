@@ -18,7 +18,7 @@ const photos = (await getCollection('photos')).sort(
     <BaseHead title={SITE_TITLE} />
   </head>
   <body>
-    <PuzzleHeader />
+    <PuzzleHeader client:load />
 
     <ul>
       {
