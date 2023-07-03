@@ -6,5 +6,8 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   site: 'https://sunify.github.io',
   base: process.env.NODE_ENV === 'production' ? '/photos' : '/',
+  build: {
+    assets: 'assets'
+  },
   integrations: [mdx(), svelte()]
 });
