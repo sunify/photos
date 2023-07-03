@@ -84,11 +84,11 @@ onMount(() => {
 <style>
 @keyframes pulse {
   0% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
 
   100% {
-    opacity: 0.5;
+    opacity: 0.9;
   }
 }
 
@@ -123,7 +123,7 @@ onMount(() => {
 }
 
 .loaded .placeholder {
-  animation: none;
+  animation-play-state: paused;
 }
 
 .photo {
