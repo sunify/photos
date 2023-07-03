@@ -65,7 +65,6 @@ onMount(() => {
   <img
     class="photo"
     src={loaded ? imageUrl : `data:image/png;base64,${photo.data.placeholder}`}
-    data-src=""
     alt={photo.data.title}
     on:click={handleImageClick}
     on:keyup={noop}

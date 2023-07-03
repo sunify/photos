@@ -4,7 +4,6 @@ import { glob } from 'glob';
 import { promisify } from 'util';
 import child_process from 'child_process';
 import rgbHex from 'rgb-hex';
-import oldItems from './items.json' assert { type: 'json' };
 
 import sizeOf from 'image-size';
 import ColorThief from 'colorthief';
@@ -13,6 +12,7 @@ import exif from 'exif';
 const { ExifImage } = exif;
 const exec = promisify(child_process.exec);
 const writeFile = promisify(fs.writeFile);
+const readFile = promisify(fs.readFile);
 
 const commonIMParams = '-units PixelsPerInch -density 72 -interlace plane';
 const ogIMParams = `${commonIMParams} -resize 1960x590 -extent 1200x630 -gravity center -quality 70 -strip`;
@@ -25,12 +25,16 @@ async function getNewPhotos() {
   const [allPhotos, addedItems] = await Promise.all([
     glob('photos/*.jpg'),
     glob('src/content/photos/*.json').then((photos) =>
-      photos.map((photo) => photo.replace(`src/content/photos/`, '').replace('.json', ''))
+      photos.map((photo) =>
+        photo.replace(`src/content/photos/`, '').replace('.json', '')
+      )
     ),
   ]);
 
+  return allPhotos;
   return allPhotos.filter(
-    (photo) => !addedItems.includes(photo.replace('photos/', '').replace('.jpg', ''))
+    (photo) =>
+      !addedItems.includes(photo.replace('photos/', '').replace('.jpg', ''))
   );
 }
 
@@ -61,15 +65,19 @@ function getExif(image) {
 }
 
 function rgb([r, g, b]) {
-  return '#' + rgbHex(r, g, b)
+  return '#' + rgbHex(r, g, b);
 }
 
 async function makePlaceholder(aspectRatio, color) {
-  const result = await exec(`convert -size ${Math.round(500 * aspectRatio)}x500 xc:${color} png:- | base64`);
+  const result = await exec(
+    `convert -size ${Math.round(
+      500 * aspectRatio
+    )}x500 xc:${color} png:- | base64`
+  );
   return result.stdout.trim();
 }
 
-async function prepareItem(fileName) {
+async function prepareItem(fileName, oldItem) {
   const fullPath = `${BASE_PATH}/full/${fileName}`;
   const thumbPath = `${BASE_PATH}/thumbs/${fileName}`;
 
@@ -78,7 +86,6 @@ async function prepareItem(fileName) {
     getExif(fullPath),
   ]);
 
-  const item = oldItems.find(oldItem => oldItem.file === fileName);
   const size = sizeOf(thumbPath);
   const aspectRatio = size.width / size.height;
   const hexColor = rgb(color);
@@ -86,7 +93,7 @@ async function prepareItem(fileName) {
 
   return {
     id: fileName.replace('.jpg', ''),
-    title: item?.title || '',
+    title: oldItem?.title || '',
     color: hexColor,
     exif,
     size,
@@ -97,6 +104,15 @@ async function prepareItem(fileName) {
   };
 }
 
+async function readItemJSON(fileName) {
+  try {
+    const data = await readFile(fileName, 'utf-8');
+    return JSON.parse(data);
+  } catch (e) {
+    return null;
+  }
+}
+
 async function run() {
   const newPhotos = await getNewPhotos();
 
@@ -104,12 +120,13 @@ async function run() {
   await Promise.all(
     newPhotos.map(async (photo) => {
       const basename = path.basename(photo);
-      const item = await prepareItem(basename);
-      await writeFile(
-        `src/content/photos/${basename.replace('.jpg', '.json')}`,
-        JSON.stringify(item, null, 2),
-        'utf-8'
-      );
+      const jsonPath = `src/content/photos/${basename.replace(
+        '.jpg',
+        '.json'
+      )}`;
+      const existingItem = await readItemJSON(jsonPath);
+      const item = await prepareItem(basename, existingItem);
+      await writeFile(jsonPath, JSON.stringify(item, null, 2), 'utf-8');
     })
   );
 }
