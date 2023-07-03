@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { CollectionEntry } from 'astro:content';
-  import { makeGrid } from '../helpers/make-grid';
+import type { CollectionEntry } from 'astro:content';
+import { makeGrid } from '../helpers/make-grid';
 
-  export let photos: CollectionEntry<'photos'>[];
+export let photos: CollectionEntry<'photos'>[];
 
-  $: grid = makeGrid(photos);
+$: grid = makeGrid(photos);
 </script>
 
 <div class="grid">

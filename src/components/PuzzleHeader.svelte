@@ -1,50 +1,50 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { isServer } from '../helpers/is-server';
+import { onMount } from 'svelte';
+import { isServer } from '../helpers/is-server';
 
-  const letters = 'alexlunёv';
+const letters = 'alexlunёv';
 
-  let positions = Array.from({ length: 9 }, (_, i) => i + 1);
-  let inPlaying = false;
-  let gapSize = 'inherit';
-  let shutterSound: HTMLAudioElement | null = null;
+let positions = Array.from({ length: 9 }, (_, i) => i + 1);
+let inPlaying = false;
+let gapSize = 'inherit';
+let shutterSound: HTMLAudioElement | null = null;
 
-  $: isWon = !positions.some((n, i, arr) => n > arr[i + 1]) && inPlaying && !isServer();
-  $: {
-    if (isWon) {
-      setTimeout(() => {
-        gapSize = '0px';
-
-        try {
-          shutterSound?.play();
-        } catch (e) {}
-      }, 300);
-    }
-  }
-
-  let selectedPosition: number | null = null;
-  function handlePieceClick(i: number) {
-    if (isWon) {
-      return;
-    }
-
-    if (selectedPosition === null) {
-      selectedPosition = i;
-    } else {
-      const temp = positions[i];
-      positions[i] = positions[selectedPosition];
-      positions[selectedPosition] = temp;
-      selectedPosition = null;
-    }
-  }
-
-  onMount(() => {
-    shutterSound = new Audio('shutter-sound.mp3');
+$: isWon = !positions.some((n, i, arr) => n > arr[i + 1]) && inPlaying && !isServer();
+$: {
+  if (isWon) {
     setTimeout(() => {
-      positions = positions.sort(() => 0.5 - Math.random());
-      inPlaying = true;
+      gapSize = '0px';
+
+      try {
+        shutterSound?.play();
+      } catch (e) {}
     }, 300);
-  });
+  }
+}
+
+let selectedPosition: number | null = null;
+function handlePieceClick(i: number) {
+  if (isWon) {
+    return;
+  }
+
+  if (selectedPosition === null) {
+    selectedPosition = i;
+  } else {
+    const temp = positions[i];
+    positions[i] = positions[selectedPosition];
+    positions[selectedPosition] = temp;
+    selectedPosition = null;
+  }
+}
+
+onMount(() => {
+  shutterSound = new Audio('shutter-sound.mp3');
+  setTimeout(() => {
+    positions = positions.sort(() => 0.5 - Math.random());
+    inPlaying = true;
+  }, 300);
+});
 </script>
 
 <header class="cover">

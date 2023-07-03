@@ -1,55 +1,55 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import type { CollectionEntry } from 'astro:content';
-  import PreviewNav from './PreviewNav.svelte';
+import { onMount } from 'svelte';
+import type { CollectionEntry } from 'astro:content';
+import PreviewNav from './PreviewNav.svelte';
 
-  export let photo: CollectionEntry<'photos'>;
-  export let prevPhotoId: string | null = null;
-  export let nextPhotoId: string | null = null;
+export let photo: CollectionEntry<'photos'>;
+export let prevPhotoId: string | null = null;
+export let nextPhotoId: string | null = null;
 
-  $: imageUrl = `images/full/${photo.id}.jpg`;
-  let loaded = false;
-  let full = false;
+$: imageUrl = `images/full/${photo.id}.jpg`;
+let loaded = false;
+let full = false;
 
-  function handleImageClick(e: MouseEvent) {
-    if (!full) {
-      const { pageX, pageY } = e;
-      setTimeout(() => {
-        const maxScrollX = document.documentElement.scrollWidth - window.innerWidth;
-        const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
-        const roundPercents = (p: number) => Math.round(p * 100) / 100;
-        window.scrollTo(
-          maxScrollX * roundPercents(pageX / window.innerWidth),
-          maxScrollY * roundPercents(pageY / window.innerHeight)
-        );
-      })
-    }
-    full = !full;
+function handleImageClick(e: MouseEvent) {
+  if (!full) {
+    const { pageX, pageY } = e;
+    setTimeout(() => {
+      const maxScrollX = document.documentElement.scrollWidth - window.innerWidth;
+      const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+      const roundPercents = (p: number) => Math.round(p * 100) / 100;
+      window.scrollTo(
+        maxScrollX * roundPercents(pageX / window.innerWidth),
+        maxScrollY * roundPercents(pageY / window.innerHeight)
+      );
+    })
   }
+  full = !full;
+}
 
-  function noop() {}
+function noop() {}
 
-  function preloadPhoto() {
-    return new Promise((resolve) => {
-      const preloader = new Image();
-      preloader.onload = () => {
-        resolve(true);
-      };
-      preloader.src = imageUrl;
-    });
-  }
-
-  function delay(ms: number) {
-    return new Promise((resolve) => {
-      setTimeout(resolve, ms);
-    });
-  }
-
-  onMount(() => {
-    Promise.all([preloadPhoto(), delay(400)]).then(() => {
-      loaded = true;
-    });
+function preloadPhoto() {
+  return new Promise((resolve) => {
+    const preloader = new Image();
+    preloader.onload = () => {
+      resolve(true);
+    };
+    preloader.src = imageUrl;
   });
+}
+
+function delay(ms: number) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
+onMount(() => {
+  Promise.all([preloadPhoto(), delay(400)]).then(() => {
+    loaded = true;
+  });
+});
 </script>
 
 <div class="preview {loaded ? 'loaded' : ''} {full ? 'full' : ''}">
