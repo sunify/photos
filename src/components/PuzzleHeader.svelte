@@ -2,7 +2,7 @@
 import { onMount } from 'svelte';
 import { isServer } from '../helpers/is-server';
 
-const letters = 'alexlunёv';
+const letters = 'alexlunёv'.split('');
 
 let positions = Array.from({ length: 9 }, (_, i) => i + 1);
 let inPlaying = false;
@@ -64,9 +64,9 @@ onMount(() => {
     </div>
 
     <div class="letters">
-      {#each positions as _, i}
-        <div class="letter">
-          <span>{letters[i]}</span>
+      {#each letters as letter}
+        <div class="letter" style={letter === 'ё' ? `font-style: italic` : ''}>
+          <span>{letter}</span>
         </div>
       {/each}
     </div>
