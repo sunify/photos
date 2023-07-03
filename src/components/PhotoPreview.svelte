@@ -12,6 +12,18 @@
   let full = false;
 
   function handleImageClick(e: MouseEvent) {
+    if (!full) {
+      const { pageX, pageY } = e;
+      setTimeout(() => {
+        const maxScrollX = document.documentElement.scrollWidth - window.innerWidth;
+        const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+        const roundPercents = (p: number) => Math.round(p * 100) / 100;
+        window.scrollTo(
+          maxScrollX * roundPercents(pageX / window.innerWidth),
+          maxScrollY * roundPercents(pageY / window.innerHeight)
+        );
+      })
+    }
     full = !full;
   }
 
