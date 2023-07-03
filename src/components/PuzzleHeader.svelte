@@ -22,19 +22,52 @@ $: {
   }
 }
 
-let selectedPosition: number | null = null;
-function handlePieceClick(i: number) {
+const coordsFromIndex = (index: number) => {
+  const x = index % 3;
+  const y = Math.floor(index / 3);
+  return [x, y];
+}
+
+function isMoveAvailable(from: number, to: number) {
+  const [fromX, fromY] = coordsFromIndex(from);
+  const [toX, toY] = coordsFromIndex(to);
+
+  const diff = Math.abs(fromX - toX) + Math.abs(fromY - toY);
+
+  return diff === 1;
+}
+
+let selectedIndex: number | null = null;
+let selectedPos: number | null = null;
+let shakeIndex: number | null = null;
+function handlePieceClick(e: MouseEvent | KeyboardEvent) {
   if (isWon) {
     return;
   }
 
-  if (selectedPosition === null) {
-    selectedPosition = i;
-  } else {
+  const target = (e.target as HTMLElement);
+
+  const i = Number(target.dataset.num) - 1;
+  const pos = Number(target.dataset.pos) - 1;
+
+  if (selectedIndex === i) {
+    return;
+  }
+
+  if (selectedIndex === null || selectedPos === null) {
+    selectedIndex = i;
+    selectedPos = pos;
+  } else if (isMoveAvailable(selectedPos, pos)) {
     const temp = positions[i];
-    positions[i] = positions[selectedPosition];
-    positions[selectedPosition] = temp;
-    selectedPosition = null;
+    positions[i] = positions[selectedIndex];
+    positions[selectedIndex] = temp;
+    selectedIndex = null;
+    selectedPos = null;
+  } else {
+    shakeIndex = i;
+    setTimeout(() => {
+      shakeIndex = null;
+    }, 500);
   }
 }
 
@@ -52,11 +85,11 @@ onMount(() => {
     <div class="pieces">
       {#each positions as pos, i}
         <div
-          class="piece"
+          class="piece {shakeIndex === i ? 'shake' : ''}"
           data-num={i + 1}
           data-pos={pos}
-          on:click={() => handlePieceClick(i)}
-          on:keyup={() => handlePieceClick(i)}
+          on:click={handlePieceClick}
+          on:keyup={handlePieceClick}
           role="button"
           tabindex="-1"
         />
@@ -239,6 +272,28 @@ onMount(() => {
   opacity: 0;
   animation: shutter 0.5s;
   animation-delay: 300ms;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
 }
 
 @media screen and (max-width: 640px) {
