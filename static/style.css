@@ -5,7 +5,9 @@
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Merriweather', serif;
+  color: #000;
+  background-color: #fff;
 }
 
 html, body {
@@ -39,14 +41,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.item.-v {
-  aspect-ratio: 3/4;
-}
-
-.item.-h {
-  aspect-ratio: 4/3;
 }
 
 .image-container.-v {
@@ -93,6 +87,7 @@ html, body {
 
 .preview-placeholder {
   animation: pulse 1s ease-in-out infinite alternate-reverse;
+  display: none;
 }
 
 .loaded .preview-placeholder {
@@ -149,11 +144,10 @@ html, body {
 }
 
 .full .preview .preview-placeholder {
-  display: none;
+  display: none !important;
 }
 
 .exif {
-  font-weight: 500;
   font-size: 14px;
   display: flex;
   gap: 15px;
@@ -220,17 +214,18 @@ html, body {
 }
 
 .cover {
+  --cell-size: 100px;
+  --gap-size: 20px;
+  --over-size: 25vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: calc(var(--cell-size) * 3 + var(--over-size));
   position: relative;
 }
 
 .cover-box {
-  --cell-size: 100px;
-  --gap-size: 20px;
-
   position: relative;
 
   width: calc(var(--cell-size) * 3 + var(--gap-size) * 2);
@@ -405,12 +400,9 @@ html, body {
   }
 
   .cover {
-    height: 350px;
-  }
-
-  .cover-box {
     --cell-size: 75px;
     --gap-size: 10px;
+    --over-size: 20vh;
   }
 
   .footer {
@@ -418,3 +410,14 @@ html, body {
     padding: 50px 0;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #151316;
+    color: #fff;
+  }
+
+  .cover-shutter {
+    background-color: #151316;
+  }
+} */
