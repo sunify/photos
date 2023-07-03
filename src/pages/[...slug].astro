@@ -7,7 +7,10 @@ import { SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const photos = await getCollection('photos');
+  const photos = (await getCollection('photos')).sort(
+    (a, b) =>
+      new Date(b.data.created).getTime() - new Date(a.data.created).getTime()
+  );
   return photos.map((photo, i) => ({
     params: { slug: photo.id },
     props: {
@@ -27,7 +30,12 @@ const { photo, nextPhoto, prevPhoto } = Astro.props;
     <BaseHead title={SITE_TITLE} />
   </head>
   <body>
-    <PhotoPreview {photo} prevPhotoId={prevPhoto?.id || null} nextPhotoId={nextPhoto?.id || null} client:load />
+    <PhotoPreview
+      {photo}
+      prevPhotoId={prevPhoto?.id || null}
+      nextPhotoId={nextPhoto?.id || null}
+      client:load
+    />
 
     <div class="exif">
       <Exif
@@ -38,12 +46,13 @@ const { photo, nextPhoto, prevPhoto } = Astro.props;
         camera={photo.data.exif.image.Model}
       />
     </div>
-  </body><style>
-    .exif {
-      position: absolute;
-      left: 0px;
-      right: 0;
-      bottom: 15px;
-    }
-  </style>
+    <style>
+      .exif {
+        position: absolute;
+        left: 0px;
+        right: 0;
+        bottom: 15px;
+      }
+    </style>
+  </body>
 </html>

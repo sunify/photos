@@ -45,12 +45,20 @@ function delay(ms: number) {
   });
 }
 
+function handleKeyup(e: KeyboardEvent) {
+  if (e.key === 'Escape') {
+    full = false;
+  }
+}
+
 onMount(() => {
   Promise.all([preloadPhoto(), delay(400)]).then(() => {
     loaded = true;
   });
 });
 </script>
+
+<svelte:window on:keyup={handleKeyup} />
 
 <div class="preview {loaded ? 'loaded' : ''} {full ? 'full' : ''}">
   <img
