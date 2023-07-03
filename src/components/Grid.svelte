@@ -12,7 +12,7 @@ $: grid = makeGrid(photos);
     <div class="row">
       {#each row as cell}
         <a
-          href={cell.item.id}
+          href={`${cell.item.id}/`}
           tabindex="0"
           class="item {cell.isVertical ? '-v' : '-h'}"
           style="width: {cell.gridSize}%"
