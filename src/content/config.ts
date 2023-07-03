@@ -7,6 +7,7 @@ const photos = defineCollection({
     id: z.string(),
     title: z.string(),
     color: z.string(),
+    placeholder: z.string(),
     size: z.object({
       width: z.number(),
       height: z.number(),

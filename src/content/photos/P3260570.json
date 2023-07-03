@@ -1,7 +1,7 @@
 {
   "id": "P3260570",
   "title": "Balcony wall",
-  "color": "rgb(59, 52, 47)",
+  "color": "#3b342f",
   "exif": {
     "image": {
       "ImageDescription": "OLYMPUS DIGITAL CAMERA",
@@ -99,5 +99,6 @@
     "width": 900,
     "type": "jpg"
   },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAACgAAAAeAQMAAABkE86eAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURTs0L////2eUyZ0AAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDAAM39JAEqAAAAAxJREFUCNdjYBh6AAAAtAABXnGQvwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0wM1QwMDowMzo1NSswMDowMKf9bssAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMDNUMDA6MDM6NTUrMDA6MDDWoNZ3AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTAzVDAwOjAzOjU1KzAwOjAwgbX3qAAAAABJRU5ErkJggg==",
   "created": "2023-03-26T13:25:27.000Z"
 }

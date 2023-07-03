@@ -8,9 +8,9 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const photos = await getCollection('photos');
-  return photos.map((photo) => ({
+  return photos.map((photo, i) => ({
     params: { slug: photo.id },
-    props: { photo },
+    props: { photo, prevPhoto: photos[i - 1], nextPhoto: photos[i + 1] },
   }));
 }
 

@@ -1,7 +1,7 @@
 {
   "id": "P6044387",
   "title": "Textures of a countryside",
-  "color": "rgb(72, 91, 49)",
+  "color": "#485b31",
   "exif": {
     "image": {
       "ImageDescription": "OLYMPUS DIGITAL CAMERA",
@@ -99,5 +99,6 @@
     "width": 900,
     "type": "jpg"
   },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAACgAAAAeAQMAAABkE86eAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURUhbMf///0GGdsIAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDAAM39JAEqAAAAAxJREFUCNdjYBh6AAAAtAABXnGQvwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0wM1QwMDowMzo1NSswMDowMKf9bssAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMDNUMDA6MDM6NTUrMDA6MDDWoNZ3AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTAzVDAwOjAzOjU1KzAwOjAwgbX3qAAAAABJRU5ErkJggg==",
   "created": "2023-06-04T12:42:29.000Z"
 }

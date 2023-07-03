@@ -3,6 +3,8 @@ import fs from 'fs';
 import { glob } from 'glob';
 import { promisify } from 'util';
 import child_process from 'child_process';
+import rgbHex from 'rgb-hex';
+import oldItems from './items.json' assert { type: 'json' };
 
 import sizeOf from 'image-size';
 import ColorThief from 'colorthief';
@@ -59,7 +61,12 @@ function getExif(image) {
 }
 
 function rgb([r, g, b]) {
-  return `rgb(${r}, ${g}, ${b})`;
+  return '#' + rgbHex(r, g, b)
+}
+
+async function makePlaceholder(aspectRatio, color) {
+  const result = await exec(`convert -size ${Math.round(30 * aspectRatio)}x30 xc:${color} png:- | base64`);
+  return result.stdout.trim();
 }
 
 async function prepareItem(fileName) {
@@ -71,12 +78,19 @@ async function prepareItem(fileName) {
     getExif(fullPath),
   ]);
 
+  const item = oldItems.find(oldItem => oldItem.file === fileName);
+  const size = sizeOf(thumbPath);
+  const aspectRatio = size.width / size.height;
+  const hexColor = rgb(color);
+  const placeholder = await makePlaceholder(aspectRatio, hexColor);
+
   return {
     id: fileName.replace('.jpg', ''),
-    title: '',
-    color: rgb(color),
+    title: item?.title || '',
+    color: hexColor,
     exif,
-    size: sizeOf(thumbPath),
+    size,
+    placeholder,
     created: new Date(
       exif.exif.CreateDate.replace(/(\d+):(\d+):(\d+)\s(.*)/, '$1/$2/$3 $4')
     ),
@@ -86,7 +100,7 @@ async function prepareItem(fileName) {
 async function run() {
   const newPhotos = await getNewPhotos();
 
-  await resizePhotos(newPhotos);
+  // await resizePhotos(newPhotos);
   await Promise.all(
     newPhotos.map(async (photo) => {
       const basename = path.basename(photo);

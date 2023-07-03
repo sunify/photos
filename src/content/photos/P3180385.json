@@ -1,7 +1,7 @@
 {
   "id": "P3180385",
   "title": "Baltic",
-  "color": "rgb(214, 234, 234)",
+  "color": "#d6eaea",
   "exif": {
     "image": {
       "ImageDescription": "OLYMPUS DIGITAL CAMERA",
@@ -99,5 +99,6 @@
     "width": 900,
     "type": "jpg"
   },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeAQMAAACCOgXaAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURdbq6v///7oYHs0AAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDAAM39JAEqAAAAAxJREFUCNdjYBhuAAAA0gABgbqf8AAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0wM1QwMDowMzo1NSswMDowMKf9bssAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMDNUMDA6MDM6NTUrMDA6MDDWoNZ3AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTAzVDAwOjAzOjU1KzAwOjAwgbX3qAAAAABJRU5ErkJggg==",
   "created": "2023-03-18T12:54:56.000Z"
 }

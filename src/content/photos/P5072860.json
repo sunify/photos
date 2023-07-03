@@ -1,7 +1,7 @@
 {
   "id": "P5072860",
   "title": "Ostpreussen road",
-  "color": "rgb(47, 51, 24)",
+  "color": "#2f3318",
   "exif": {
     "image": {
       "ImageDescription": "OLYMPUS DIGITAL CAMERA",
@@ -99,5 +99,6 @@
     "width": 675,
     "type": "jpg"
   },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAeAQMAAAD96xcrAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURS8zGP///yAPlRgAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDAAM39JAEqAAAAAxJREFUCNdjYBgYAAAAeAAB2u2iVwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0wM1QwMDowMzo1NSswMDowMKf9bssAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMDNUMDA6MDM6NTUrMDA6MDDWoNZ3AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTAzVDAwOjAzOjU1KzAwOjAwgbX3qAAAAABJRU5ErkJggg==",
   "created": "2023-05-07T16:24:00.000Z"
 }

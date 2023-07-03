@@ -1,7 +1,7 @@
 {
   "id": "P5203547",
   "title": "Remains of Ratshof",
-  "color": "rgb(74, 73, 43)",
+  "color": "#4a492b",
   "exif": {
     "image": {
       "ImageDescription": "OLYMPUS DIGITAL CAMERA",
@@ -99,5 +99,6 @@
     "width": 675,
     "type": "jpg"
   },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAABcAAAAeAQMAAAD96xcrAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURUpJK////ynKpNAAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDAAM39JAEqAAAAAxJREFUCNdjYBgYAAAAeAAB2u2iVwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0wM1QwMDowMzo1NSswMDowMKf9bssAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMDNUMDA6MDM6NTUrMDA6MDDWoNZ3AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTAzVDAwOjAzOjU1KzAwOjAwgbX3qAAAAABJRU5ErkJggg==",
   "created": "2023-05-20T16:28:43.000Z"
 }
