@@ -27,7 +27,7 @@ const { photo, nextPhoto, prevPhoto } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} />
+    <BaseHead title={SITE_TITLE} image={`images/og/${photo.id}.jpg`} />
   </head>
   <body>
     <PhotoPreview
