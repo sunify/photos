@@ -4,12 +4,16 @@
   import PreviewNav from './PreviewNav.svelte';
 
   export let photo: CollectionEntry<'photos'>;
-  export let previewId: string | null = null;
-  export let nextId: string | null = null;
 
   $: imageUrl = `images/full/${photo.id}.jpg`;
-
   let loaded = false;
+  let full = false;
+
+  function handleImageClick(e: MouseEvent) {
+    full = !full;
+  }
+
+  function noop() {}
 
   onMount(() => {
     const preloader = new Image();
@@ -20,12 +24,14 @@
   });
 </script>
 
-<div class="preview {loaded ? 'loaded' : ''}">
+<div class="preview {loaded ? 'loaded' : ''} {full ? 'full' : ''}">
   <img
     class="photo"
     src={loaded ? imageUrl : `data:image/png;base64,${photo.data.placeholder}`}
     data-src=""
     alt={photo.data.title}
+    on:click={handleImageClick}
+    on:keyup={noop}
   />
 
   <img
@@ -34,7 +40,9 @@
     alt="placeholder"
   />
 
-  <PreviewNav />
+  {#if !full}
+    <PreviewNav />
+  {/if}
 </div>
 
 <style>
@@ -57,6 +65,11 @@
   height: 100%;
   padding: var(--top-padding) var(--side-padding) var(--bottom-padding)
     var(--side-padding);
+}
+
+.full {
+  background: #FFF;
+  z-index: 100;
 }
 
 .photo, .placeholder {
@@ -87,21 +100,24 @@
   opacity: 1;
 }
 
-.full .preview {
+.full.preview {
   width: auto;
   height: auto;
   padding: 0;
 }
 
-.full .preview .photo {
+.full.preview .photo {
   width: auto;
   height: auto;
+  left: 0;
+  top: 0;
+  position: relative;
   padding: var(--side-padding);
   background: none !important;
   margin: 0 auto;
 }
 
-.full .preview .placeholder {
+.full.preview .placeholder {
   display: none !important;
 }
 </style>
