@@ -6,8 +6,9 @@ import PreviewNav from './PreviewNav.svelte';
 export let photo: CollectionEntry<'photos'>;
 export let prevPhotoId: string | null = null;
 export let nextPhotoId: string | null = null;
+export let baseUrl: URL;
 
-$: imageUrl = `images/full/${photo.id}.jpg`;
+$: imageUrl = new URL(`../images/full/${photo.id}.jpg`, baseUrl);
 let loaded = false;
 let full = false;
 
@@ -35,7 +36,7 @@ function preloadPhoto() {
     preloader.onload = () => {
       resolve(true);
     };
-    preloader.src = imageUrl;
+    preloader.src = imageUrl.href;
   });
 }
 

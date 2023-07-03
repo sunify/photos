@@ -27,13 +27,14 @@ const { photo, nextPhoto, prevPhoto } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={[photo.data.title, SITE_TITLE].join(' · ')} image={`images/og/${photo.id}.jpg`} />
+    <BaseHead title={[photo.data.title, SITE_TITLE].join(' · ')} image={`../images/og/${photo.id}.jpg`} />
   </head>
   <body>
     <PhotoPreview
       {photo}
       prevPhotoId={prevPhoto?.id || null}
       nextPhotoId={nextPhoto?.id || null}
+      baseUrl={Astro.url}
       client:load
     />
 
