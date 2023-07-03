@@ -15,12 +15,26 @@
 
   function noop() {}
 
+  function preloadPhoto() {
+    return new Promise((resolve) => {
+      const preloader = new Image();
+      preloader.onload = () => {
+        resolve(true);
+      };
+      preloader.src = imageUrl;
+    });
+  }
+
+  function delay(ms: number) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
+  }
+
   onMount(() => {
-    const preloader = new Image();
-    preloader.onload = () => {
+    Promise.all([preloadPhoto(), delay(400)]).then(() => {
       loaded = true;
-    };
-    preloader.src = imageUrl;
+    });
   });
 </script>
 

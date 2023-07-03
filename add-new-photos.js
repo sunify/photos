@@ -100,7 +100,7 @@ async function prepareItem(fileName) {
 async function run() {
   const newPhotos = await getNewPhotos();
 
-  // await resizePhotos(newPhotos);
+  await resizePhotos(newPhotos);
   await Promise.all(
     newPhotos.map(async (photo) => {
       const basename = path.basename(photo);
