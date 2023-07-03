@@ -1,0 +1,104 @@
+{
+  "id": "P6175013",
+  "title": "Drama at the port",
+  "color": "#c4c3b8",
+  "exif": {
+    "image": {
+      "ImageDescription": "OLYMPUS DIGITAL CAMERA",
+      "Make": "OLYMPUS CORPORATION",
+      "Model": "E-PL8",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:06:18 02:53:20",
+      "ExifOffset": 240
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 1004,
+      "ThumbnailLength": 12635
+    },
+    "exif": {
+      "ExposureTime": 0.001,
+      "FNumber": 4.5,
+      "ExposureProgram": 1,
+      "ISO": 320,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:06:17 20:11:02",
+      "CreateDate": "2023:06:17 20:11:02",
+      "ShutterSpeedValue": 9.965784,
+      "ApertureValue": 4.33985,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 4,
+      "MeteringMode": 2,
+      "LightSource": 0,
+      "Flash": 72,
+      "FocalLength": 22,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2661.021453857422,
+      "FocalPlaneYResolution": 2661.021453857422,
+      "FocalPlaneResolutionUnit": 3,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "CFAPattern": {
+        "type": "Buffer",
+        "data": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "DigitalZoomRatio": 1,
+      "FocalLengthIn35mmFormat": 44,
+      "SceneCaptureType": 0,
+      "GainControl": 2,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SerialNumber": "BHRA37830",
+      "LensInfo": [
+        14,
+        150,
+        4,
+        5.6
+      ],
+      "LensModel": "OLYMPUS M.14-150mm F4.0-5.6 II",
+      "LensSerialNumber": "AC7A42525"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 675,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAApsAAAH0AQMAAABIFnQ1AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURcTDuP///1nTNwEAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDADU3fYyV3QAAAEBJREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4NpgQAAbwVF2AAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDctMDNUMDA6NTM6NTUrMDA6MDDWqsKJAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA3LTAzVDAwOjUzOjU1KzAwOjAwp/d6NQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wNy0wM1QwMDo1Mzo1NSswMDowMPDiW+oAAAAASUVORK5CYII=",
+  "created": "2023-06-17T18:11:02.000Z"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "P6010269",
+  "title": "Thai Octopus",
+  "color": "#86c2df",
+  "exif": {
+    "image": {
+      "ImageDescription": "OLYMPUS DIGITAL CAMERA",
+      "Make": "OLYMPUS CORPORATION",
+      "Model": "E-PL8",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:04:14 23:34:36",
+      "ExifOffset": 240
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 1002,
+      "ThumbnailLength": 11732
+    },
+    "exif": {
+      "ExposureTime": 0.003125,
+      "FNumber": 11,
+      "ExposureProgram": 5,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2019:06:01 14:20:15",
+      "CreateDate": "2019:06:01 14:20:15",
+      "ShutterSpeedValue": 8.321928,
+      "ApertureValue": 6.918863,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 3.61328125,
+      "MeteringMode": 5,
+      "LightSource": 9,
+      "Flash": 24,
+      "FocalLength": 42,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2661.021453857422,
+      "FocalPlaneYResolution": 2661.021453857422,
+      "FocalPlaneResolutionUnit": 3,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "CFAPattern": {
+        "type": "Buffer",
+        "data": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 1,
+      "DigitalZoomRatio": 1,
+      "FocalLengthIn35mmFormat": 84,
+      "SceneCaptureType": 1,
+      "GainControl": 1,
+      "Contrast": 2,
+      "Saturation": 0,
+      "Sharpness": 2,
+      "SerialNumber": "BHRA37830",
+      "LensInfo": [
+        14,
+        42,
+        3.5,
+        5.6
+      ],
+      "LensModel": "OLYMPUS M.14-42mm F3.5-5.6 EZ",
+      "LensSerialNumber": "AC4F15493"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 675,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAApsAAAH0AQMAAABIFnQ1AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURYbC3////4DSemwAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDADU3fYyV3QAAAEBJREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4NpgQAAbwVF2AAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDctMDNUMDA6NTM6NTUrMDA6MDDWqsKJAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA3LTAzVDAwOjUzOjU1KzAwOjAwp/d6NQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wNy0wM1QwMDo1Mzo1NSswMDowMPDiW+oAAAAASUVORK5CYII=",
+  "created": "2019-06-01T12:20:15.000Z"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "P5072705",
+  "title": "70",
+  "color": "#97ced0",
+  "exif": {
+    "image": {
+      "ImageDescription": "OLYMPUS DIGITAL CAMERA",
+      "Make": "OLYMPUS CORPORATION",
+      "Model": "E-PL8",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:05:07 21:08:34",
+      "ExifOffset": 240
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 994,
+      "ThumbnailLength": 7613
+    },
+    "exif": {
+      "ExposureTime": 0.00025,
+      "FNumber": 4.2,
+      "ExposureProgram": 1,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:05:07 13:29:36",
+      "CreateDate": "2023:05:07 13:29:36",
+      "ShutterSpeedValue": 11.965784,
+      "ApertureValue": 4.140779,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 3.61328125,
+      "MeteringMode": 2,
+      "LightSource": 0,
+      "Flash": 24,
+      "FocalLength": 113,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2661.021453857422,
+      "FocalPlaneYResolution": 2661.021453857422,
+      "FocalPlaneResolutionUnit": 3,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "CFAPattern": {
+        "type": "Buffer",
+        "data": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "DigitalZoomRatio": 1,
+      "FocalLengthIn35mmFormat": 226,
+      "SceneCaptureType": 0,
+      "GainControl": 1,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SerialNumber": "BHRA37830",
+      "LensInfo": [
+        40,
+        150,
+        3.5,
+        4.5
+      ],
+      "LensModel": "OLYMPUS 40-150mm Lens",
+      "LensSerialNumber": "000000000"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 675,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAApsAAAH0AQMAAABIFnQ1AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURZfO0P///9XLVgUAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDADU3fYyV3QAAAEBJREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4NpgQAAbwVF2AAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDctMDNUMDA6NTM6NTUrMDA6MDDWqsKJAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA3LTAzVDAwOjUzOjU1KzAwOjAwp/d6NQAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wNy0wM1QwMDo1Mzo1NSswMDowMPDiW+oAAAAASUVORK5CYII=",
+  "created": "2023-05-07T11:29:36.000Z"
+}

@@ -1,19 +1,25 @@
 {
-  "name": "photo-page",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "name": "photo-page-2",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "./build.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "new-photos": "node add-new-photos.js",
+    "astro": "astro"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/rss": "^2.4.3",
+    "@astrojs/svelte": "^3.1.0",
+    "astro": "^2.7.2",
     "colorthief": "^2.4.0",
     "exif": "^0.6.0",
-    "glob": "^9.3.4",
+    "glob": "^10.3.1",
     "image-size": "^1.0.2",
-    "nunjucks": "^3.2.3"
+    "rgb-hex": "^4.0.1",
+    "svelte": "^4.0.1"
   }
 }

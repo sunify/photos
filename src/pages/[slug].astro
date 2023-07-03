@@ -1,0 +1,59 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import PhotoPreview from '../components/PhotoPreview.svelte';
+import Exif from '../components/Exif.svelte';
+import { SITE_TITLE } from '../consts';
+
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const photos = (await getCollection('photos')).sort(
+    (a, b) =>
+      new Date(b.data.created).getTime() - new Date(a.data.created).getTime()
+  );
+  return photos.map((photo, i) => ({
+    params: { slug: photo.id },
+    props: {
+      photo,
+      prevPhoto: photos[i - 1] || null,
+      nextPhoto: photos[i + 1] || null,
+    },
+  }));
+}
+
+const { photo, nextPhoto, prevPhoto } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={[photo.data.title, SITE_TITLE].join(' · ')} image={`../images/og/${photo.id}.jpg`} />
+  </head>
+  <body>
+    <PhotoPreview
+      {photo}
+      prevPhotoId={prevPhoto?.id || null}
+      nextPhotoId={nextPhoto?.id || null}
+      baseUrl={Astro.url}
+      client:load
+    />
+
+    <div class="exif">
+      <Exif
+        fNumber={photo.data.exif.exif.FNumber}
+        iso={photo.data.exif.exif.ISO}
+        exposureTime={photo.data.exif.exif.ExposureTime}
+        focalLength={photo.data.exif.exif.FocalLengthIn35mmFormat}
+        camera={photo.data.exif.image.Model}
+      />
+    </div>
+    <style>
+      .exif {
+        position: absolute;
+        left: 0px;
+        right: 0;
+        bottom: 15px;
+      }
+    </style>
+  </body>
+</html>

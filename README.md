@@ -1,3 +1,8 @@
-# Photo lab
+# Photos
 
-- npm run build – builds static pages based in items.json file
+### How to add new photo
+
+1. Put it into `source-photos` folder
+2. Run `npm run new-photos`
+3. Edit title in corresponding file in `src/content/photos`
+4. Done

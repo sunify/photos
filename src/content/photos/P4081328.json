@@ -1,0 +1,104 @@
+{
+  "id": "P4081328",
+  "title": "Awaiting",
+  "color": "#777567",
+  "exif": {
+    "image": {
+      "ImageDescription": "OLYMPUS DIGITAL CAMERA",
+      "Make": "OLYMPUS CORPORATION",
+      "Model": "E-PL8",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:04:10 00:22:06",
+      "ExifOffset": 240
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 990,
+      "ThumbnailLength": 17398
+    },
+    "exif": {
+      "ExposureTime": 0.001,
+      "FNumber": 1.8,
+      "ExposureProgram": 1,
+      "ISO": 3200,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:04:08 17:53:34",
+      "CreateDate": "2023:04:08 17:53:34",
+      "ShutterSpeedValue": 9.965784,
+      "ApertureValue": 1.695994,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 1.53125,
+      "MeteringMode": 2,
+      "LightSource": 0,
+      "Flash": 24,
+      "FocalLength": 20,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2661.021453857422,
+      "FocalPlaneYResolution": 2661.021453857422,
+      "FocalPlaneResolutionUnit": 3,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "CFAPattern": {
+        "type": "Buffer",
+        "data": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "DigitalZoomRatio": 1,
+      "FocalLengthIn35mmFormat": 40,
+      "SceneCaptureType": 0,
+      "GainControl": 2,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SerialNumber": "BHRA37830",
+      "LensInfo": [
+        20,
+        20,
+        1.7,
+        1.7
+      ],
+      "LensModel": "LUMIX G 20/F1.7",
+      "LensSerialNumber": "02FG3231780"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 675,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAXcAAAH0AQMAAAD8Kv/LAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURXd1Z////yQ9AqEAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDADU47TOITAAAAC1JREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADddwAABcnqeAwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0wM1QwMDo1Mzo1NiswMDowMOdC2BQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMDNUMDA6NTM6NTYrMDA6MDCWH2CoAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTAzVDAwOjUzOjU2KzAwOjAwwQpBdwAAAABJRU5ErkJggg==",
+  "created": "2023-04-08T15:53:34.000Z"
+}

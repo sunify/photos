@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import PuzzleHeader from '../components/PuzzleHeader.svelte';
+import Grid from '../components/Grid.svelte';
+import Footer from '../components/Footer.svelte';
+
+import { SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+
+const photos = (await getCollection('photos')).sort(
+  (a, b) =>
+    new Date(b.data.created).getTime() - new Date(a.data.created).getTime()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} />
+  </head>
+  <body>
+    <PuzzleHeader client:load />
+    <Grid photos={photos} />
+    <Footer />
+  </body>
+</html>

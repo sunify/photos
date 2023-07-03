@@ -1,0 +1,71 @@
+{
+  "id": "R0005776",
+  "title": "Happy door",
+  "color": "#8b98a0",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:04:30 19:19:23",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 10760
+    },
+    "exif": {
+      "ExposureTime": 0.01,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 100,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 100,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:04:30 16:28:35",
+      "CreateDate": "2023:04:30 16:28:35",
+      "ShutterSpeedValue": 6.643856,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 2,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 35,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURYuYoP///32zDhIAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDADU47TOITAAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0wM1QwMDo1Mzo1NSswMDowMNaqwokAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMDNUMDA6NTM6NTUrMDA6MDCn93o1AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTAzVDAwOjUzOjU1KzAwOjAw8OJb6gAAAABJRU5ErkJggg==",
+  "created": "2023-04-30T14:28:35.000Z"
+}

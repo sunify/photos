@@ -1,0 +1,104 @@
+{
+  "id": "P3120148",
+  "title": "On the edge",
+  "color": "#1e3a46",
+  "exif": {
+    "image": {
+      "ImageDescription": "OLYMPUS DIGITAL CAMERA",
+      "Make": "OLYMPUS CORPORATION",
+      "Model": "E-PL8",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:04:07 18:35:59",
+      "ExifOffset": 240
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 992,
+      "ThumbnailLength": 7620
+    },
+    "exif": {
+      "ExposureTime": 0.0025,
+      "FNumber": 3.5,
+      "ExposureProgram": 3,
+      "ISO": 250,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:03:12 17:31:15",
+      "CreateDate": "2023:03:12 17:31:15",
+      "ShutterSpeedValue": 8.643856,
+      "ApertureValue": 3.61471,
+      "ExposureCompensation": -1.3,
+      "MaxApertureValue": 2.97265625,
+      "MeteringMode": 3,
+      "LightSource": 0,
+      "Flash": 24,
+      "FocalLength": 30,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2661.021453857422,
+      "FocalPlaneYResolution": 2661.021453857422,
+      "FocalPlaneResolutionUnit": 3,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "CFAPattern": {
+        "type": "Buffer",
+        "data": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "DigitalZoomRatio": 1,
+      "FocalLengthIn35mmFormat": 60,
+      "SceneCaptureType": 0,
+      "GainControl": 2,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SerialNumber": "BHRA37830",
+      "LensInfo": [
+        30,
+        30,
+        2.8,
+        2.8
+      ],
+      "LensModel": "SIGMA 30mm F2.8 DN",
+      "LensSerialNumber": "512560828"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 675,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAXcAAAH0AQMAAAD8Kv/LAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURR46Rv///8nrW/AAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcDADU3fYyV3QAAAC1JREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADddwAABcnqeAwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0wM1QwMDo1Mzo1NSswMDowMNaqwokAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMDNUMDA6NTM6NTUrMDA6MDCn93o1AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTAzVDAwOjUzOjU1KzAwOjAw8OJb6gAAAABJRU5ErkJggg==",
+  "created": "2023-03-12T15:31:15.000Z"
+}
