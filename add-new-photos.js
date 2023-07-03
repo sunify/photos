@@ -23,7 +23,7 @@ const BASE_PATH = 'public/images';
 
 async function getNewPhotos() {
   const [allPhotos, addedItems] = await Promise.all([
-    glob('photos/*.jpg'),
+    glob('source-photos/*.jpg'),
     glob('src/content/photos/*.json').then((photos) =>
       photos.map((photo) =>
         photo.replace(`src/content/photos/`, '').replace('.json', '')

@@ -156,4 +156,11 @@ onMount(() => {
 .full.preview .placeholder {
   display: none !important;
 }
+
+@media screen and (max-width: 640px) {
+  .preview {
+    --side-padding: 10px;
+    --top-padding: 27px;
+  }
+}
 </style>
