@@ -102,7 +102,7 @@ onMount(() => {
   position: absolute;
   width: var(--cell-size);
   height: var(--cell-size);
-  background-image: url(cover.jpg);
+  background-image: url(../cover.jpg);
   background-size: calc(var(--cell-size) * 3) calc(var(--cell-size) * 3);
   transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
 }
