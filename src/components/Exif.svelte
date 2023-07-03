@@ -6,12 +6,17 @@ export let focalLength: number;
 export let lens: string | null = null;
 export let camera: string;
 
-function formatCamera(camera: string) {
+function formatCamera(camera: string, lens: string | null) {
   const replacements: Record<string, string> = {
     'RICOH GR III': 'GRIII'
   };
 
-  return replacements[camera] || camera;
+  let result = replacements[camera] || camera;
+  if (lens) {
+    result += ` (${lens})`;
+  }
+
+  return result;
 }
 
 function formatExposure(exposureTime: number): string {
@@ -24,7 +29,7 @@ function formatExposure(exposureTime: number): string {
 </script>
 
 <div class="exif">
-  <div class="model">{formatCamera(camera)}</div>
+  <div class="model">{formatCamera(camera, lens)}</div>
   <div class="focal-length">{focalLength}</div>
   <div class="exposure">{formatExposure(exposureTime)}</div>
   <div class="fstop">{fNumber}</div>

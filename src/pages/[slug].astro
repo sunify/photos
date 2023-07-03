@@ -45,6 +45,7 @@ const { photo, nextPhoto, prevPhoto } = Astro.props;
         exposureTime={photo.data.exif.exif.ExposureTime}
         focalLength={photo.data.exif.exif.FocalLengthIn35mmFormat}
         camera={photo.data.exif.image.Model}
+        lens={photo.data.exif.exif.LensModel}
       />
     </div>
     <style>
