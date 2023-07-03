@@ -1,3 +1,8 @@
+<script lang="ts">
+export let prevPhotoId: string | null = null;
+export let nextPhotoId: string | null = null;
+</script>
+
 <a href="." class="back">Back</a>
 
 <style>

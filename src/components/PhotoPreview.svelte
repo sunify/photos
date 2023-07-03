@@ -4,6 +4,8 @@
   import PreviewNav from './PreviewNav.svelte';
 
   export let photo: CollectionEntry<'photos'>;
+  export let prevPhotoId: string | null = null;
+  export let nextPhotoId: string | null = null;
 
   $: imageUrl = `images/full/${photo.id}.jpg`;
   let loaded = false;
@@ -55,7 +57,7 @@
   />
 
   {#if !full}
-    <PreviewNav />
+    <PreviewNav {prevPhotoId} {nextPhotoId} />
   {/if}
 </div>
 
