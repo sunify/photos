@@ -65,7 +65,7 @@ function rgb([r, g, b]) {
 }
 
 async function makePlaceholder(aspectRatio, color) {
-  const result = await exec(`convert -size ${Math.round(30 * aspectRatio)}x30 xc:${color} png:- | base64`);
+  const result = await exec(`convert -size ${Math.round(500 * aspectRatio)}x500 xc:${color} png:- | base64`);
   return result.stdout.trim();
 }
 
