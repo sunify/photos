@@ -12,10 +12,6 @@ $: imageUrl = new URL(`../images/full/${photo.id}.jpg`, baseUrl);
 let loaded = false;
 let full = false;
 
-$: {
-  console.log(baseUrl);
-}
-
 function handleImageClick(e: MouseEvent) {
   if (!full) {
     const { pageX, pageY } = e;
