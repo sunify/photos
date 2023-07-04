@@ -33,7 +33,7 @@ async function getNewPhotos() {
 
   return allPhotos.filter(
     (photo) =>
-      !addedItems.includes(photo.replace('photos/', '').replace('.jpg', ''))
+      !addedItems.includes(photo.replace('source-photos/', '').replace('.jpg', ''))
   );
 }
 
