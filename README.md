@@ -9,4 +9,4 @@
 
 ### How to remove a photo
 
-Run `npm run remove-photo $fileName` where `$fileName` is basename of photo file eg `R0007973.jpg`
+Run `npm run remove-photo $fileName` where `$fileName` is a basename of photo file eg `R0007973.jpg`
