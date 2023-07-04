@@ -4,6 +4,7 @@ import { glob } from 'glob';
 import { promisify } from 'util';
 import child_process from 'child_process';
 import rgbHex from 'rgb-hex';
+import readline from 'node:readline/promises';
 
 import sizeOf from 'image-size';
 import ColorThief from 'colorthief';
@@ -33,7 +34,9 @@ async function getNewPhotos() {
 
   return allPhotos.filter(
     (photo) =>
-      !addedItems.includes(photo.replace('source-photos/', '').replace('.jpg', ''))
+      !addedItems.includes(
+        photo.replace('source-photos/', '').replace('.jpg', '')
+      )
   );
 }
 
@@ -76,6 +79,15 @@ async function makePlaceholder(aspectRatio, color) {
   return result.stdout.trim();
 }
 
+const readlineInterface = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+async function askForTitle(fileName) {
+  const answer = await readlineInterface.question(`Title for a ${fileName}: `);
+  return answer.trim();
+}
+
 async function prepareItem(fileName, oldItem) {
   const fullPath = `${BASE_PATH}/full/${fileName}`;
   const thumbPath = `${BASE_PATH}/thumbs/${fileName}`;
@@ -89,10 +101,11 @@ async function prepareItem(fileName, oldItem) {
   const aspectRatio = size.width / size.height;
   const hexColor = rgb(color);
   const placeholder = await makePlaceholder(aspectRatio, hexColor);
+  const title = await askForTitle(fileName);
 
   return {
     id: fileName.replace('.jpg', ''),
-    title: oldItem?.title || '',
+    title: title || oldItem?.title || '',
     color: hexColor,
     exif,
     size,
@@ -116,18 +129,18 @@ async function run() {
   const newPhotos = await getNewPhotos();
 
   await resizePhotos(newPhotos);
-  await Promise.all(
-    newPhotos.map(async (photo) => {
-      const basename = path.basename(photo);
-      const jsonPath = `src/content/photos/${basename.replace(
-        '.jpg',
-        '.json'
-      )}`;
-      const existingItem = await readItemJSON(jsonPath);
-      const item = await prepareItem(basename, existingItem);
-      await writeFile(jsonPath, JSON.stringify(item, null, 2), 'utf-8');
-    })
-  );
+  for (const photo of newPhotos) {
+    const basename = path.basename(photo);
+    const jsonPath = `src/content/photos/${basename.replace(
+      '.jpg',
+      '.json'
+    )}`;
+    const existingItem = await readItemJSON(jsonPath);
+    const item = await prepareItem(basename, existingItem);
+    await writeFile(jsonPath, JSON.stringify(item, null, 2), 'utf-8');
+  }
+
+  readlineInterface.close();
 }
 
 run();
