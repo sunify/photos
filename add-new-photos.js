@@ -31,7 +31,6 @@ async function getNewPhotos() {
     ),
   ]);
 
-  return allPhotos;
   return allPhotos.filter(
     (photo) =>
       !addedItems.includes(photo.replace('photos/', '').replace('.jpg', ''))
