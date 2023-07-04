@@ -8,6 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "new-photos": "node scripts/new-photos",
+    "remove-photo": "node scripts/remove-photo",
     "astro": "astro"
   },
   "dependencies": {
