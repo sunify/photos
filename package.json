@@ -7,7 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "new-photos": "node add-new-photos.js",
+    "new-photos": "node scripts/add-new-photos.js",
     "astro": "astro"
   },
   "dependencies": {
