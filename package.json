@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "new-photos": "node scripts/new-photos",
     "remove-photo": "node scripts/remove-photo",
+    "update-photo": "node scripts/update-photo",
     "astro": "astro"
   },
   "dependencies": {

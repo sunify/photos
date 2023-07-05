@@ -2,9 +2,9 @@ import path from 'path';
 import fs from 'fs/promises';
 
 import { getNewPhotos } from './get-new-photos.js';
-import { resizePhotos } from './resize-photos.js';
-import { readJSONFile } from './read-json-file.js';
-import * as prepareItem from './prepare-item.js';
+import { resizePhotos } from '../common/resize-photos.js';
+import { readJSONFile } from '../common/read-json-file.js';
+import * as prepareItem from '../common/prepare-item.js';
 
 async function run() {
   const newPhotos = await getNewPhotos();
