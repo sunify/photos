@@ -63,7 +63,7 @@ export async function prepare(fileName, oldItem) {
   const aspectRatio = size.width / size.height;
   const hexColor = rgb(color);
   const placeholder = await makePlaceholder(aspectRatio, hexColor);
-  const title = await askForTitle(fileName);
+  const title = oldItem ? oldItem.title : await askForTitle(fileName);
 
   return {
     id: fileName.replace('.jpg', ''),
