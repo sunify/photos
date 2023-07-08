@@ -9,6 +9,7 @@
   function formatCamera(camera: string, lens?: string | null) {
     const replacements: Record<string, string> = {
       'RICOH GR III': 'GRIII',
+      'DMC-GX80': 'GX80',
     };
 
     let result = replacements[camera] || camera;
