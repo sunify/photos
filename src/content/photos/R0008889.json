@@ -1,0 +1,71 @@
+{
+  "id": "R0008889",
+  "title": "Sails",
+  "color": "#87b9cc",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:07:19 10:39:01",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 13425
+    },
+    "exif": {
+      "ExposureTime": 0.008,
+      "FNumber": 16,
+      "ExposureProgram": 3,
+      "ISO": 100,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 100,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:07:17 15:27:47",
+      "CreateDate": "2023:07:17 15:27:47",
+      "ShutterSpeedValue": 6.965784,
+      "ApertureValue": 8,
+      "ExposureCompensation": 0,
+      "MeteringMode": 2,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 1,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURYe5zP///4cggGYAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcTCCcGCqzjEwAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNy0xOVQwODozOTowNiswMDowMHkjLvgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMTlUMDg6Mzk6MDYrMDA6MDAIfpZEAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTE5VDA4OjM5OjA2KzAwOjAwX2u3mwAAAABJRU5ErkJggg==",
+  "created": "2023-07-17T13:27:47.000Z"
+}
