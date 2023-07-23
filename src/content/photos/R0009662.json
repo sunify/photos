@@ -1,0 +1,71 @@
+{
+  "id": "R0009662",
+  "title": "Evening on Pregolya river",
+  "color": "#9cd6eb",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:07:23 01:12:24",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 10570
+    },
+    "exif": {
+      "ExposureTime": 0.01,
+      "FNumber": 4,
+      "ExposureProgram": 3,
+      "ISO": 1250,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 1250,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:07:22 21:14:12",
+      "CreateDate": "2023:07:22 21:14:12",
+      "ShutterSpeedValue": 6.643856,
+      "ApertureValue": 4,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURZzW6////8i2BSUAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcXDgYrSANBYAAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA3LTIzVDE0OjA2OjQzKzAwOjAwZySLDAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wNy0yM1QxNDowNjo0MyswMDowMBZ5M7AAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDctMjNUMTQ6MDY6NDMrMDA6MDBBbBJvAAAAAElFTkSuQmCC",
+  "created": "2023-07-22T19:14:12.000Z"
+}

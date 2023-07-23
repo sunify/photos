@@ -1,0 +1,71 @@
+{
+  "id": "R0009510",
+  "title": "Reichsbahnbrücke [2]",
+  "color": "#6ebcdd",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:07:23 01:12:58",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 16958
+    },
+    "exif": {
+      "ExposureTime": 0.01,
+      "FNumber": 10,
+      "ExposureProgram": 3,
+      "ISO": 320,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 320,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:07:22 19:44:27",
+      "CreateDate": "2023:07:22 19:44:27",
+      "ShutterSpeedValue": 6.643856,
+      "ApertureValue": 6.643856,
+      "ExposureCompensation": 0.7,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 2
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURW683f///5YudaYAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wcXDgUdrJSHOgAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA3LTIzVDE0OjA1OjI5KzAwOjAw7gxmxgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wNy0yM1QxNDowNToyOSswMDowMJ9R3noAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDctMjNUMTQ6MDU6MjkrMDA6MDDIRP+lAAAAAElFTkSuQmCC",
+  "created": "2023-07-22T17:44:27.000Z"
+}
