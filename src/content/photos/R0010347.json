@@ -1,0 +1,71 @@
+{
+  "id": "R0010347",
+  "title": "Le Petit Chaperon rouge",
+  "color": "#92836b",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:08:14 23:38:23",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 8748
+    },
+    "exif": {
+      "ExposureTime": 0.0025,
+      "FNumber": 5,
+      "ExposureProgram": 1,
+      "ISO": 400,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 400,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:08:14 19:48:48",
+      "CreateDate": "2023:08:14 19:48:48",
+      "ShutterSpeedValue": 8.643856,
+      "ApertureValue": 4.643856,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 50,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURZKDa////+8WktUAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wgOFScJrs7WMgAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA4LTE0VDIxOjM5OjA5KzAwOjAwo0VEwwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wOC0xNFQyMTozOTowOSswMDowMNIY/H8AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDgtMTRUMjE6Mzk6MDkrMDA6MDCFDd2gAAAAAElFTkSuQmCC",
+  "created": "2023-08-14T17:48:48.000Z"
+}
