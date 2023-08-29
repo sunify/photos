@@ -1,0 +1,71 @@
+{
+  "id": "R0010598",
+  "title": "Chill for a summer day",
+  "color": "#9a9c8e",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:08:28 22:26:08",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 8689
+    },
+    "exif": {
+      "ExposureTime": 0.00125,
+      "FNumber": 8,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:08:20 08:02:49",
+      "CreateDate": "2023:08:20 08:02:49",
+      "ShutterSpeedValue": 9.643856,
+      "ApertureValue": 6,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 2
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURZqcjv///wBUoeEAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wgcFCExK0Q8CQAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA4LTI4VDIwOjMzOjQ5KzAwOjAwGQOLOQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wOC0yOFQyMDozMzo0OSswMDowMGheM4UAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDgtMjhUMjA6MzM6NDkrMDA6MDA/SxJaAAAAAElFTkSuQmCC",
+  "created": "2023-08-20T06:02:49.000Z"
+}
