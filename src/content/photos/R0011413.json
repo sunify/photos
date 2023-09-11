@@ -1,0 +1,71 @@
+{
+  "id": "R0011413",
+  "title": "Anime anyone",
+  "color": "#709cbd",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:09:10 15:35:18",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 10112
+    },
+    "exif": {
+      "ExposureTime": 0.0004,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 100,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 100,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:09:10 14:08:18",
+      "CreateDate": "2023:09:10 14:08:18",
+      "ShutterSpeedValue": 11.287712,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 2,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 35,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURXCcvf///1UVzkoAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wkLDxcIHYAvcwAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA5LTExVDE1OjIzOjA4KzAwOjAwwv0SfQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wOS0xMVQxNToyMzowOCswMDowMLOgqsEAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDktMTFUMTU6MjM6MDgrMDA6MDDktYseAAAAAElFTkSuQmCC",
+  "created": "2023-09-10T12:08:18.000Z"
+}
