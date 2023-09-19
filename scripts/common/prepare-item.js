@@ -8,6 +8,7 @@ import ColorThief from 'colorthief';
 import exif from 'exif';
 
 import { BASE_PATH } from './constants.js';
+import { printImage } from './print-image.js';
 
 const { ExifImage } = exif;
 const exec = promisify(child_process.exec);
@@ -63,7 +64,13 @@ export async function prepare(fileName, oldItem) {
   const aspectRatio = size.width / size.height;
   const hexColor = rgb(color);
   const placeholder = await makePlaceholder(aspectRatio, hexColor);
-  const title = oldItem ? oldItem.title : await askForTitle(fileName);
+  let title = '';
+  if (oldItem) {
+    title = oldItem.title;
+  } else {
+    await printImage(thumbPath);
+    title = await askForTitle(fileName);
+  }
 
   return {
     id: fileName.replace('.jpg', ''),
