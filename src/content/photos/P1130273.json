@@ -1,0 +1,92 @@
+{
+  "id": "P1130273",
+  "title": "House at Severnaya Gora",
+  "color": "#d3d4d9",
+  "exif": {
+    "image": {
+      "Make": "Panasonic",
+      "Model": "DMC-GX80",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:09:15 16:15:45",
+      "ExifOffset": 198
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 938,
+      "ThumbnailLength": 15744
+    },
+    "exif": {
+      "ExposureTime": 0.001,
+      "FNumber": 4.7,
+      "ExposureProgram": 1,
+      "ISO": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:09:15 13:57:59",
+      "CreateDate": "2023:09:15 13:57:59",
+      "ShutterSpeedValue": 9.965784,
+      "ApertureValue": 4.465322,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 4.46484375,
+      "MeteringMode": 2,
+      "LightSource": 0,
+      "Flash": 16,
+      "FocalLength": 25,
+      "SubSecTimeOriginal": "738",
+      "SubSecTimeDigitized": "738",
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2653.603729248047,
+      "FocalPlaneYResolution": 2653.603729248047,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "DigitalZoomRatio": 0,
+      "FocalLengthIn35mmFormat": 50,
+      "SceneCaptureType": 0,
+      "GainControl": 1,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SerialNumber": "XGL1811090084",
+      "LensModel": "OLYMPUS M.14-150mm F4.0-5.6 II",
+      "LensSerialNumber": "AC7A42525"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 676,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAXgAAAH0AQMAAAANIaRGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURdPU2f///xZa3tYAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wkTDCQWhA+2CQAAAC1JREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADddwAABcnqeAwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wOS0xOVQxMjozNjoyMiswMDowMA1vx90AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDktMTlUMTI6MzY6MjIrMDA6MDB8Mn9hAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA5LTE5VDEyOjM2OjIyKzAwOjAwKydevgAAAABJRU5ErkJggg==",
+  "created": "2023-09-15T11:57:59.000Z"
+}
