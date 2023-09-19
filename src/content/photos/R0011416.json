@@ -1,0 +1,71 @@
+{
+  "id": "R0011416",
+  "title": "Fence",
+  "color": "#81aecf",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:09:10 15:35:15",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 16465
+    },
+    "exif": {
+      "ExposureTime": 0.0005,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 100,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 100,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:09:10 14:20:27",
+      "CreateDate": "2023:09:10 14:20:27",
+      "ShutterSpeedValue": 10.965784,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 2,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURYGuz////5EMhwcAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wkTCwAJ/aBM3wAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA5LTE5VDExOjAwOjA5KzAwOjAwZHvu0gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wOS0xOVQxMTowMDowOSswMDowMBUmVm4AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDktMTlUMTE6MDA6MDkrMDA6MDBCM3exAAAAAElFTkSuQmCC",
+  "created": "2023-09-10T12:20:27.000Z"
+}
