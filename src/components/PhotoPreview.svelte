@@ -2,6 +2,7 @@
 import { onMount } from 'svelte';
 import type { CollectionEntry } from 'astro:content';
 import PreviewNav from './PreviewNav.svelte';
+import { printImageToConsole } from './printImageToConsole';
 
 export let photo: CollectionEntry<'photos'>;
 export let prevPhotoId: string | null = null;
@@ -35,6 +36,7 @@ function preloadPhoto() {
     const preloader = new Image();
     preloader.onload = () => {
       resolve(true);
+      printImageToConsole(preloader);
     };
     preloader.src = imageUrl.href;
   });
