@@ -38,7 +38,7 @@ export function printImageToConsole(image: HTMLImageElement) {
   let res = '\n';
   const styles = [];
   let colors = collectColors(context);
-  colors = posterize(colors, 34);
+  colors = posterize(colors, 54);
   for (let y = 0; y < colors.length; y += 2) {
     for (let x = 0; x < colors[y].length; x += 1) {
       const color1 = colors[y][x];
