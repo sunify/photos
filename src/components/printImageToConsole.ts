@@ -280,7 +280,7 @@ export function printImageToConsole(image: HTMLImageElement) {
     return;
   }
   context.imageSmoothingQuality = 'high';
-  context.imageSmoothingEnabled = false;
+  context.imageSmoothingEnabled = true;
   context.drawImage(image, 0, 0, canvas.width, canvas.height);
 
   const closestPointIndex = <T>(

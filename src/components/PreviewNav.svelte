@@ -12,7 +12,7 @@ function goBack(fallbackLocation: string) {
 }
 
 function goToPhotoId(photoId: string) {
-  window.history.replaceState(null, '', `./${photoId}`);
+  window.history.replaceState(null, '', `/photos/${photoId}`);
   window.location.reload();
 }
 
