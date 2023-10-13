@@ -1,0 +1,71 @@
+{
+  "id": "R0012265",
+  "title": "Bridge destiny",
+  "color": "#715d44",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:10:08 11:08:13",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 14934
+    },
+    "exif": {
+      "ExposureTime": 0.01,
+      "FNumber": 4,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:10:08 07:55:12",
+      "CreateDate": "2023:10:08 07:55:12",
+      "ShutterSpeedValue": 6.643856,
+      "ApertureValue": 4,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURXFdRP///7FShakAAAABYktHRAH/Ai3eAAAAB3RJTUUH5woNDRUodZecWwAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0xMC0xM1QxMzoyMTo0MCswMDowMO3M3vgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTAtMTNUMTM6MjE6NDArMDA6MDCckWZEAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTEwLTEzVDEzOjIxOjQwKzAwOjAwy4RHmwAAAABJRU5ErkJggg==",
+  "created": "2023-10-08T05:55:12.000Z"
+}
