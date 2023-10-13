@@ -1,8 +1,11 @@
 type DistanceFn<T> = (p1: T, p2: T) => number;
+type CentroidFn<T> = (points: T[]) => T;
+type InitFn<T> = (points: T[], k: number) => T[];
 
 type Options<T> = {
   distanceFn: DistanceFn<T>;
-  centroidFn: (points: T[]) => T;
+  centroidFn: CentroidFn<T>;
+  initFn?: InitFn<T>;
 };
 
 type Cluster<T> = {
@@ -10,8 +13,17 @@ type Cluster<T> = {
   points: T[]
 };
 
-function random(start: number, end: number) {
-  return Math.round(Math.random() * (end - start)) + start;
+function initRandom<T>(points: T[], k: number) {
+  function random(start: number, end: number) {
+    return Math.round(Math.random() * (end - start)) + start;
+  }
+
+  const indicies = new Set<number>();
+  while (indicies.size < k) {
+    indicies.add(random(0, points.length));
+  }
+
+  return [...indicies].map((i) => points[i]);
 }
 
 export function closestPointIndex<T>(points: T[], point: T, distanceFn: DistanceFn<T>) {
@@ -31,17 +43,14 @@ export function closestPointIndex<T>(points: T[], point: T, distanceFn: Distance
 export function kMeans<T>(
   points: T[],
   k: number,
-  { distanceFn, centroidFn }: Options<T>
+  { distanceFn, centroidFn, initFn = initRandom }: Options<T>
 ) {
   const clusters: Array<Cluster<T>> = [];
-  const indicies = new Set<number>();
-  while (indicies.size < k) {
-    indicies.add(random(0, points.length));
-  }
+  const initialPoints = initFn(points, k);
 
-  indicies.forEach((i) => {
+  initialPoints.forEach((point) => {
     clusters.push({
-      center: points[i],
+      center: point,
       points: [],
     });
   });

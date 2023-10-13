@@ -1,4 +1,4 @@
-import { kMeans } from './k-means';
+import { kMeans, closestPointIndex } from './k-means';
 
 function rgb(c: string) {
   const color = parseInt(c.replace('#', ''), 16);
