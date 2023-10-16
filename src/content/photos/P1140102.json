@@ -1,0 +1,92 @@
+{
+  "id": "P1140102",
+  "title": "October",
+  "color": "#3d3b1a",
+  "exif": {
+    "image": {
+      "Make": "Panasonic",
+      "Model": "DMC-GX80",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:10:10 16:04:29",
+      "ExifOffset": 198
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 938,
+      "ThumbnailLength": 25385
+    },
+    "exif": {
+      "ExposureTime": 0.0015625,
+      "FNumber": 5,
+      "ExposureProgram": 1,
+      "ISO": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:10:10 13:51:42",
+      "CreateDate": "2023:10:10 13:51:42",
+      "ShutterSpeedValue": 9.321928,
+      "ApertureValue": 4.643856,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 4.64453125,
+      "MeteringMode": 2,
+      "LightSource": 0,
+      "Flash": 16,
+      "FocalLength": 31,
+      "SubSecTimeOriginal": "122",
+      "SubSecTimeDigitized": "122",
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2653.603729248047,
+      "FocalPlaneYResolution": 2653.603729248047,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "DigitalZoomRatio": 0,
+      "FocalLengthIn35mmFormat": 62,
+      "SceneCaptureType": 0,
+      "GainControl": 1,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SerialNumber": "XGL1811090084",
+      "LensModel": "OLYMPUS M.14-150mm F4.0-5.6 II",
+      "LensSerialNumber": "AC7A42525"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 676,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAXgAAAH0AQMAAAANIaRGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURT07Gv////RotcIAAAABYktHRAH/Ai3eAAAAB3RJTUUH5woQFgcbALNOTQAAAC1JREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADddwAABcnqeAwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0xMC0xNlQyMjowNzoyNyswMDowMGDYAT8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTAtMTZUMjI6MDc6MjcrMDA6MDARhbmDAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTEwLTE2VDIyOjA3OjI3KzAwOjAwRpCYXAAAAABJRU5ErkJggg==",
+  "created": "2023-10-10T11:51:42.000Z"
+}
