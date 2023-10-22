@@ -1,0 +1,99 @@
+{
+  "id": "R0012737",
+  "title": "LUK",
+  "color": "#1d2118",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:10:21 22:35:28",
+      "ExifOffset": 232,
+      "GPSInfo": 658
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 964,
+      "ThumbnailLength": 8887
+    },
+    "exif": {
+      "ExposureTime": 0.04,
+      "FNumber": 5.6,
+      "ExposureProgram": 1,
+      "ISO": 1600,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 1600,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:10:21 21:48:19",
+      "CreateDate": "2023:10:21 21:48:19",
+      "ShutterSpeedValue": 4.643856,
+      "ApertureValue": 4.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 2,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 1,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {
+      "GPSVersionID": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "GPSLatitudeRef": "N",
+      "GPSLatitude": [
+        54,
+        44.72706,
+        0
+      ],
+      "GPSLongitudeRef": "E",
+      "GPSLongitude": [
+        20,
+        31.60284,
+        0
+      ],
+      "GPSAltitude": 28.4,
+      "GPSTimeStamp": [
+        19,
+        36,
+        50
+      ],
+      "GPSMapDatum": "WGS84",
+      "GPSDateStamp": "2023:10:21"
+    },
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURR0hGP///3Od91wAAAABYktHRAH/Ai3eAAAAB3RJTUUH5woWFggnjS9x2QAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0xMC0yMlQyMjowODozOSswMDowMIrtNnIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTAtMjJUMjI6MDg6MzkrMDA6MDD7sI7OAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTEwLTIyVDIyOjA4OjM5KzAwOjAwrKWvEQAAAABJRU5ErkJggg==",
+  "created": "2023-10-21T19:48:19.000Z"
+}

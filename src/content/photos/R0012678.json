@@ -1,0 +1,71 @@
+{
+  "id": "R0012678",
+  "title": "Fruits and vegetables",
+  "color": "#23271c",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:10:21 22:35:38",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 11493
+    },
+    "exif": {
+      "ExposureTime": 0.25,
+      "FNumber": 5,
+      "ExposureProgram": 1,
+      "ISO": 400,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 400,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:10:21 21:17:12",
+      "CreateDate": "2023:10:21 21:17:12",
+      "ShutterSpeedValue": 2,
+      "ApertureValue": 4.643856,
+      "ExposureCompensation": 0,
+      "MeteringMode": 2,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 1,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURSMnHP///03P83YAAAABYktHRAH/Ai3eAAAAB3RJTUUH5woWFggxefvEiAAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0xMC0yMlQyMjowODo0OSswMDowMIAoP2sAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTAtMjJUMjI6MDg6NDkrMDA6MDDxdYfXAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTEwLTIyVDIyOjA4OjQ5KzAwOjAwpmCmCAAAAABJRU5ErkJggg==",
+  "created": "2023-10-21T19:17:12.000Z"
+}
