@@ -9,15 +9,14 @@ type GridItem<T> = {
 type GridRow<T> = GridItem<T>[];
 type Grid<T> = GridRow<T>[];
 
-export function makeGrid<T extends CollectionEntry<'photos'>>(items: T[]): Grid<T> {
-  const MAX_ROW_LENGTH = 2.1;
+export function makeGrid<T extends CollectionEntry<'photos'>>(items: T[], rowLength = 2.1): Grid<T> {
   const grid = [];
   let currentRow = [];
   let currentRowLength = 0;
 
   function postProcessRow(row: GridRow<T>) {
     const getItemSize = (item: GridItem<T>) => item.isVertical ? 0.565 : 1
-    const rowSize = Math.max(row.map(getItemSize).reduce((a, b) => a + b, 0), MAX_ROW_LENGTH);
+    const rowSize = Math.max(row.map(getItemSize).reduce((a, b) => a + b, 0), rowLength);
     row.forEach((item) => {
       item.gridSize = getItemSize(item) / rowSize * 100;
     });
@@ -34,7 +33,7 @@ export function makeGrid<T extends CollectionEntry<'photos'>>(items: T[]): Grid<
     currentRow.push(newItem);
     currentRowLength += itemSize;
 
-    if (currentRowLength >= MAX_ROW_LENGTH) {
+    if (currentRowLength >= rowLength) {
       grid.push(currentRow);
       postProcessRow(currentRow);
       currentRow = [];

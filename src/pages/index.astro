@@ -20,7 +20,7 @@ const photos = (await getCollection('photos')).sort(
   </head>
   <body>
     <PuzzleHeader client:load />
-    <Grid photos={photos} />
+    <Grid photos={photos} client:load />
     <Footer />
   </body>
 </html>
