@@ -1,0 +1,71 @@
+{
+  "id": "R0013222",
+  "title": "Symmetry",
+  "color": "#3b372d",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:11:11 15:56:45",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 10164
+    },
+    "exif": {
+      "ExposureTime": 0.004,
+      "FNumber": 4.5,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:11:11 14:35:38",
+      "CreateDate": "2023:11:11 14:35:38",
+      "ShutterSpeedValue": 7.965784,
+      "ApertureValue": 4.33985,
+      "ExposureCompensation": 0.3,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURTs3Lf///4o9e8YAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wsLEistS0nhiAAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0xMS0xMVQxODo0Mzo0NSswMDowMOQ/8bkAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTEtMTFUMTg6NDM6NDUrMDA6MDCVYkkFAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTExLTExVDE4OjQzOjQ1KzAwOjAwwndo2gAAAABJRU5ErkJggg==",
+  "created": "2023-11-11T12:35:38.000Z"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "P1150049",
+  "title": "White house",
+  "color": "#352216",
+  "exif": {
+    "image": {
+      "Make": "Panasonic",
+      "Model": "DMC-GX80",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:11:04 21:56:11",
+      "ExifOffset": 198
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 926,
+      "ThumbnailLength": 22593
+    },
+    "exif": {
+      "ExposureTime": 0.008,
+      "FNumber": 2.8,
+      "ExposureProgram": 1,
+      "ISO": 500,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:11:04 16:53:43",
+      "CreateDate": "2023:11:04 16:53:43",
+      "ShutterSpeedValue": 6.965784,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 2.97265625,
+      "MeteringMode": 2,
+      "LightSource": 0,
+      "Flash": 16,
+      "FocalLength": 30,
+      "SubSecTimeOriginal": "856",
+      "SubSecTimeDigitized": "856",
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2653.603729248047,
+      "FocalPlaneYResolution": 2653.603729248047,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "DigitalZoomRatio": 0,
+      "FocalLengthIn35mmFormat": 60,
+      "SceneCaptureType": 0,
+      "GainControl": 2,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SerialNumber": "XGL1811090084",
+      "LensModel": "SIGMA 30mm F2.8 DN",
+      "LensSerialNumber": "512560828"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 676,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAXgAAAH0AQMAAAANIaRGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURTUiFv///z8dfeQAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wsLEis1WCV53gAAAC1JREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADddwAABcnqeAwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0xMS0xMVQxODo0Mzo1MyswMDowMEtFxB0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMTEtMTFUMTg6NDM6NTMrMDA6MDA6GHyhAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTExLTExVDE4OjQzOjUzKzAwOjAwbQ1dfgAAAABJRU5ErkJggg==",
+  "created": "2023-11-04T14:53:43.000Z"
+}
