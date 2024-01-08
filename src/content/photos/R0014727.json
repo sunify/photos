@@ -1,0 +1,71 @@
+{
+  "id": "R0014727",
+  "title": "Christmas fare",
+  "color": "#17160f",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2023:12:25 00:51:50",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 9778
+    },
+    "exif": {
+      "ExposureTime": 0.016666666666666666,
+      "FNumber": 3.2,
+      "ExposureProgram": 1,
+      "ISO": 640,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 640,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2023:12:24 20:41:13",
+      "CreateDate": "2023:12:24 20:41:13",
+      "ShutterSpeedValue": 5.906891,
+      "ApertureValue": 3.356144,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 2
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURRcWD////wzJ34oAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AEIFhI58U0VCQAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wMS0wOFQyMjoxODo1NyswMDowMCrgNN0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDEtMDhUMjI6MTg6NTcrMDA6MDBbvYxhAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTAxLTA4VDIyOjE4OjU3KzAwOjAwDKitvgAAAABJRU5ErkJggg==",
+  "created": "2023-12-24T18:41:13.000Z"
+}

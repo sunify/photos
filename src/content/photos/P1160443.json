@@ -1,0 +1,92 @@
+{
+  "id": "P1160443",
+  "title": "Is this Sun in Konig winter?",
+  "color": "#c0c7ce",
+  "exif": {
+    "image": {
+      "Make": "Panasonic",
+      "Model": "DMC-GX80",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2024:01:07 16:52:33",
+      "ExifOffset": 198
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 926,
+      "ThumbnailLength": 11539
+    },
+    "exif": {
+      "ExposureTime": 0.001,
+      "FNumber": 2.8,
+      "ExposureProgram": 1,
+      "ISO": 320,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:01:07 15:52:17",
+      "CreateDate": "2024:01:07 15:52:17",
+      "ShutterSpeedValue": 9.965784,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 2.97265625,
+      "MeteringMode": 2,
+      "LightSource": 0,
+      "Flash": 16,
+      "FocalLength": 30,
+      "SubSecTimeOriginal": "452",
+      "SubSecTimeDigitized": "452",
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2653.603729248047,
+      "FocalPlaneYResolution": 2653.603729248047,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "DigitalZoomRatio": 0,
+      "FocalLengthIn35mmFormat": 60,
+      "SceneCaptureType": 0,
+      "GainControl": 2,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SerialNumber": "XGL1811090084",
+      "LensModel": "SIGMA 30mm F2.8 DN",
+      "LensSerialNumber": "512560828"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 676,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAXgAAAH0AQMAAAANIaRGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURcDHzv///3mWLJcAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AEIFhMyf4T9wAAAAC1JREFUeNrtwQENAAAAwqD3T+3sARQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADddwAABcnqeAwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wMS0wOFQyMjoxOTo1MCswMDowMACFYW0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDEtMDhUMjI6MTk6NTArMDA6MDBx2NnRAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTAxLTA4VDIyOjE5OjUwKzAwOjAwJs34DgAAAABJRU5ErkJggg==",
+  "created": "2024-01-07T13:52:17.000Z"
+}

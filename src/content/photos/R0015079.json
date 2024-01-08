@@ -1,0 +1,99 @@
+{
+  "id": "R0015079",
+  "title": "First people of the year",
+  "color": "#b5b4b7",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2024:01:01 15:17:02",
+      "ExifOffset": 232,
+      "GPSInfo": 658
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 964,
+      "ThumbnailLength": 15304
+    },
+    "exif": {
+      "ExposureTime": 0.005,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:01:01 14:17:07",
+      "CreateDate": "2024:01:01 14:17:07",
+      "ShutterSpeedValue": 7.643856,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {
+      "GPSVersionID": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "GPSLatitudeRef": "N",
+      "GPSLatitude": [
+        54,
+        44.29062,
+        0
+      ],
+      "GPSLongitudeRef": "E",
+      "GPSLongitude": [
+        20,
+        31.7979,
+        0
+      ],
+      "GPSAltitude": 25.5,
+      "GPSTimeStamp": [
+        12,
+        13,
+        44
+      ],
+      "GPSMapDatum": "WGS84",
+      "GPSDateStamp": "2024:01:01"
+    },
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURbW0t////4o8xewAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AEIFhIJ15QlpQAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTAxLTA4VDIyOjE4OjA5KzAwOjAwMj9B5AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wMS0wOFQyMjoxODowOSswMDowMENi+VgAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDEtMDhUMjI6MTg6MDkrMDA6MDAUd9iHAAAAAElFTkSuQmCC",
+  "created": "2024-01-01T12:17:07.000Z"
+}

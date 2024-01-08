@@ -1,0 +1,99 @@
+{
+  "id": "R0015064",
+  "title": "Snow tunnel",
+  "color": "#979599",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2024:01:01 15:17:08",
+      "ExifOffset": 232,
+      "GPSInfo": 658
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 964,
+      "ThumbnailLength": 17574
+    },
+    "exif": {
+      "ExposureTime": 0.008,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:01:01 14:13:13",
+      "CreateDate": "2024:01:01 14:13:13",
+      "ShutterSpeedValue": 6.965784,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {
+      "GPSVersionID": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "GPSLatitudeRef": "N",
+      "GPSLatitude": [
+        54,
+        44.29674,
+        0
+      ],
+      "GPSLongitudeRef": "E",
+      "GPSLongitude": [
+        20,
+        31.84386,
+        0
+      ],
+      "GPSAltitude": 27.3,
+      "GPSTimeStamp": [
+        12,
+        10,
+        30
+      ],
+      "GPSMapDatum": "WGS84",
+      "GPSDateStamp": "2024:01:01"
+    },
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURZeVmf///3wUv2gAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AEIFhIZyiM1wQAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTAxLTA4VDIyOjE4OjI1KzAwOjAwt7os7QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wMS0wOFQyMjoxODoyNSswMDowMMbnlFEAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDEtMDhUMjI6MTg6MjUrMDA6MDCR8rWOAAAAAElFTkSuQmCC",
+  "created": "2024-01-01T12:13:13.000Z"
+}
