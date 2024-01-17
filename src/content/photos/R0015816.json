@@ -1,0 +1,71 @@
+{
+  "id": "R0015816",
+  "title": "A Study in Pink [2]",
+  "color": "#45485f",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2024:01:15 17:59:44",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 9089
+    },
+    "exif": {
+      "ExposureTime": 0.03333333333333333,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 1600,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 1600,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:01:15 17:06:46",
+      "CreateDate": "2024:01:15 17:06:46",
+      "ShutterSpeedValue": 4.906891,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURUVIX////wGhCH4AAAABYktHRAH/Ai3eAAAAB3RJTUUH6AERDBAidb6A1AAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wMS0xN1QxMjoxNjozNCswMDowMLaDntYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDEtMTdUMTI6MTY6MzQrMDA6MDDH3iZqAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTAxLTE3VDEyOjE2OjM0KzAwOjAwkMsHtQAAAABJRU5ErkJggg==",
+  "created": "2024-01-15T15:06:46.000Z"
+}

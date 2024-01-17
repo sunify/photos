@@ -1,0 +1,71 @@
+{
+  "id": "R0015849",
+  "title": "Winter pond",
+  "color": "#bdc3c6",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 6.2 (Macintosh)",
+      "ModifyDate": "2024:01:16 18:15:45",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 740,
+      "ThumbnailLength": 13536
+    },
+    "exif": {
+      "ExposureTime": 0.0005,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:01:16 12:07:49",
+      "CreateDate": "2024:01:16 12:07:49",
+      "ShutterSpeedValue": 10.965784,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURb3Dxv////4evKcAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AERDA8GhOdqmwAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTAxLTE3VDEyOjE1OjA2KzAwOjAwRKQzHwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wMS0xN1QxMjoxNTowNiswMDowMDX5i6MAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDEtMTdUMTI6MTU6MDYrMDA6MDBi7Kp8AAAAAElFTkSuQmCC",
+  "created": "2024-01-16T10:07:49.000Z"
+}
