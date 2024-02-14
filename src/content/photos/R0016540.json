@@ -1,0 +1,71 @@
+{
+  "id": "R0016540",
+  "title": "Chemistry",
+  "color": "#231a1a",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:02:12 11:00:28",
+      "ExifOffset": 222
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 742,
+      "ThumbnailLength": 8647
+    },
+    "exif": {
+      "ExposureTime": 0.025,
+      "FNumber": 2.8,
+      "ExposureProgram": 1,
+      "ISO": 4000,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 4000,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:02:11 01:07:56",
+      "CreateDate": "2024:02:11 01:07:56",
+      "ShutterSpeedValue": 5.321928,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 0,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 332,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAABUsAAAH0AQMAAAA+PO7/AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURSMaGv///zEV0J0AAAABYktHRAH/Ai3eAAAAB3RJTUUH6AIOCywqQgNahQAAAGpJREFUeNrtwTEBAAAAwqD1T20LL6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIcBTgsAAc41PxkAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDItMTRUMTE6NDQ6NDIrMDA6MDCdYIAfAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTAyLTE0VDExOjQ0OjQyKzAwOjAw7D04owAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyNC0wMi0xNFQxMTo0NDo0MiswMDowMLsoGXwAAAAASUVORK5CYII=",
+  "created": "2024-02-10T23:07:56.000Z"
+}
