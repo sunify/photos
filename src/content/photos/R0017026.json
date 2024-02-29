@@ -1,0 +1,71 @@
+{
+  "id": "R0017026",
+  "title": "Road To Nowhere",
+  "color": "#b87540",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:02:28 17:22:21",
+      "ExifOffset": 222
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 742,
+      "ThumbnailLength": 4684
+    },
+    "exif": {
+      "ExposureTime": 0.025,
+      "FNumber": 2.8,
+      "ExposureProgram": 1,
+      "ISO": 640,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 640,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:02:27 22:19:30",
+      "CreateDate": "2024:02:27 22:19:30",
+      "ShutterSpeedValue": 5.321928,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 1,
+      "ExposureMode": 1,
+      "WhiteBalance": 1,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURbh1QP////lmOUcAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AIdDCQK9lcesQAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wMi0yOVQxMjozNjoxMCswMDowMIjLL/8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDItMjlUMTI6MzY6MTArMDA6MDD5lpdDAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTAyLTI5VDEyOjM2OjEwKzAwOjAwroO2nAAAAABJRU5ErkJggg==",
+  "created": "2024-02-27T20:19:30.000Z"
+}
