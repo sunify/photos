@@ -129,6 +129,10 @@ onMount(() => {
   width: calc(var(--cell-size) * 3 + var(--gap-size) * 2);
   height: calc(var(--cell-size) * 3 + var(--gap-size) * 2);
   gap: var(--gap-size);
+
+  --bg: #FFF;
+  background-color: var(--bg);
+  box-shadow: 0 0 0 var(--gap-size) var(--bg);
 }
 
 .piece {
