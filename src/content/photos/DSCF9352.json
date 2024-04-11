@@ -1,0 +1,96 @@
+{
+  "id": "DSCF9352",
+  "title": "Lo-fi noodles",
+  "color": "#46331c",
+  "exif": {
+    "image": {
+      "Make": "FUJIFILM",
+      "Model": "X-T30 II",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:04:06 18:44:44",
+      "ExifOffset": 200
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 984,
+      "ThumbnailLength": 13733
+    },
+    "exif": {
+      "ExposureTime": 0.0007142857142857143,
+      "FNumber": 5.6,
+      "ExposureProgram": 3,
+      "ISO": 640,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          50
+        ]
+      },
+      "DateTimeOriginal": "2024:04:06 17:28:18",
+      "CreateDate": "2024:04:06 17:28:18",
+      "ShutterSpeedValue": 10.451211,
+      "ApertureValue": 4.970854,
+      "BrightnessValue": 8.81,
+      "ExposureCompensation": -0.33,
+      "MaxApertureValue": 3,
+      "MeteringMode": 5,
+      "LightSource": 0,
+      "Flash": 0,
+      "FocalLength": 27,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2655.3432006835938,
+      "FocalPlaneYResolution": 2655.3432006835938,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 41,
+      "SceneCaptureType": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 0,
+      "SerialNumber": "1D013383",
+      "LensInfo": [
+        27,
+        27,
+        2.8,
+        2.8
+      ],
+      "LensMake": "TTARTISAN",
+      "LensModel": "AF 27/2.8",
+      "LensSerialNumber": "2AA07513"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURUYzHP///4CWXN0AAAABYktHRAH/Ai3eAAAAB3RJTUUH6AQLEDkkOuPYlQAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA0LTExVDE2OjU3OjM2KzAwOjAw06UZiwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNC0xMVQxNjo1NzozNiswMDowMKL4oTcAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDQtMTFUMTY6NTc6MzYrMDA6MDD17YDoAAAAAElFTkSuQmCC",
+  "created": "2024-04-06T15:28:18.000Z"
+}

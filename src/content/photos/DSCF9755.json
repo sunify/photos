@@ -1,0 +1,96 @@
+{
+  "id": "DSCF9755",
+  "title": "Night tram",
+  "color": "#24322c",
+  "exif": {
+    "image": {
+      "Make": "FUJIFILM",
+      "Model": "X-T30 II",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:04:10 22:39:33",
+      "ExifOffset": 200
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 984,
+      "ThumbnailLength": 14810
+    },
+    "exif": {
+      "ExposureTime": 0.02,
+      "FNumber": 4.5,
+      "ExposureProgram": 3,
+      "ISO": 6400,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          50
+        ]
+      },
+      "DateTimeOriginal": "2024:04:10 20:11:27",
+      "CreateDate": "2024:04:10 20:11:27",
+      "ShutterSpeedValue": 5.643856,
+      "ApertureValue": 4.33985,
+      "BrightnessValue": -0.02,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 3,
+      "MeteringMode": 5,
+      "LightSource": 0,
+      "Flash": 0,
+      "FocalLength": 27,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2655.3432006835938,
+      "FocalPlaneYResolution": 2655.3432006835938,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 41,
+      "SceneCaptureType": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 0,
+      "SerialNumber": "1D013383",
+      "LensInfo": [
+        27,
+        27,
+        2.8,
+        2.8
+      ],
+      "LensMake": "TTARTISAN",
+      "LensModel": "AF 27/2.8",
+      "LensSerialNumber": "2AA07513"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURSQyLP///wjhI50AAAABYktHRAH/Ai3eAAAAB3RJTUUH6AQLEDg3p0aoCgAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNC0xMVQxNjo1Njo1NSswMDowMMvgYa8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDQtMTFUMTY6NTY6NTUrMDA6MDC6vdkTAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA0LTExVDE2OjU2OjU1KzAwOjAw7aj4zAAAAABJRU5ErkJggg==",
+  "created": "2024-04-10T18:11:27.000Z"
+}
