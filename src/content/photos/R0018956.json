@@ -1,0 +1,71 @@
+{
+  "id": "R0018956",
+  "title": "Knockin on Heaven's Door",
+  "color": "#afbcc3",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:04:14 13:02:14",
+      "ExifOffset": 222
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 742,
+      "ThumbnailLength": 8133
+    },
+    "exif": {
+      "ExposureTime": 0.0005,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:04:14 08:54:17",
+      "CreateDate": "2024:04:14 08:54:17",
+      "ShutterSpeedValue": 10.965784,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURa+8w/////xcmBsAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AQUEjkcGR/zrAAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNC0yMFQxODo1NzoyOCswMDowMEgkpO0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDQtMjBUMTg6NTc6MjgrMDA6MDA5eRxRAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA0LTIwVDE4OjU3OjI4KzAwOjAwbmw9jgAAAABJRU5ErkJggg==",
+  "created": "2024-04-14T06:54:17.000Z"
+}

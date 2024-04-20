@@ -1,0 +1,96 @@
+{
+  "id": "DSCF0226",
+  "title": "Eye of Baltic [2]",
+  "color": "#96815a",
+  "exif": {
+    "image": {
+      "Make": "FUJIFILM",
+      "Model": "X-T30 II",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:04:19 19:26:17",
+      "ExifOffset": 200
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 984,
+      "ThumbnailLength": 18893
+    },
+    "exif": {
+      "ExposureTime": 0.0005263157894736842,
+      "FNumber": 8,
+      "ExposureProgram": 3,
+      "ISO": 640,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          50
+        ]
+      },
+      "DateTimeOriginal": "2024:04:19 13:19:25",
+      "CreateDate": "2024:04:19 13:19:25",
+      "ShutterSpeedValue": 10.891784,
+      "ApertureValue": 6,
+      "BrightnessValue": 9.8,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 3,
+      "MeteringMode": 5,
+      "LightSource": 0,
+      "Flash": 0,
+      "FocalLength": 27,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2655.3432006835938,
+      "FocalPlaneYResolution": 2655.3432006835938,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 41,
+      "SceneCaptureType": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 0,
+      "SerialNumber": "1D013383",
+      "LensInfo": [
+        27,
+        27,
+        2.8,
+        2.8
+      ],
+      "LensMake": "TTARTISAN",
+      "LensModel": "AF 27/2.8",
+      "LensSerialNumber": "2AA07513"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURZaBWv///0bQHGcAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AQUEwAYETTQOAAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA0LTIwVDE5OjAwOjI0KzAwOjAwwZmgJwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNC0yMFQxOTowMDoyNCswMDowMLDEGJsAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDQtMjBUMTk6MDA6MjQrMDA6MDDn0TlEAAAAAElFTkSuQmCC",
+  "created": "2024-04-19T11:19:25.000Z"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "R0018797",
+  "title": "Bike > scooter",
+  "color": "#4fa9ce",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:04:11 09:52:47",
+      "ExifOffset": 222
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 742,
+      "ThumbnailLength": 8930
+    },
+    "exif": {
+      "ExposureTime": 0.001,
+      "FNumber": 5.6,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:04:11 07:46:15",
+      "CreateDate": "2024:04:11 07:46:15",
+      "ShutterSpeedValue": 9.965784,
+      "ApertureValue": 4.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURU+pzv///7ByQ7YAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AQUEjooE4ZU2gAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA0LTIwVDE4OjU4OjQwKzAwOjAwTK+4gAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNC0yMFQxODo1ODo0MCswMDowMD3yADwAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDQtMjBUMTg6NTg6NDArMDA6MDBq5yHjAAAAAElFTkSuQmCC",
+  "created": "2024-04-11T05:46:15.000Z"
+}

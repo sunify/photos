@@ -1,0 +1,71 @@
+{
+  "id": "R0018958",
+  "title": "Stormy beach",
+  "color": "#adbbc0",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:04:14 13:02:12",
+      "ExifOffset": 222
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 742,
+      "ThumbnailLength": 10260
+    },
+    "exif": {
+      "ExposureTime": 0.000625,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:04:14 08:55:32",
+      "CreateDate": "2024:04:14 08:55:32",
+      "ShutterSpeedValue": 10.643856,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 2
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURa27wP///xEBSu4AAAABYktHRAH/Ai3eAAAAB3RJTUUH6AQUEjkUF8R7ngAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNC0yMFQxODo1NzoyMCswMDowMHvL6ooAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDQtMjBUMTg6NTc6MjArMDA6MDAKllI2AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA0LTIwVDE4OjU3OjIwKzAwOjAwXYNz6QAAAABJRU5ErkJggg==",
+  "created": "2024-04-14T06:55:32.000Z"
+}
