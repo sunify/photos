@@ -1,0 +1,96 @@
+{
+  "id": "DSCF1388",
+  "title": "Sunset on the Oberteich",
+  "color": "#271d26",
+  "exif": {
+    "image": {
+      "Make": "FUJIFILM",
+      "Model": "X-T30 II",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.1.2 (Macintosh)",
+      "ModifyDate": "2024:05:02 23:15:25",
+      "ExifOffset": 200
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 1000,
+      "ThumbnailLength": 10553
+    },
+    "exif": {
+      "ExposureTime": 0.01,
+      "FNumber": 4,
+      "ExposureProgram": 3,
+      "ISO": 400,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          50
+        ]
+      },
+      "DateTimeOriginal": "2024:05:02 20:27:12",
+      "CreateDate": "2024:05:02 20:27:12",
+      "ShutterSpeedValue": 6.643856,
+      "ApertureValue": 4,
+      "BrightnessValue": 4.34,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 3,
+      "MeteringMode": 5,
+      "LightSource": 0,
+      "Flash": 0,
+      "FocalLength": 18,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2655.3432006835938,
+      "FocalPlaneYResolution": 2655.3432006835938,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 27,
+      "SceneCaptureType": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 0,
+      "SerialNumber": "1D013383",
+      "LensInfo": [
+        18,
+        55,
+        2.8,
+        4
+      ],
+      "LensMake": "FUJIFILM",
+      "LensModel": "XF18-55mmF2.8-4 R LM OIS",
+      "LensSerialNumber": "2AC02408"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURScdJv///6JZCYIAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AUNEBAtH3KJtgAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNS0xM1QxNjoxNjo0NSswMDowMOfRt4gAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDUtMTNUMTY6MTY6NDUrMDA6MDCWjA80AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA1LTEzVDE2OjE2OjQ1KzAwOjAwwZku6wAAAABJRU5ErkJggg==",
+  "created": "2024-05-02T18:27:12.000Z"
+}

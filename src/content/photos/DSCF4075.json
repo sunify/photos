@@ -1,0 +1,96 @@
+{
+  "id": "DSCF4075",
+  "title": "Game. Set. Match.",
+  "color": "#20251e",
+  "exif": {
+    "image": {
+      "Make": "FUJIFILM",
+      "Model": "X-T30 II",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.3 (Macintosh)",
+      "ModifyDate": "2024:05:26 01:32:56",
+      "ExifOffset": 198
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 998,
+      "ThumbnailLength": 16391
+    },
+    "exif": {
+      "ExposureTime": 0.002,
+      "FNumber": 4,
+      "ExposureProgram": 1,
+      "ISO": 320,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          50
+        ]
+      },
+      "DateTimeOriginal": "2024:05:25 17:45:22",
+      "CreateDate": "2024:05:25 17:45:22",
+      "ShutterSpeedValue": 8.965784,
+      "ApertureValue": 4,
+      "BrightnessValue": 6.83,
+      "ExposureCompensation": 0.33,
+      "MaxApertureValue": 3,
+      "MeteringMode": 5,
+      "LightSource": 0,
+      "Flash": 0,
+      "FocalLength": 34.3,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2655.3432006835938,
+      "FocalPlaneYResolution": 2655.3432006835938,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 51,
+      "SceneCaptureType": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 0,
+      "SerialNumber": "1D013383",
+      "LensInfo": [
+        18,
+        55,
+        2.8,
+        4
+      ],
+      "LensMake": "FUJIFILM",
+      "LensModel": "XF18-55mmF2.8-4 R LM OIS",
+      "LensSerialNumber": "2AC02408"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURSAlHv///xuSGjMAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AYGDiweVUji9AAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA2LTA2VDE0OjQ0OjMwKzAwOjAw9HvI/gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNi0wNlQxNDo0NDozMCswMDowMIUmcEIAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDYtMDZUMTQ6NDQ6MzArMDA6MDDSM1GdAAAAAElFTkSuQmCC",
+  "created": "2024-05-25T15:45:22.000Z"
+}
