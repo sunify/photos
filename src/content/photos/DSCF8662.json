@@ -1,0 +1,96 @@
+{
+  "id": "DSCF8662",
+  "title": "Airport fields",
+  "color": "#8da1be",
+  "exif": {
+    "image": {
+      "Make": "FUJIFILM",
+      "Model": "X-T30 II",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.3 (Macintosh)",
+      "ModifyDate": "2024:07:15 00:55:24",
+      "ExifOffset": 198
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 998,
+      "ThumbnailLength": 5877
+    },
+    "exif": {
+      "ExposureTime": 0.002,
+      "FNumber": 6.4,
+      "ExposureProgram": 1,
+      "ISO": 4000,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          50
+        ]
+      },
+      "DateTimeOriginal": "2024:07:14 21:09:10",
+      "CreateDate": "2024:07:14 21:09:10",
+      "ShutterSpeedValue": 8.965784,
+      "ApertureValue": 5.356144,
+      "BrightnessValue": 5.17,
+      "ExposureCompensation": 0.33,
+      "MaxApertureValue": 3,
+      "MeteringMode": 5,
+      "LightSource": 0,
+      "Flash": 0,
+      "FocalLength": 18,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2655.3432006835938,
+      "FocalPlaneYResolution": 2655.3432006835938,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 27,
+      "SceneCaptureType": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 0,
+      "SerialNumber": "1D013383",
+      "LensInfo": [
+        18,
+        55,
+        2.8,
+        4
+      ],
+      "LensMake": "FUJIFILM",
+      "LensModel": "XF18-55mmF2.8-4 R LM OIS",
+      "LensSerialNumber": "2AC02408"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURY2hvv///7cdF1QAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AcRCTkiuHModAAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wNy0xN1QwOTo1NzozNCswMDowMA6C06wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDctMTdUMDk6NTc6MzQrMDA6MDB/32sQAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA3LTE3VDA5OjU3OjM0KzAwOjAwKMpKzwAAAABJRU5ErkJggg==",
+  "created": "2024-07-14T19:09:10.000Z"
+}
