@@ -1,0 +1,72 @@
+{
+  "id": "R0021476",
+  "title": "Beauty",
+  "color": "#383c37",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.3 (Macintosh)",
+      "ModifyDate": "2024:08:11 20:04:02",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 772,
+      "ThumbnailLength": 19215
+    },
+    "exif": {
+      "ExposureTime": 0.001,
+      "FNumber": 2.8,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:08:10 09:21:12",
+      "CreateDate": "2024:08:10 09:21:12",
+      "ShutterSpeedValue": 9.965784,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": -0.7,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 50,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3,
+      "LensModel": "GR LENS 18.3mm F2.8"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURTg8N////0Tdj4IAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AkUCRsod/rJGQAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wOS0yMFQwOToyNzo0MCswMDowMOMtXkIAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDktMjBUMDk6Mjc6NDArMDA6MDCScOb+AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA5LTIwVDA5OjI3OjQwKzAwOjAwxWXHIQAAAABJRU5ErkJggg==",
+  "created": "2024-08-10T07:21:12.000Z"
+}

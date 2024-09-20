@@ -1,0 +1,96 @@
+{
+  "id": "DSCF0136",
+  "title": "Fly",
+  "color": "#b9a783",
+  "exif": {
+    "image": {
+      "Make": "FUJIFILM",
+      "Model": "X-T30 II",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.3 (Macintosh)",
+      "ModifyDate": "2024:08:07 22:02:02",
+      "ExifOffset": 198
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 998,
+      "ThumbnailLength": 8478
+    },
+    "exif": {
+      "ExposureTime": 0.006666666666666667,
+      "FNumber": 8,
+      "ExposureProgram": 3,
+      "ISO": 320,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          50
+        ]
+      },
+      "DateTimeOriginal": "2024:08:07 09:29:00",
+      "CreateDate": "2024:08:07 09:29:00",
+      "ShutterSpeedValue": 7.228819,
+      "ApertureValue": 6,
+      "BrightnessValue": 8.45,
+      "ExposureCompensation": 0,
+      "MaxApertureValue": 3,
+      "MeteringMode": 5,
+      "LightSource": 0,
+      "Flash": 0,
+      "FocalLength": 34.3,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2655.3432006835938,
+      "FocalPlaneYResolution": 2655.3432006835938,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 51,
+      "SceneCaptureType": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 0,
+      "SerialNumber": "1D013383",
+      "LensInfo": [
+        18,
+        55,
+        2.8,
+        4
+      ],
+      "LensMake": "FUJIFILM",
+      "LensModel": "XF18-55mmF2.8-4 R LM OIS",
+      "LensSerialNumber": "2AC02408"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURbmng////6X3hzMAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AkUCSAEeZBKwgAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA5LTIwVDA5OjMyOjA0KzAwOjAwtI9gLwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wOS0yMFQwOTozMjowNCswMDowMMXS2JMAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDktMjBUMDk6MzI6MDQrMDA6MDCSx/lMAAAAAElFTkSuQmCC",
+  "created": "2024-08-07T07:29:00.000Z"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "R0022683",
+  "title": "Hello",
+  "color": "#cbbba4",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.3 (Macintosh)",
+      "ModifyDate": "2024:09:12 16:05:28",
+      "ExifOffset": 232,
+      "GPSInfo": 690
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 996,
+      "ThumbnailLength": 9471
+    },
+    "exif": {
+      "ExposureTime": 0.008,
+      "FNumber": 5,
+      "ExposureProgram": 3,
+      "ISO": 400,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 400,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:09:11 17:03:26",
+      "CreateDate": "2024:09:11 17:03:26",
+      "ShutterSpeedValue": 6.965784,
+      "ApertureValue": 4.643856,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 1,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 1,
+      "Saturation": 0,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3,
+      "LensModel": "GR LENS 18.3mm F2.8"
+    },
+    "gps": {
+      "GPSVersionID": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "GPSLatitudeRef": "N",
+      "GPSLatitude": [
+        54,
+        45.00738,
+        0
+      ],
+      "GPSLongitudeRef": "E",
+      "GPSLongitude": [
+        20,
+        31.8915,
+        0
+      ],
+      "GPSAltitude": 30,
+      "GPSTimeStamp": [
+        14,
+        59,
+        27
+      ],
+      "GPSMapDatum": "WGS84",
+      "GPSDateStamp": "2024:09:11"
+    },
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 675,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAApsAAAH0AQMAAABIFnQ1AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURcu7pP///3voxv0AAAABYktHRAH/Ai3eAAAAB3RJTUUH6AkUCRodOFI8ewAAAEBJREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4NpgQAAbwVF2AAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDktMjBUMDk6MjY6MjkrMDA6MDBfGHkoAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTA5LTIwVDA5OjI2OjI5KzAwOjAwLkXBlAAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyNC0wOS0yMFQwOToyNjoyOSswMDowMHlQ4EsAAAAASUVORK5CYII=",
+  "created": "2024-09-11T15:03:26.000Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "R0021430",
+  "title": "Rainy Moscow [2]",
+  "color": "#2c2b28",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.3 (Macintosh)",
+      "ModifyDate": "2024:08:13 23:02:53",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 772,
+      "ThumbnailLength": 14512
+    },
+    "exif": {
+      "ExposureTime": 0.05,
+      "FNumber": 2.8,
+      "ExposureProgram": 1,
+      "ISO": 100,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 100,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:08:08 18:33:44",
+      "CreateDate": "2024:08:08 18:33:44",
+      "ShutterSpeedValue": 4.321928,
+      "ApertureValue": 2.970854,
+      "ExposureCompensation": 0,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 1,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 1,
+      "Saturation": 2,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 3,
+      "LensModel": "GR LENS 18.3mm F2.8"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURSwrKP///wYgw1QAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AkUCRs780SIxwAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wOS0yMFQwOToyNzo1OSswMDowMLofGw8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDktMjBUMDk6Mjc6NTkrMDA6MDDLQqOzAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA5LTIwVDA5OjI3OjU5KzAwOjAwnFeCbAAAAABJRU5ErkJggg==",
+  "created": "2024-08-08T16:33:44.000Z"
+}

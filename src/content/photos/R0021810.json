@@ -1,0 +1,72 @@
+{
+  "id": "R0021810",
+  "title": "Car",
+  "color": "#21251e",
+  "exif": {
+    "image": {
+      "Make": "RICOH IMAGING COMPANY, LTD.",
+      "Model": "RICOH GR III",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.3 (Macintosh)",
+      "ModifyDate": "2024:08:20 22:29:02",
+      "ExifOffset": 220
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 772,
+      "ThumbnailLength": 14021
+    },
+    "exif": {
+      "ExposureTime": 0.0005,
+      "FNumber": 5.6,
+      "ExposureProgram": 3,
+      "ISO": 200,
+      "SensitivityType": 1,
+      "StandardOutputSensitivity": 200,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          49
+        ]
+      },
+      "DateTimeOriginal": "2024:08:20 14:13:02",
+      "CreateDate": "2024:08:20 14:13:02",
+      "ShutterSpeedValue": 10.965784,
+      "ApertureValue": 4.970854,
+      "ExposureCompensation": -1.7,
+      "MeteringMode": 5,
+      "Flash": 16,
+      "FocalLength": 18.3,
+      "ColorSpace": 1,
+      "SensingMethod": 2,
+      "CustomRendered": 0,
+      "ExposureMode": 1,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 28,
+      "SceneCaptureType": 0,
+      "Contrast": 2,
+      "Saturation": 2,
+      "Sharpness": 0,
+      "SubjectDistanceRange": 3,
+      "LensModel": "GR LENS 18.3mm F2.8"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 900,
+    "width": 600,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAU0AAAH0AQMAAACD++06AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURSElHv///9DOyZYAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AkUCRsP0vB8cgAAACxJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAICHAVP8AAGG1ChJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA5LTIwVDA5OjI3OjE1KzAwOjAw+fV/gQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wOS0yMFQwOToyNzoxNSswMDowMIioxz0AAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDktMjBUMDk6Mjc6MTUrMDA6MDDfvebiAAAAAElFTkSuQmCC",
+  "created": "2024-08-20T12:13:02.000Z"
+}

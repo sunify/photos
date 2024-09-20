@@ -1,0 +1,96 @@
+{
+  "id": "DSCF3977",
+  "title": "Forest",
+  "color": "#3c3d31",
+  "exif": {
+    "image": {
+      "Make": "FUJIFILM",
+      "Model": "X-T30 II",
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "Software": "Adobe Lightroom 7.3 (Macintosh)",
+      "ModifyDate": "2024:09:17 10:48:25",
+      "ExifOffset": 198
+    },
+    "thumbnail": {
+      "Compression": 6,
+      "XResolution": 72,
+      "YResolution": 72,
+      "ResolutionUnit": 2,
+      "ThumbnailOffset": 1010,
+      "ThumbnailLength": 17190
+    },
+    "exif": {
+      "ExposureTime": 0.00625,
+      "FNumber": 5,
+      "ExposureProgram": 3,
+      "ISO": 3200,
+      "SensitivityType": 1,
+      "ExifVersion": {
+        "type": "Buffer",
+        "data": [
+          48,
+          50,
+          51,
+          50
+        ]
+      },
+      "DateTimeOriginal": "2024:09:14 16:59:56",
+      "CreateDate": "2024:09:14 16:59:56",
+      "ShutterSpeedValue": 7.321928,
+      "ApertureValue": 4.643856,
+      "BrightnessValue": 0.62,
+      "ExposureCompensation": -1.67,
+      "MaxApertureValue": 1,
+      "MeteringMode": 5,
+      "LightSource": 0,
+      "Flash": 0,
+      "FocalLength": 16,
+      "ColorSpace": 1,
+      "FocalPlaneXResolution": 2655.3432006835938,
+      "FocalPlaneYResolution": 2655.3432006835938,
+      "FocalPlaneResolutionUnit": 3,
+      "SensingMethod": 2,
+      "FileSource": {
+        "type": "Buffer",
+        "data": [
+          3
+        ]
+      },
+      "SceneType": {
+        "type": "Buffer",
+        "data": [
+          1
+        ]
+      },
+      "CustomRendered": 0,
+      "ExposureMode": 0,
+      "WhiteBalance": 0,
+      "FocalLengthIn35mmFormat": 24,
+      "SceneCaptureType": 0,
+      "Sharpness": 2,
+      "SubjectDistanceRange": 0,
+      "SerialNumber": "1D013383",
+      "LensInfo": [
+        16,
+        16,
+        1.4,
+        1.4
+      ],
+      "LensMake": "SIGMA",
+      "LensModel": "SIGMA 16mm F1.4 DC DN | Contemporary 017",
+      "LensSerialNumber": "56422638"
+    },
+    "gps": {},
+    "interoperability": {},
+    "makernote": {}
+  },
+  "size": {
+    "height": 600,
+    "width": 900,
+    "type": "jpg"
+  },
+  "placeholder": "iVBORw0KGgoAAAANSUhEUgAAAu4AAAH0AQMAAABYdjrpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGUExURTw9Mf///8dHu/gAAAABYktHRAH/Ai3eAAAAB3RJTUUH6AkUCR0FZH8y6gAAAEVJREFUeNrtwYEAAAAAw6D5U5/gBlUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAO5jAABktcLcgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wOS0yMFQwOToyOTowNSswMDowMCuWT6wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDktMjBUMDk6Mjk6MDUrMDA6MDBay/cQAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDI0LTA5LTIwVDA5OjI5OjA1KzAwOjAwDd7WzwAAAABJRU5ErkJggg==",
+  "created": "2024-09-14T14:59:56.000Z"
+}
