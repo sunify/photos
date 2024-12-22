@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { downloadCanvas } from './donwload-canvas';
+
   const sizesMap = {
     s: 500,
     m: 1500,
@@ -87,8 +89,15 @@
       render(ctx, images, { direction, size, spacing });
     }
   }
+
+  function handleSave(e: MouseEvent) {
+    e.preventDefault();
+    downloadCanvas(canvas, 'collage');
+  }
 </script>
 
 <canvas bind:this={canvas} />
+
+<button on:click={handleSave}>Save</button>
 
 
