@@ -6,6 +6,14 @@
   type LayoutType = keyof typeof layouts;
   type Layout = ReturnType<typeof layouts.horizontal>;
 
+  function getFromStorage<T extends string>(key: string, defaultValue: T) {
+    return (localStorage.getItem(key) || defaultValue) as T;
+  }
+
+  function saveToStorage(key: string, value: string) {
+    localStorage.setItem(key, value);
+  }
+
   let urls: Array<string> = [];
   let images: Array<HTMLImageElement> = [];
   $: {
@@ -24,10 +32,17 @@
     });
   }
 
-  let backgroundColor = '#FFFFFF';
-  let layoutType: LayoutType = 'horizontal';
-  let size: Size = 'm';
-  let spacing: number = 3;
+  let backgroundColor = getFromStorage('backgroundColor', '#FFFFFF');
+  let layoutType: LayoutType = getFromStorage<LayoutType>('layoutType', 'horizontal');
+  let size: Size = getFromStorage<Size>('size', 'm');
+  let spacing: number = Number(getFromStorage('spacing', '3'));
+  $: {
+    saveToStorage('backgroundColor', backgroundColor);
+    saveToStorage('layoutType', layoutType);
+    saveToStorage('size', size);
+    saveToStorage('spacing', spacing.toString());
+  }
+
   $: layout = layouts[layoutType](images, { size, spacing });
 
   function render(ctx: CanvasRenderingContext2D, layout: Layout, backgroundColor: string) {
