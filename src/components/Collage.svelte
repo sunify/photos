@@ -109,7 +109,6 @@
   }
 
   .input {
-    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,12 +142,33 @@
     align-items: center;
     justify-content: center;
   }
+
+  .panel {
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+  }
 </style>
 
-<label class="input">
-  <div class="inputLabel">Add images</div>
-  <input type="file" multiple accept="image/png, image/jpeg" on:change={handleFiles}>
-</label>
+<div class="panel">
+  <label class="input">
+    <div class="inputLabel">Add images</div>
+    <input type="file" multiple accept="image/png, image/jpeg" on:change={handleFiles}>
+  </label>
+
+  {#if images.length > 0}
+    <select bind:value={size}>
+      <option value="s">Small</option>
+      <option value="m">Medium</option>
+      <option value="l">Large</option>
+    </select>
+    <select bind:value={direction}>
+      <option value="horizontal">Horizontal</option>
+      <option value="vertical">Vertical</option>
+    </select>
+    <input type="range" min="0" max="10" step="1" bind:value={spacing} />
+  {/if}
+</div>
 
 {#if images.length > 0}
   <canvas bind:this={canvas} class="canvas" />
