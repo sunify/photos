@@ -15,10 +15,7 @@
     spacing: number;
   };
 
-  let urls: Array<URL> = [
-    'https://sunify.github.io/photos/images/full/DSCF0683.jpg',
-    'https://sunify.github.io/photos/images/full/DSCF0729.jpg',
-  ].map((link) => new URL(link));
+  let urls: Array<string> = [];
   let images: Array<HTMLImageElement> = [];
   $: {
     Promise.all(
@@ -28,7 +25,7 @@
           image.onload = () => {
             resolve(image);
           };
-          image.src = url.toString();
+          image.src = url;
         });
       })
     ).then((result) => {
@@ -37,7 +34,7 @@
   }
 
   let direction: Direction = 'horizontal';
-  let size: Size = 's';
+  let size: Size = 'm';
   let spacing: number = 3;
 
   function render(
@@ -94,9 +91,26 @@
     e.preventDefault();
     downloadCanvas(canvas, 'collage');
   }
+
+  function handleFiles(e: Event) {
+    const input = e.target as HTMLInputElement;
+    if (input.files) {
+      urls = urls.concat(Array.from(input.files).map((file) => URL.createObjectURL(file)));
+      input.value = '';
+    }
+  }
 </script>
 
-<canvas bind:this={canvas} />
+<style>
+  .canvas {
+    max-width: 100%;
+    display: block;
+  }
+</style>
+
+<input type="file" multiple accept="image/png, image/jpeg" on:change={handleFiles}>
+
+<canvas bind:this={canvas} class="canvas" />
 
 <button on:click={handleSave}>Save</button>
 
