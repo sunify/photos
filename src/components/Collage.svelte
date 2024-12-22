@@ -103,12 +103,41 @@
 
 <style>
   .canvas {
-    max-width: 100%;
+    max-width: calc(100% - 40px);
     display: block;
+    margin: 0 20px;
+  }
+
+  .input {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .inputLabel {
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px 15px;
+  }
+
+  .input input {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
   }
 </style>
 
-<input type="file" multiple accept="image/png, image/jpeg" on:change={handleFiles}>
+<label class="input">
+  <div class="inputLabel">Add images</div>
+  <input type="file" multiple accept="image/png, image/jpeg" on:change={handleFiles}>
+</label>
 
 {#if images.length > 0}
   <canvas bind:this={canvas} class="canvas" />
