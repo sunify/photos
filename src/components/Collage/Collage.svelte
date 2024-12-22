@@ -15,15 +15,35 @@
     localStorage.setItem(key, value);
   }
 
-  let urls: Array<string> = [
-    'https://sunify.github.io/photos/images/full/DSCF2407.jpg',
-    'https://sunify.github.io/photos/images/full/DSCF2330.jpg'
-  ];
+  let urls: Array<string> = [];
+  let selectedUrl: string | null;
   let images: Array<HTMLImageElement> = [];
   $: {
     loadImages(urls).then((result) => {
       images = result;
     });
+  }
+
+  function selectUrl(url: string) {
+    console.log('selectUrl', { selectedUrl, url });
+    if (selectedUrl === url) {
+      selectedUrl = null;
+    } else if (selectedUrl) {
+      const i1 = urls.indexOf(selectedUrl);
+      const i2 = urls.indexOf(url);
+      urls = urls.map((u, i) => {
+        if (i === i1) {
+          return url;
+        } else if(i === i2) {
+          return selectedUrl;
+        }
+
+        return u;
+      }) as string[];
+      selectedUrl = null;
+    } else {
+      selectedUrl = url;
+    }
   }
 
   let backgroundColor = getFromStorage('backgroundColor', '#FFFFFF');
@@ -140,6 +160,19 @@
 >
   {#if images.length > 0}
     <canvas bind:this={canvas} class="canvas" />
+    <div class="grid" style="aspect-ratio: {layout.w / layout.h}">
+      {#each layout.items as item, i}
+        <div class="grid-item" style="
+          width: {item.w / layout.w * 100}%;
+          height: {item.h / layout.h * 100}%;
+          left: {item.x / layout.w * 100}%;
+          top: {item.y / layout.h * 100}%;
+        "
+        on:click={() => selectUrl(urls[i])}
+        role="presentation"
+        ></div>
+      {/each}
+    </div>
   {:else}
     <label class="input">
       <div class="button">Add images</div>
@@ -165,6 +198,14 @@
     right: 0;
   }
 
+  .grid {
+    position: absolute;
+    opacity: 0.2;
+  }
+
+  .grid-item {
+    position: absolute;
+  }
 
   .button {
     appearance: none;
@@ -193,9 +234,13 @@
     display: block;
   }
 
+  .canvasWrapper.vertical .canvas,
+  .canvasWrapper.vertical .grid {
     height: 100%;
   }
 
+  .canvasWrapper.horizontal .canvas,
+  .canvasWrapper.horizontal .grid {
     width: 100%;
   }
 
