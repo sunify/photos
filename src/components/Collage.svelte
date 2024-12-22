@@ -88,6 +88,10 @@
       input.value = '';
     }
   }
+
+  function handleReset() {
+    urls = [];
+  }
 </script>
 
 <svelte:window on:resize={handleResize} />
@@ -114,6 +118,8 @@
       <option value="vertical">Vertical</option>
     </select>
     <input type="range" min="0" max="10" step="1" bind:value={spacing} />
+
+    <button on:click={handleReset} class="button reset">Reset</button>
   </div>
 {/if}
 
@@ -143,6 +149,11 @@
 {/if}
 
 <style>
+  .reset {
+    position: absolute;
+    right: 0;
+  }
+
   .button {
     appearance: none;
     color: #000;
@@ -209,7 +220,8 @@
 
   .panel {
     display: flex;
-    padding: 15px;
+    margin: 15px;
     gap: 10px;
+    position: relative;
   }
 </style>

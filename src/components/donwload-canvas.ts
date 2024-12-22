@@ -7,9 +7,10 @@ export function downloadCanvas(canvas: HTMLCanvasElement, fileName: string) {
     canvas.toBlob((blob) => {
       if (blob) {
         const url = URL.createObjectURL(blob);
-        downloadLink.href = url;
-        downloadLink.download = `${fileName}.jpg`;
-        downloadLink.click();
+        window.open(url, 'blank')
+        // downloadLink.href = url;
+        // downloadLink.download = `${fileName}.jpg`;
+        // downloadLink.click();
         URL.revokeObjectURL(url);
         resolve(blob);
       }
