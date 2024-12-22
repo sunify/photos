@@ -2,9 +2,9 @@
   import { downloadCanvas } from './donwload-canvas';
 
   const sizesMap = {
-    s: 500,
-    m: 1500,
-    l: 2500
+    s: 1000,
+    m: 2000,
+    l: 3000
   };
 
   type Direction = 'vertical' | 'horizontal';
@@ -110,7 +110,9 @@
 
 <input type="file" multiple accept="image/png, image/jpeg" on:change={handleFiles}>
 
-<canvas bind:this={canvas} class="canvas" />
+{#if images.length > 0}
+  <canvas bind:this={canvas} class="canvas" />
+{/if}
 
 <button on:click={handleSave}>Save</button>
 
