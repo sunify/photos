@@ -1,17 +1,13 @@
 <script lang="ts">
   import { downloadCanvas } from './donwload-canvas';
+  import { sizesMap, layouts } from './collage-layouts';
 
-  const sizesMap = {
-    s: 1000,
-    m: 2000,
-    l: 3000
-  };
-
-  type Direction = 'vertical' | 'horizontal';
   type Size = keyof typeof sizesMap;
+  type LayoutType = keyof typeof layouts;
+
   type RenderOptions = {
     size: Size;
-    direction: Direction;
+    layoutType: LayoutType;
     spacing: number;
   };
 
@@ -33,49 +29,24 @@
     });
   }
 
-  let direction: Direction = 'horizontal';
+  let layoutType: LayoutType = 'horizontal';
   let size: Size = 'm';
   let spacing: number = 3;
 
   function render(
     ctx: CanvasRenderingContext2D,
     images: Array<HTMLImageElement>,
-    { direction, size, spacing }: RenderOptions
+    { layoutType, size, spacing }: RenderOptions
   ) {
-    const aspects = images.map((image) => image.width / image.height);
-    const realSize = sizesMap[size];
-    const realSpacing = realSize * (spacing / 100);
-    const rects = aspects.map((aspect) => {
-      if (direction === 'vertical') {
-        return [realSize, Math.round(realSize / aspect)];
-      }
-      return [Math.round(realSize * aspect), realSize];
-    });
-    const totalLength = rects.map(([w, h]) => {
-      return direction === 'vertical' ? h : w;
-    }).reduce((a, b) => a + b, realSpacing * (images.length + 1));
-
-    if (direction === 'vertical') {
-      ctx.canvas.width = realSize + realSpacing * 2;
-      ctx.canvas.height = totalLength;
-    } else {
-      ctx.canvas.width = totalLength;
-      ctx.canvas.height = realSize + realSpacing * 2;
-    }
+    const layout = layouts[layoutType](images, { size, spacing });
+    ctx.canvas.width = layout.w;
+    ctx.canvas.height = layout.h;
 
     ctx.fillStyle = '#FFF';
-    ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    ctx.fillRect(0, 0, layout.w, layout.h);
 
-    let offset = realSpacing;
-    images.forEach((image, i) => {
-      const rect = rects[i];
-      if (direction === 'vertical') {
-        ctx.drawImage(image, realSpacing, offset, rect[0], rect[1]);
-        offset += rect[1] + realSpacing;
-      } else {
-        ctx.drawImage(image, offset, realSpacing, rect[0], rect[1]);
-        offset += rect[0] + realSpacing;
-      }
+    layout.items.forEach(({ image, x, y, w, h}, i) => {
+      ctx.drawImage(image, x, y, w, h);
     });
   }
 
@@ -83,7 +54,7 @@
   $: ctx = canvas?.getContext('2d');
   $: {
     if (ctx) {
-      render(ctx, images, { direction, size, spacing });
+      render(ctx, images, { layoutType, size, spacing });
     }
   }
 
@@ -102,10 +73,16 @@
 </script>
 
 <style>
-  .canvas {
+  .canvasWrapper {
     max-height: 80vh;
-    display: block;
     margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .canvas {
+    display: block;
+    width: 100%;
+    object-fit: contain;
   }
 
   .input {
@@ -162,7 +139,7 @@
       <option value="m">Medium</option>
       <option value="l">Large</option>
     </select>
-    <select bind:value={direction}>
+    <select bind:value={layoutType}>
       <option value="horizontal">Horizontal</option>
       <option value="vertical">Vertical</option>
     </select>
@@ -171,7 +148,9 @@
 </div>
 
 {#if images.length > 0}
-  <canvas bind:this={canvas} class="canvas" />
+  <div class="canvasWrapper">
+    <canvas bind:this={canvas} class="canvas" />
+  </div>
 {/if}
 
 <div class="save">
