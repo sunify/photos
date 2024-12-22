@@ -1,6 +1,7 @@
 <script lang="ts">
   import { downloadCanvas } from './donwload-canvas';
   import { sizesMap, layouts } from './collage-layouts';
+  import { loadImages } from './load-images';
 
   type Size = keyof typeof sizesMap;
   type LayoutType = keyof typeof layouts;
@@ -14,20 +15,13 @@
     localStorage.setItem(key, value);
   }
 
-  let urls: Array<string> = [];
+  let urls: Array<string> = [
+    'https://sunify.github.io/photos/images/full/DSCF2407.jpg',
+    'https://sunify.github.io/photos/images/full/DSCF2330.jpg'
+  ];
   let images: Array<HTMLImageElement> = [];
   $: {
-    Promise.all(
-      urls.map((url) => {
-        return new Promise<HTMLImageElement>((resolve) => {
-          const image = new Image();
-          image.onload = () => {
-            resolve(image);
-          };
-          image.src = url;
-        });
-      })
-    ).then((result) => {
+    loadImages(urls).then((result) => {
       images = result;
     });
   }
@@ -69,25 +63,23 @@
 
   let wrapper: HTMLElement | null = null;
   let wrapperSize: { w: number; h: number } = { w: 0, h: 0 };
+  $: verticalWrapper = layout.w / layout.h < wrapperSize.w / wrapperSize.h;
 
-  function updateWrapperSize(wrapper: HTMLElement) {
+  function updateWrapperSize(wrapper: HTMLElement | null) {
+    if (!wrapper) {
+      return;
+    }
     const rect = wrapper.getBoundingClientRect();
     wrapperSize.w = rect.width;
     wrapperSize.h = rect.height;
   }
 
   $: {
-    if (wrapper) {
-      updateWrapperSize(wrapper);
-    }
+    updateWrapperSize(wrapper);
   }
 
-  $: verticalWrapper = layout.w / layout.h < wrapperSize.w / wrapperSize.h;
-
   function handleResize() {
-    if (wrapper) {
-      updateWrapperSize(wrapper);
-    }
+    updateWrapperSize(wrapper);
   }
 
   function handleSave(e: MouseEvent) {
@@ -173,6 +165,7 @@
     right: 0;
   }
 
+
   .button {
     appearance: none;
     color: #000;
@@ -189,9 +182,8 @@
     position: fixed;
     top: 60px;
     bottom: 90px;
-    left: 0;
-    right: 0;
-    padding: 0 20px;
+    left: 20px;
+    right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,11 +193,9 @@
     display: block;
   }
 
-  .canvasWrapper.vertical .canvas {
     height: 100%;
   }
 
-  .canvasWrapper.horizontal .canvas {
     width: 100%;
   }
 
