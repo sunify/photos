@@ -29,22 +29,19 @@
   let spacing: number = 3;
   $: layout = layouts[layoutType](images, { size, spacing });
 
-  function render(
-    ctx: CanvasRenderingContext2D,
-    layout: Layout
-  ) {
+  function render(ctx: CanvasRenderingContext2D, layout: Layout) {
     ctx.canvas.width = layout.w;
     ctx.canvas.height = layout.h;
 
     ctx.fillStyle = '#FFF';
     ctx.fillRect(0, 0, layout.w, layout.h);
 
-    layout.items.forEach(({ image, x, y, w, h}, i) => {
+    layout.items.forEach(({ image, x, y, w, h }, i) => {
       ctx.drawImage(image, x, y, w, h);
     });
   }
 
-  let canvas: HTMLCanvasElement;
+  let canvas: HTMLCanvasElement | null = null;
   $: ctx = canvas?.getContext('2d');
   $: {
     if (ctx) {
@@ -52,31 +49,134 @@
     }
   }
 
+  let wrapper: HTMLElement | null = null;
+  let wrapperSize: { w: number; h: number } = { w: 0, h: 0 };
+
+  function updateWrapperSize(wrapper: HTMLElement) {
+    const rect = wrapper.getBoundingClientRect();
+    wrapperSize.w = rect.width;
+    wrapperSize.h = rect.height;
+  }
+
+  $: {
+    if (wrapper) {
+      updateWrapperSize(wrapper);
+    }
+  }
+
+  $: verticalWrapper = layout.w / layout.h < wrapperSize.w / wrapperSize.h;
+
+  function handleResize() {
+    if (wrapper) {
+      updateWrapperSize(wrapper);
+    }
+  }
+
   function handleSave(e: MouseEvent) {
     e.preventDefault();
-    downloadCanvas(canvas, 'collage');
+    if (canvas) {
+      downloadCanvas(canvas, 'collage');
+    }
   }
 
   function handleFiles(e: Event) {
     const input = e.target as HTMLInputElement;
     if (input.files) {
-      urls = urls.concat(Array.from(input.files).map((file) => URL.createObjectURL(file)));
+      urls = urls.concat(
+        Array.from(input.files).map((file) => URL.createObjectURL(file))
+      );
       input.value = '';
     }
   }
 </script>
 
+<svelte:window on:resize={handleResize} />
+
+{#if images.length > 0}
+  <div class="panel">
+    <label class="input">
+      <div class="button">Add images</div>
+      <input
+        type="file"
+        multiple
+        accept="image/png, image/jpeg"
+        on:change={handleFiles}
+      />
+    </label>
+
+    <select bind:value={size}>
+      <option value="s">Small</option>
+      <option value="m">Medium</option>
+      <option value="l">Large</option>
+    </select>
+    <select bind:value={layoutType}>
+      <option value="horizontal">Horizontal</option>
+      <option value="vertical">Vertical</option>
+    </select>
+    <input type="range" min="0" max="10" step="1" bind:value={spacing} />
+  </div>
+{/if}
+
+<div
+  class="canvasWrapper {verticalWrapper ? 'vertical' : 'horizontal'}"
+  bind:this={wrapper}
+>
+  {#if images.length > 0}
+    <canvas bind:this={canvas} class="canvas" />
+  {:else}
+    <label class="input">
+      <div class="button">Add images</div>
+      <input
+        type="file"
+        multiple
+        accept="image/png, image/jpeg"
+        on:change={handleFiles}
+      />
+    </label>
+  {/if}
+</div>
+
+{#if images.length > 0}
+<div class="save">
+  <button on:click={handleSave} class="button">Save</button>
+</div>
+{/if}
+
 <style>
+  .button {
+    appearance: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border: none;
+    font: inherit;
+    font-size: 14px;
+  }
+
   .canvasWrapper {
-    max-height: 80vh;
-    margin: 0 auto;
+    position: fixed;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
     padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .canvas {
     display: block;
+  }
+
+  .canvasWrapper.vertical .canvas {
+    height: 100%;
+  }
+
+  .canvasWrapper.horizontal .canvas {
     width: 100%;
-    object-fit: contain;
   }
 
   .input {
@@ -84,13 +184,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-
-  .inputLabel {
-    color: #000;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 5px 15px;
   }
 
   .input input {
@@ -108,7 +201,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,37 +209,7 @@
 
   .panel {
     display: flex;
-    padding: 30px;
+    padding: 15px;
     gap: 10px;
   }
 </style>
-
-<div class="panel">
-  <label class="input">
-    <div class="inputLabel">Add images</div>
-    <input type="file" multiple accept="image/png, image/jpeg" on:change={handleFiles}>
-  </label>
-
-  {#if images.length > 0}
-    <select bind:value={size}>
-      <option value="s">Small</option>
-      <option value="m">Medium</option>
-      <option value="l">Large</option>
-    </select>
-    <select bind:value={layoutType}>
-      <option value="horizontal">Horizontal</option>
-      <option value="vertical">Vertical</option>
-    </select>
-    <input type="range" min="0" max="10" step="1" bind:value={spacing} />
-  {/if}
-</div>
-
-{#if images.length > 0}
-  <div class="canvasWrapper">
-    <canvas bind:this={canvas} class="canvas" />
-  </div>
-{/if}
-
-<div class="save">
-  <button on:click={handleSave}>Save</button>
-</div>
