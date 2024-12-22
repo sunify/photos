@@ -103,9 +103,9 @@
 
 <style>
   .canvas {
-    max-width: calc(100% - 40px);
+    max-height: 80vh;
     display: block;
-    margin: 0 20px;
+    margin: 0 auto;
   }
 
   .input {
@@ -132,6 +132,17 @@
     height: 100%;
     cursor: pointer;
   }
+
+  .save {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>
 
 <label class="input">
@@ -143,6 +154,6 @@
   <canvas bind:this={canvas} class="canvas" />
 {/if}
 
-<button on:click={handleSave}>Save</button>
-
-
+<div class="save">
+  <button on:click={handleSave}>Save</button>
+</div>
