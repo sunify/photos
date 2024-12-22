@@ -25,7 +25,6 @@
   }
 
   function selectUrl(url: string) {
-    console.log('selectUrl', { selectedUrl, url });
     if (selectedUrl === url) {
       selectedUrl = null;
     } else if (selectedUrl) {
