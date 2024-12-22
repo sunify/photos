@@ -24,16 +24,17 @@
     });
   }
 
+  let backgroundColor = '#FFFFFF';
   let layoutType: LayoutType = 'horizontal';
   let size: Size = 'm';
   let spacing: number = 3;
   $: layout = layouts[layoutType](images, { size, spacing });
 
-  function render(ctx: CanvasRenderingContext2D, layout: Layout) {
+  function render(ctx: CanvasRenderingContext2D, layout: Layout, backgroundColor: string) {
     ctx.canvas.width = layout.w;
     ctx.canvas.height = layout.h;
 
-    ctx.fillStyle = '#FFF';
+    ctx.fillStyle = backgroundColor;
     ctx.fillRect(0, 0, layout.w, layout.h);
 
     layout.items.forEach(({ image, x, y, w, h }, i) => {
@@ -45,7 +46,9 @@
   $: ctx = canvas?.getContext('2d');
   $: {
     if (ctx) {
-      render(ctx, layout);
+      requestAnimationFrame(() => {
+        render(ctx, layout, backgroundColor);
+      });
     }
   }
 
@@ -118,6 +121,7 @@
       <option value="vertical">Vertical</option>
     </select>
     <input type="range" min="0" max="10" step="1" bind:value={spacing} />
+    <input type="color" bind:value={backgroundColor} />
 
     <button on:click={handleReset} class="button reset">Reset</button>
   </div>
@@ -169,7 +173,7 @@
   .canvasWrapper {
     position: fixed;
     top: 60px;
-    bottom: 60px;
+    bottom: 90px;
     left: 0;
     right: 0;
     padding: 0 20px;
@@ -211,7 +215,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 20px;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -222,6 +226,9 @@
     display: flex;
     margin: 15px;
     gap: 10px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
   }
 </style>
