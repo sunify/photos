@@ -20,7 +20,7 @@ type LayoutItem = {
   h: number;
 };
 
-type Layout = {
+export type Layout = {
   items: Array<LayoutItem>;
   w: number;
   h: number;

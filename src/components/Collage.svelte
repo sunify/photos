@@ -4,12 +4,7 @@
 
   type Size = keyof typeof sizesMap;
   type LayoutType = keyof typeof layouts;
-
-  type RenderOptions = {
-    size: Size;
-    layoutType: LayoutType;
-    spacing: number;
-  };
+  type Layout = ReturnType<typeof layouts.horizontal>;
 
   let urls: Array<string> = [];
   let images: Array<HTMLImageElement> = [];
@@ -32,13 +27,12 @@
   let layoutType: LayoutType = 'horizontal';
   let size: Size = 'm';
   let spacing: number = 3;
+  $: layout = layouts[layoutType](images, { size, spacing });
 
   function render(
     ctx: CanvasRenderingContext2D,
-    images: Array<HTMLImageElement>,
-    { layoutType, size, spacing }: RenderOptions
+    layout: Layout
   ) {
-    const layout = layouts[layoutType](images, { size, spacing });
     ctx.canvas.width = layout.w;
     ctx.canvas.height = layout.h;
 
@@ -54,7 +48,7 @@
   $: ctx = canvas?.getContext('2d');
   $: {
     if (ctx) {
-      render(ctx, images, { layoutType, size, spacing });
+      render(ctx, layout);
     }
   }
 
