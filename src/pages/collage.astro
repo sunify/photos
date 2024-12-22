@@ -1,0 +1,14 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import CollageUI from '../components/Collage.svelte';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title="Collage" />
+  </head>
+  <body>
+    <CollageUI client:only="svelte" />
+  </body>
+</html>
