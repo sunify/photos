@@ -62,6 +62,15 @@
   }
 
   $: layout = layouts[layoutType](images, { size, spacing });
+  function predictLayout(images: Array<HTMLImageElement>): LayoutType {
+    const aspectRatios = images.map((img) => img.width / img.height);
+    const vertAr = aspectRatios.reduce((a, b) => a + b, 0);
+    const horAr = aspectRatios.map((ar) => 1 / ar).reduce((a, b) => a + b, 0);
+    return vertAr < horAr ? 'horizontal' : 'vertical';
+  }
+  $: {
+    layoutType = predictLayout(images);
+  }
 
   function render(ctx: CanvasRenderingContext2D, layout: Layout, backgroundColor: string) {
     ctx.canvas.width = layout.w;
@@ -78,7 +87,7 @@
   let canvas: HTMLCanvasElement | null = null;
   $: ctx = canvas?.getContext('2d');
   $: {
-    if (ctx) {
+    if (ctx && images.length) {
       requestAnimationFrame(() => {
         render(ctx, layout, backgroundColor);
       });
