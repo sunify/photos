@@ -50,26 +50,65 @@
     }
   }
 
+  function prepareAspectRatio(raw: string): 'auto' | number {
+    if (raw === 'auto') {
+      return raw;
+    }
+
+    return Number(raw);
+  }
+
   let backgroundColor = getFromStorage('backgroundColor', '#FFFFFF');
   let layoutType: LayoutType = getFromStorage<LayoutType>('layoutType', 'horizontal');
   let size: Size = getFromStorage<Size>('size', 'm');
   let spacing: number = Number(getFromStorage('spacing', '3'));
+  let aspectRatio: string = getFromStorage('aspectRatio', 'auto');
   $: {
     saveToStorage('backgroundColor', backgroundColor);
     saveToStorage('layoutType', layoutType);
     saveToStorage('size', size);
     saveToStorage('spacing', spacing.toString());
+    saveToStorage('aspectRatio', aspectRatio);
   }
 
-  $: layout = layouts[layoutType](images, { size, spacing });
-  function predictLayout(images: Array<HTMLImageElement>): LayoutType {
+  $: layout = padLayoutToAspectRatio(layouts[layoutType](images, { size, spacing }), prepareAspectRatio(aspectRatio));
+  function predictLayoutType(images: Array<HTMLImageElement>): LayoutType {
     const aspectRatios = images.map((img) => img.width / img.height);
     const vertAr = aspectRatios.reduce((a, b) => a + b, 0);
     const horAr = aspectRatios.map((ar) => 1 / ar).reduce((a, b) => a + b, 0);
+
     return vertAr < horAr ? 'horizontal' : 'vertical';
   }
+  function padLayoutToAspectRatio(layout: Layout, aspectRatio: 'auto' | number) {
+    if (aspectRatio === 'auto') {
+      return layout;
+    }
+    console.log({ aspectRatio });
+
+    const layoutAspectRatio = layout.w / layout.h;
+    if (layoutAspectRatio > aspectRatio) {
+      const newH = layout.w / aspectRatio;
+      const vertOffset = (newH - layout.h) / 2;
+      layout.items.forEach((item) => {
+        item.y += vertOffset;
+      });
+      layout.h = newH;
+    } else {
+      const newW = layout.h * aspectRatio;
+      const horOffset = (newW - layout.w) / 2;
+      layout.items.forEach((item) => {
+        item.x += horOffset;
+      });
+      layout.w = newW;
+    }
+    return layout;
+  }
+  let shouldPredictLayout = true;
   $: {
-    layoutType = predictLayout(images);
+    if (shouldPredictLayout && images.length > 0) {
+      layoutType = predictLayoutType(images);
+      shouldPredictLayout = false;
+    }
   }
 
   function render(ctx: CanvasRenderingContext2D, layout: Layout, backgroundColor: string) {
@@ -129,6 +168,7 @@
         Array.from(input.files).map((file) => URL.createObjectURL(file))
       );
       input.value = '';
+      shouldPredictLayout = true;
     }
   }
 
@@ -168,12 +208,22 @@
 
       <div class="settingsMenu">
         <RadioGroup
-        options={[
-          { value: 's', label: 'S' },
-          { value: 'm', label: 'M' },
-          { value: 'l', label: 'L' },
-        ]}
-        bind:value={size}
+          options={[
+            { value: 's', label: 'S' },
+            { value: 'm', label: 'M' },
+            { value: 'l', label: 'L' },
+          ]}
+          bind:value={size}
+        />
+        <RadioGroup
+          options={[
+            { value: 'auto', label: 'Auto' },
+            { value: (1/1).toString(), label: '1/1' },
+            { value: (4/5).toString(), label: '4/5' },
+            { value: (5/4).toString(), label: '5/4' },
+            { value: (9/16).toString(), label: '9/16' },
+          ]}
+          bind:value={aspectRatio}
         />
       <input type="color" bind:value={backgroundColor} />
       <input type="range" class="spacingInput" min="0" max="10" step="1" bind:value={spacing} />
