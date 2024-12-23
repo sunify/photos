@@ -1,4 +1,6 @@
 <script lang="ts">
+  import RadioGroup from '../RadioGroup.svelte'
+  import Dropdown from '../Dropdown.svelte'
   import { downloadCanvas } from './donwload-canvas';
   import { sizesMap, layouts } from './collage-layouts';
   import { loadImages } from './load-images';
@@ -121,6 +123,8 @@
   function handleReset() {
     urls = [];
   }
+
+  let isSettingsOpen: boolean = false;
 </script>
 
 <svelte:window on:resize={handleResize} />
@@ -128,7 +132,7 @@
 {#if images.length > 0}
   <div class="panel">
     <label class="input">
-      <div class="button">Add images</div>
+      <div class="button">+</div>
       <input
         type="file"
         multiple
@@ -137,19 +141,32 @@
       />
     </label>
 
-    <select bind:value={size}>
-      <option value="s">Small</option>
-      <option value="m">Medium</option>
-      <option value="l">Large</option>
-    </select>
-    <select bind:value={layoutType}>
-      <option value="horizontal">Horizontal</option>
-      <option value="vertical">Vertical</option>
-    </select>
-    <input type="range" min="0" max="10" step="1" bind:value={spacing} />
-    <input type="color" bind:value={backgroundColor} />
+    <RadioGroup
+      options={[
+        { value: 'horizontal', label: 'Horizontal' },
+        { value: 'vertical', label: 'Vertical' },
+      ]}
+      bind:value={layoutType}
+      />
 
-    <button on:click={handleReset} class="button reset">Reset</button>
+    <Dropdown bind:isOpen={isSettingsOpen}>
+      <div class="button" slot="trigger">
+        Settings
+      </div>
+
+      <div class="settingsMenu">
+        <RadioGroup
+        options={[
+          { value: 's', label: 'S' },
+          { value: 'm', label: 'M' },
+          { value: 'l', label: 'L' },
+        ]}
+        bind:value={size}
+        />
+      <input type="color" bind:value={backgroundColor} />
+      <input type="range" class="spacingInput" min="0" max="10" step="1" bind:value={spacing} />
+      </div>
+    </Dropdown>
   </div>
 {/if}
 
@@ -188,15 +205,11 @@
 {#if images.length > 0}
 <div class="save">
   <button on:click={handleSave} class="button">Save</button>
+  <button on:click={handleReset} class="button reset">Reset</button>
 </div>
 {/if}
 
 <style>
-  .reset {
-    position: absolute;
-    right: 0;
-  }
-
   .grid {
     position: absolute;
     opacity: 0.2;
@@ -216,6 +229,8 @@
     border: none;
     font: inherit;
     font-size: 14px;
+    white-space: nowrap;
+    border: 1px solid #bbb;
   }
 
   .canvasWrapper {
@@ -269,6 +284,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
   }
 
   .panel {
@@ -276,8 +292,24 @@
     margin: 15px;
     gap: 10px;
     position: fixed;
+    z-index: 10;
     top: 0;
     right: 0;
     left: 0;
+    justify-content: center;
+  }
+
+  .spacingInput {
+    width: 100px;
+  }
+
+  .settingsMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 6px;
   }
 </style>
