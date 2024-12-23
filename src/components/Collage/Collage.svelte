@@ -18,7 +18,7 @@
   }
 
   let urls: Array<string> = [];
-  let selectedUrl: string | null;
+  let selectedImage: number | null = null;
   let images: Array<HTMLImageElement> = [];
   $: {
     loadImages(urls).then((result) => {
@@ -26,24 +26,27 @@
     });
   }
 
-  function selectUrl(url: string) {
-    if (selectedUrl === url) {
-      selectedUrl = null;
-    } else if (selectedUrl) {
-      const i1 = urls.indexOf(selectedUrl);
-      const i2 = urls.indexOf(url);
+  function selectImage(i: number) {
+    if (selectedImage === i) {
+      return;
+    }
+    if (selectedImage !== null) {
+      const i1 = selectedImage;
+      const i2 = i;
+      const url1 = urls[i1];
+      const url2 = urls[i2];
       urls = urls.map((u, i) => {
         if (i === i1) {
-          return url;
+          return url2;
         } else if(i === i2) {
-          return selectedUrl;
+          return url1;
         }
 
         return u;
       }) as string[];
-      selectedUrl = null;
+      selectedImage = null;
     } else {
-      selectedUrl = url;
+      selectedImage = i;
     }
   }
 
@@ -184,7 +187,7 @@
           left: {item.x / layout.w * 100}%;
           top: {item.y / layout.h * 100}%;
         "
-        on:click={() => selectUrl(urls[i])}
+        on:click={() => selectImage(i)}
         role="presentation"
         ></div>
       {/each}
