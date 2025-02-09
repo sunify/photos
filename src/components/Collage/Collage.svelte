@@ -270,7 +270,7 @@
 >
   {#if images.length > 0}
     <canvas bind:this={canvas} class="canvas" />
-    <div class="grid" style="aspect-ratio: {layout.w / layout.h}">
+    <div class="grid {cutByThirds ? 'cutByThirds' : ''}" style="aspect-ratio: {layout.w / layout.h}">
       {#each layout.items as item, i}
         <div class="grid-item" style="
           width: {item.w / layout.w * 100}%;
@@ -307,6 +307,26 @@
   .grid {
     position: absolute;
     opacity: 0.2;
+  }
+
+
+  .grid.cutByThirds::before,
+  .grid.cutByThirds::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: calc(100% / 3);
+  }
+
+  .grid.cutByThirds::before {
+    left: 0;
+    border-right: 2px solid #000;
+  }
+
+  .grid.cutByThirds::after {
+    right: 0;
+    border-left: 2px solid #000;
   }
 
   .grid-item {
