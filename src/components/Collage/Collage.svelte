@@ -58,11 +58,14 @@
     return Number(raw);
   }
 
+  const TWELVE_BY_FIVE = (12/5).toString();
+
   let backgroundColor = getFromStorage('backgroundColor', '#FFFFFF');
   let layoutType: LayoutType = getFromStorage<LayoutType>('layoutType', 'horizontal');
   let size: Size = getFromStorage<Size>('size', 'm');
   let spacing: number = Number(getFromStorage('spacing', '3'));
   let aspectRatio: string = getFromStorage('aspectRatio', 'auto');
+  let cutByThirds: boolean = aspectRatio === TWELVE_BY_FIVE;
   $: {
     saveToStorage('backgroundColor', backgroundColor);
     saveToStorage('layoutType', layoutType);
@@ -83,7 +86,6 @@
     if (aspectRatio === 'auto') {
       return layout;
     }
-    console.log({ aspectRatio });
 
     const layoutAspectRatio = layout.w / layout.h;
     if (layoutAspectRatio > aspectRatio) {
@@ -222,9 +224,16 @@
             { value: (4/5).toString(), label: '4/5' },
             { value: (5/4).toString(), label: '5/4' },
             { value: (9/16).toString(), label: '9/16' },
+            { value: TWELVE_BY_FIVE, label: '12/5' },
           ]}
           bind:value={aspectRatio}
         />
+        {#if aspectRatio === TWELVE_BY_FIVE}
+          <label>
+            <input type="checkbox" bind:checked={cutByThirds} />
+            Cut by 3s
+          </label>
+        {/if}
       <input type="color" bind:value={backgroundColor} />
       <input type="range" class="spacingInput" min="0" max="10" step="1" bind:value={spacing} />
       </div>
@@ -372,6 +381,7 @@
     padding: 15px;
     align-items: flex-start;
     background-color: #fff;
+    color: #000;
     border-radius: 6px;
   }
 </style>
