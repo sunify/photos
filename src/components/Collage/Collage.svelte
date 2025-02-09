@@ -73,6 +73,11 @@
     saveToStorage('spacing', spacing.toString());
     saveToStorage('aspectRatio', aspectRatio);
   }
+  $: {
+    if (aspectRatio !== TWELVE_BY_FIVE) {
+      cutByThirds = false;
+    }
+  }
 
   $: layout = padLayoutToAspectRatio(layouts[layoutType](images, { size, spacing }), prepareAspectRatio(aspectRatio));
   function predictLayoutType(images: Array<HTMLImageElement>): LayoutType {
@@ -156,10 +161,28 @@
     updateWrapperSize(wrapper);
   }
 
-  function handleSave(e: MouseEvent) {
+  async function handleSave(e: MouseEvent) {
     e.preventDefault();
     if (canvas) {
-      downloadCanvas(canvas, 'collage');
+      if (!cutByThirds) {
+        await downloadCanvas(canvas, 'collage');
+      } else {
+        const thirdsCanvas = document.createElement('canvas');
+        const ctx = thirdsCanvas.getContext('2d');
+        if (!ctx) {
+          return;
+        }
+        thirdsCanvas.height = canvas.height;
+        thirdsCanvas.width = canvas.width / 3;
+        for (let i = 0; i < 3; i += 1) {
+          ctx.drawImage(
+            canvas,
+            thirdsCanvas.width * i, 0, thirdsCanvas.width, thirdsCanvas.height,
+            0, 0, thirdsCanvas.width, thirdsCanvas.height
+          );
+          await downloadCanvas(thirdsCanvas, 'collage-thirds-' + (i + 1));
+        }
+      }
     }
   }
 
