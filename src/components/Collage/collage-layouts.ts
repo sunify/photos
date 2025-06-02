@@ -10,6 +10,7 @@ export type Size = keyof typeof sizesMap;
 type LayoutOptions = {
   size: Size;
   spacing: number;
+  padding: number;
 };
 
 type LayoutItem = {
@@ -36,7 +37,7 @@ function calcSpacing(spacing: number, size: Size) {
 
 function linearLayout(
   images: Array<HTMLImageElement>,
-  { size, spacing }: LayoutOptions,
+  { size, spacing, padding }: LayoutOptions,
   vertical: boolean
 ): Layout {
   const items: Array<LayoutItem> = [];
@@ -49,6 +50,7 @@ function linearLayout(
   const aspects = images.map((image) => image.width / image.height);
   const realSize = calcSize(size);
   const realSpacing = calcSpacing(spacing, size);
+  const realPadding = calcSpacing(padding, size);
   const rects = aspects.map((aspect) => {
     if (vertical) {
       return [realSize, Math.round(realSize / aspect)];
@@ -57,23 +59,23 @@ function linearLayout(
   });
   const totalLength = rects.map(([w, h]) => {
     return vertical ? h : w;
-  }).reduce((a, b) => a + b, realSpacing * (images.length + 1));
+  }).reduce((a, b) => a + b, realSpacing * (images.length - 1) + realPadding * 2);
 
   if (vertical) {
-    result.w = realSize + realSpacing * 2;
+    result.w = realSize + realPadding * 2;
     result.h = totalLength;
   } else {
     result.w = totalLength;
-    result.h = realSize + realSpacing * 2;
+    result.h = realSize + realPadding * 2;
   }
 
-  let offset = realSpacing;
+  let offset = realPadding;
   images.forEach((image, i) => {
     const rect = rects[i];
     if (vertical) {
       result.items.push({
         image,
-        x: realSpacing,
+        x: realPadding,
         y: offset,
         w: rect[0],
         h: rect[1]
@@ -83,7 +85,7 @@ function linearLayout(
       result.items.push({
         image,
         x: offset,
-        y: realSpacing,
+        y: realPadding,
         w: rect[0],
         h: rect[1]
       });

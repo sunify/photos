@@ -59,27 +59,45 @@
   }
 
   const TWELVE_BY_FIVE = (12/5).toString();
+  const EIGTH_BY_FIVE = (8/5).toString();
 
   let backgroundColor = getFromStorage('backgroundColor', '#FFFFFF');
   let layoutType: LayoutType = getFromStorage<LayoutType>('layoutType', 'horizontal');
   let size: Size = getFromStorage<Size>('size', 'm');
   let spacing: number = Number(getFromStorage('spacing', '3'));
+  let padding: number = Number(getFromStorage('padding', '3'));
   let aspectRatio: string = getFromStorage('aspectRatio', 'auto');
   let cutByThirds: boolean = aspectRatio === TWELVE_BY_FIVE;
+  let cutByHalves: boolean = aspectRatio === EIGTH_BY_FIVE;
+  let noise: boolean = getFromStorage<string>('noise', 'false') === 'true';
+  let noiseOverImage: boolean = getFromStorage<string>('noiseOverImage', 'false') === 'true';
+  let noiseIntensity = Number(getFromStorage('noiseIntensity', '0.2'));
+  let noiseSmoothness = Number(getFromStorage('noiseSmoothness', '0'));
+  let noiseSize = Number(getFromStorage('noiseSize', '1'));
   $: {
     saveToStorage('backgroundColor', backgroundColor);
     saveToStorage('layoutType', layoutType);
     saveToStorage('size', size);
     saveToStorage('spacing', spacing.toString());
+    saveToStorage('padding', padding.toString());
     saveToStorage('aspectRatio', aspectRatio);
+    saveToStorage('noise', noise ? 'true' : 'false');
+    saveToStorage('noiseOverImage', noiseOverImage ? 'true' : 'false');
+    saveToStorage('noiseIntensity', noiseIntensity.toString());
+    saveToStorage('noiseSmoothness', noiseSmoothness.toString());
+    saveToStorage('noiseSize', noiseSize.toString());
   }
   $: {
     if (aspectRatio !== TWELVE_BY_FIVE) {
       cutByThirds = false;
     }
+
+    if (aspectRatio !== EIGTH_BY_FIVE) {
+      cutByHalves = false;
+    }
   }
 
-  $: layout = padLayoutToAspectRatio(layouts[layoutType](images, { size, spacing }), prepareAspectRatio(aspectRatio));
+  $: layout = padLayoutToAspectRatio(layouts[layoutType](images, { size, spacing, padding }), prepareAspectRatio(aspectRatio));
   function predictLayoutType(images: Array<HTMLImageElement>): LayoutType {
     const aspectRatios = images.map((img) => img.width / img.height);
     const vertAr = aspectRatios.reduce((a, b) => a + b, 0);
@@ -118,6 +136,66 @@
     }
   }
 
+  $: {
+    if (layout.w) {
+      noiseObsolete = true;
+    }
+  }
+
+  const noiseCanvas = document.createElement("canvas");
+  const nctx = noiseCanvas.getContext("2d");
+
+
+  let noiseObsolete = true;
+  function recalcNoise(width: number, height: number) {
+    if (!nctx) {
+      return;
+    }
+    noiseCanvas.width = width;
+    noiseCanvas.height = height;
+
+    const idata = nctx.createImageData(width, height);
+    const data = idata.data;
+
+    for (let y = 0; y < height; y += noiseSize) {
+      for (let x = 0; x < width; x += noiseSize) {
+        const val = Math.floor((Math.random() - 0.5) * 255 * noiseIntensity);
+        for (let dy = 0; dy < noiseSize; dy++) {
+          for (let dx = 0; dx < noiseSize; dx++) {
+            const px = (x + dx) + (y + dy) * width;
+            if (px >= width * height) continue;
+            const i = px * 4;
+            data[i + 0] = val + 128; // R
+            data[i + 1] = val + 128; // G
+            data[i + 2] = val + 128; // B
+            data[i + 3] = 255 * noiseIntensity;
+          }
+        }
+      }
+    }
+
+    nctx.putImageData(idata, 0, 0);
+
+    if (noiseSmoothness > 0) {
+      // Применим размытие
+      nctx.filter = `blur(${noiseSmoothness}px)`;
+      nctx.drawImage(noiseCanvas, 0, 0);
+    }
+  }
+
+  function applyNoise(ctx: CanvasRenderingContext2D) {
+    if (noiseObsolete) {
+      recalcNoise(ctx.canvas.width, ctx.canvas.height);
+      noiseObsolete = false;
+    }
+    ctx.globalCompositeOperation = "hard-light";
+    ctx.drawImage(noiseCanvas, 0, 0);
+    ctx.globalCompositeOperation = "source-over";
+    ctx.globalAlpha = 0.2;
+    ctx.drawImage(noiseCanvas, 0, 0);
+    ctx.globalAlpha = 1;
+  }
+
   function render(ctx: CanvasRenderingContext2D, layout: Layout, backgroundColor: string) {
     ctx.canvas.width = layout.w;
     ctx.canvas.height = layout.h;
@@ -125,19 +203,32 @@
     ctx.fillStyle = backgroundColor;
     ctx.fillRect(0, 0, layout.w, layout.h);
 
+    if (noise && !noiseOverImage) {
+      applyNoise(ctx);
+    }
+
     layout.items.forEach(({ image, x, y, w, h }, i) => {
       ctx.drawImage(image, x, y, w, h);
     });
+
+    if (noise && noiseOverImage) {
+      applyNoise(ctx);
+    }
   }
 
   let canvas: HTMLCanvasElement | null = null;
   $: ctx = canvas?.getContext('2d');
   $: {
+    console.log(noise, noiseOverImage, noiseIntensity, noiseSmoothness, noiseSize);
     if (ctx && images.length) {
       requestAnimationFrame(() => {
         render(ctx, layout, backgroundColor);
       });
     }
+  }
+  $: {
+    console.log(noiseIntensity, noiseSmoothness, noiseSize);
+    noiseObsolete = true;
   }
 
   let wrapper: HTMLElement | null = null;
@@ -164,9 +255,7 @@
   async function handleSave(e: MouseEvent) {
     e.preventDefault();
     if (canvas) {
-      if (!cutByThirds) {
-        await downloadCanvas(canvas, 'collage');
-      } else {
+      if (cutByThirds) {
         const thirdsCanvas = document.createElement('canvas');
         const ctx = thirdsCanvas.getContext('2d');
         if (!ctx) {
@@ -182,6 +271,24 @@
           );
           await downloadCanvas(thirdsCanvas, 'collage-thirds-' + (i + 1));
         }
+      } else if (cutByHalves) {
+        const halvesCanvas = document.createElement('canvas');
+        const ctx = halvesCanvas.getContext('2d');
+        if (!ctx) {
+          return;
+        }
+        halvesCanvas.height = canvas.height;
+        halvesCanvas.width = canvas.width / 2;
+        for (let i = 0; i < 2; i += 1) {
+          ctx.drawImage(
+            canvas,
+            halvesCanvas.width * i, 0, halvesCanvas.width, halvesCanvas.height,
+            0, 0, halvesCanvas.width, halvesCanvas.height
+          );
+          await downloadCanvas(halvesCanvas, 'collage-havles-' + (i + 1));
+        }
+      } else {
+        await downloadCanvas(canvas, 'collage');
       }
     }
   }
@@ -247,6 +354,7 @@
             { value: (4/5).toString(), label: '4/5' },
             { value: (5/4).toString(), label: '5/4' },
             { value: (9/16).toString(), label: '9/16' },
+            { value: EIGTH_BY_FIVE, label: '8/5' },
             { value: TWELVE_BY_FIVE, label: '12/5' },
           ]}
           bind:value={aspectRatio}
@@ -257,8 +365,30 @@
             Cut by 3s
           </label>
         {/if}
-      <input type="color" bind:value={backgroundColor} />
-      <input type="range" class="spacingInput" min="0" max="10" step="1" bind:value={spacing} />
+        {#if aspectRatio === EIGTH_BY_FIVE}
+          <label>
+            <input type="checkbox" bind:checked={cutByHalves} />
+            Cut by halves
+          </label>
+        {/if}
+          <input type="color" bind:value={backgroundColor} />
+
+          Spacing: <input type="range" class="spacingInput" min="0" max="10" step="1" bind:value={spacing} />
+          Padding: <input type="range" class="spacingInput" min="0" max="10" step="1" bind:value={padding} />
+
+        <label>
+          <input type="checkbox" bind:checked={noise} />
+          Noise
+        </label>
+        {#if noise}
+          <label>
+            <input type="checkbox" bind:checked={noiseOverImage} />
+            Noise over image
+          </label>
+          Intensity: <input type="range" class="spacingInput" min="0" max="1" step="0.05" bind:value={noiseIntensity} />
+          Smoothness: <input type="range" class="spacingInput" min="0" max="3" step="0.5" bind:value={noiseSmoothness} />
+          Size: <input type="range" class="spacingInput" min="1" max="5" step="1" bind:value={noiseSize} />
+        {/if}
       </div>
     </Dropdown>
   </div>
@@ -270,7 +400,7 @@
 >
   {#if images.length > 0}
     <canvas bind:this={canvas} class="canvas" />
-    <div class="grid {cutByThirds ? 'cutByThirds' : ''}" style="aspect-ratio: {layout.w / layout.h}">
+    <div class="grid {cutByThirds ? 'cutByThirds' : ''}  {cutByHalves ? 'cutByHalves' : ''}" style="aspect-ratio: {layout.w / layout.h}">
       {#each layout.items as item, i}
         <div class="grid-item" style="
           width: {item.w / layout.w * 100}%;
@@ -309,6 +439,15 @@
     opacity: 0.2;
   }
 
+  .grid.cutByHalves::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 50%;
+    left: 0;
+    border-right: 2px solid #000;
+  }
 
   .grid.cutByThirds::before,
   .grid.cutByThirds::after {
