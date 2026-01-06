@@ -351,8 +351,11 @@
           options={[
             { value: 'auto', label: 'Auto' },
             { value: (1/1).toString(), label: '1/1' },
+            { value: (3/4).toString(), label: '3/4' },
+            { value: (4/3).toString(), label: '4/3' },
             { value: (4/5).toString(), label: '4/5' },
             { value: (5/4).toString(), label: '5/4' },
+            { value: (16/9).toString(), label: '16/9' },
             { value: (9/16).toString(), label: '9/16' },
             { value: EIGTH_BY_FIVE, label: '8/5' },
             { value: TWELVE_BY_FIVE, label: '12/5' },
