@@ -27,6 +27,9 @@
     display: flex;
     border: 1px solid #bbb;
     border-radius: 3px;
+    max-width: 100%;
+    overflow-y: auto;
+    min-width: 0;
   }
 
   .wrapper {

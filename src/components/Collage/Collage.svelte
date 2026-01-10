@@ -18,6 +18,7 @@
   }
 
   let urls: Array<string> = [];
+  let files: Array<File> = [];
   let selectedImage: number | null = null;
   let images: Array<HTMLImageElement> = [];
   $: {
@@ -288,7 +289,8 @@
           await downloadCanvas(halvesCanvas, 'collage-havles-' + (i + 1));
         }
       } else {
-        await downloadCanvas(canvas, 'collage');
+        const name = files.length === 1 ? files[0].name.split('.').slice(0, -1).join('.') + '-collage' : 'collage';
+        await downloadCanvas(canvas, name);
       }
     }
   }
@@ -296,8 +298,9 @@
   function handleFiles(e: Event) {
     const input = e.target as HTMLInputElement;
     if (input.files) {
+      files = Array.from(input.files);
       urls = urls.concat(
-        Array.from(input.files).map((file) => URL.createObjectURL(file))
+        files.map((file) => URL.createObjectURL(file))
       );
       input.value = '';
       shouldPredictLayout = true;
@@ -306,6 +309,7 @@
 
   function handleReset() {
     urls = [];
+    files = [];
   }
 
   let isSettingsOpen: boolean = false;
@@ -568,5 +572,6 @@
     background-color: #fff;
     color: #000;
     border-radius: 6px;
+    max-width: 300px;
   }
 </style>
