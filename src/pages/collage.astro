@@ -17,14 +17,52 @@ import CollageUI from '../components/Collage/Collage.svelte';
   </head>
   <body>
     <CollageUI client:only="svelte" />
+    <div id="offline-status" role="status" aria-live="polite" hidden></div>
     <script is:inline>
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/photos/collage-sw.js', {
-            scope: '/photos/collage/',
-          });
+        window.addEventListener('load', async () => {
+          const status = document.querySelector('#offline-status');
+
+          try {
+            const registration = await navigator.serviceWorker.register('/photos/collage-sw.js', {
+              scope: '/photos/collage/',
+              updateViaCache: 'none',
+            });
+            await registration.update();
+
+            if (registration.installing) {
+              await new Promise((resolve, reject) => {
+                registration.installing.addEventListener('statechange', (event) => {
+                  if (event.target.state === 'activated') resolve();
+                  if (event.target.state === 'redundant') reject(new Error('Service worker install failed'));
+                });
+              });
+            }
+
+            await navigator.serviceWorker.ready;
+            status.textContent = 'Offline ready';
+            status.hidden = false;
+          } catch (error) {
+            console.error('Could not prepare the collage for offline use', error);
+            status.textContent = 'Offline setup failed';
+            status.hidden = false;
+          }
         });
       }
     </script>
+    <style is:global>
+      #offline-status {
+        position: fixed;
+        z-index: 20;
+        left: max(12px, env(safe-area-inset-left));
+        bottom: max(12px, env(safe-area-inset-bottom));
+        padding: 6px 10px;
+        border: 1px solid #bbb;
+        border-radius: 999px;
+        background: #fff;
+        color: #000;
+        font: 12px/1.2 system-ui, sans-serif;
+      }
+    </style>
   </body>
 </html>
