@@ -7,8 +7,24 @@ import CollageUI from '../components/Collage/Collage.svelte';
 <html lang="en">
   <head>
     <BaseHead title="Collage" />
+    <link rel="manifest" href="/photos/collage.webmanifest" />
+    <link rel="apple-touch-icon" href="/photos/collage-icon-180.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="application-name" content="Collage" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Collage" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   </head>
   <body>
     <CollageUI client:only="svelte" />
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/photos/collage-sw.js', {
+            scope: '/photos/collage/',
+          });
+        });
+      }
+    </script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 <script lang="ts">
   import RadioGroup from '../RadioGroup.svelte'
   import Dropdown from '../Dropdown.svelte'
-  import { downloadCanvas } from './donwload-canvas';
+  import { canvasToFile, saveImages } from './donwload-canvas';
   import { sizesMap, layouts } from './collage-layouts';
   import { loadImages } from './load-images';
 
@@ -256,6 +256,8 @@
   async function handleSave(e: MouseEvent) {
     e.preventDefault();
     if (canvas) {
+      const collageFiles: File[] = [];
+
       if (cutByThirds) {
         const thirdsCanvas = document.createElement('canvas');
         const ctx = thirdsCanvas.getContext('2d');
@@ -270,7 +272,7 @@
             thirdsCanvas.width * i, 0, thirdsCanvas.width, thirdsCanvas.height,
             0, 0, thirdsCanvas.width, thirdsCanvas.height
           );
-          await downloadCanvas(thirdsCanvas, 'collage-thirds-' + (i + 1));
+          collageFiles.push(await canvasToFile(thirdsCanvas, 'collage-thirds-' + (i + 1)));
         }
       } else if (cutByHalves) {
         const halvesCanvas = document.createElement('canvas');
@@ -286,12 +288,14 @@
             halvesCanvas.width * i, 0, halvesCanvas.width, halvesCanvas.height,
             0, 0, halvesCanvas.width, halvesCanvas.height
           );
-          await downloadCanvas(halvesCanvas, 'collage-havles-' + (i + 1));
+          collageFiles.push(await canvasToFile(halvesCanvas, 'collage-halves-' + (i + 1)));
         }
       } else {
         const name = files.length === 1 ? files[0].name.split('.').slice(0, -1).join('.') + '-collage' : 'collage';
-        await downloadCanvas(canvas, name);
+        collageFiles.push(await canvasToFile(canvas, name));
       }
+
+      await saveImages(collageFiles);
     }
   }
 
