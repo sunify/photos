@@ -1,4 +1,4 @@
-const CACHE_NAME = 'collage-v2';
+const CACHE_NAME = 'collage-v3';
 const COLLAGE_URL = '/photos/collage/';
 
 function extractUrls(text, baseUrl, contentType) {
@@ -76,12 +76,17 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const { request } = event;
+  const requestUrl = new URL(request.url);
 
-  if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) {
+  if (request.method !== 'GET' || requestUrl.origin !== self.location.origin) {
     return;
   }
 
   if (request.mode === 'navigate') {
+    if (!/^\/photos\/collage\/?$/.test(requestUrl.pathname)) {
+      return;
+    }
+
     event.respondWith(
       fetch(request)
         .then((response) => {
@@ -91,6 +96,14 @@ self.addEventListener('fetch', (event) => {
         })
         .catch(() => caches.match(COLLAGE_URL)),
     );
+    return;
+  }
+
+  const isCollageResource = requestUrl.pathname.startsWith('/photos/assets/')
+    || requestUrl.pathname.startsWith('/photos/collage')
+    || requestUrl.pathname === '/photos/favicon.svg';
+
+  if (!isCollageResource) {
     return;
   }
 
