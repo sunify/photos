@@ -1,0 +1,25 @@
+{
+  "id": "/photos/collage/",
+  "name": "Collage",
+  "short_name": "Collage",
+  "description": "Create and save photo collages",
+  "start_url": "/photos/collage/",
+  "scope": "/photos/collage/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/photos/collage-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/photos/collage-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
