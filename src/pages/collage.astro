@@ -24,8 +24,13 @@ import CollageUI from '../components/Collage/Collage.svelte';
           const status = document.querySelector('#offline-status');
 
           try {
+            const oldRegistration = await navigator.serviceWorker.getRegistration('/photos/collage/');
+            if (oldRegistration?.scope.endsWith('/photos/collage/')) {
+              await oldRegistration.unregister();
+            }
+
             const registration = await navigator.serviceWorker.register('/photos/collage-sw.js', {
-              scope: '/photos/collage/',
+              scope: '/photos/',
               updateViaCache: 'none',
             });
             await registration.update();

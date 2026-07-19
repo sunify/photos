@@ -4,7 +4,7 @@
   "short_name": "Collage",
   "description": "Create and save photo collages",
   "start_url": "/photos/collage/",
-  "scope": "/photos/collage/",
+  "scope": "/photos/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
