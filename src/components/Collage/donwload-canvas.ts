@@ -34,7 +34,9 @@ function downloadFiles(files: File[]) {
 export async function saveImages(files: File[]) {
   const shareData: ShareData = { files };
 
-  if (navigator.share && (!navigator.canShare || navigator.canShare(shareData))) {
+  // Safari can report false from canShare() for a valid set of multiple files.
+  // Treat it as advisory and let the actual Share API make the decision.
+  if (navigator.share) {
     try {
       await navigator.share(shareData);
       return 'shared' as const;
@@ -43,7 +45,12 @@ export async function saveImages(files: File[]) {
       if (error instanceof DOMException && error.name === 'AbortError') {
         return 'cancelled' as const;
       }
+      throw error;
     }
+  }
+
+  if (!window.isSecureContext) {
+    throw new Error('Web Share недоступен: страница открыта не через HTTPS');
   }
 
   downloadFiles(files);
