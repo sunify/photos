@@ -1,4 +1,4 @@
-const CACHE_NAME = 'collage-v3';
+const CACHE_NAME = 'collage-v4';
 const COLLAGE_URL = '/photos/collage/';
 
 function extractUrls(text, baseUrl, contentType) {
