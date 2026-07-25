@@ -49,10 +49,6 @@ export async function saveImages(files: File[]) {
     }
   }
 
-  if (!window.isSecureContext) {
-    throw new Error('Web Share недоступен: страница открыта не через HTTPS');
-  }
-
   downloadFiles(files);
   return 'downloaded' as const;
 }

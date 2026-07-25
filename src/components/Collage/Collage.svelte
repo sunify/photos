@@ -429,11 +429,6 @@
     saveError = '';
     // The share call must happen in the same task as the tap on iOS.
     void saveImages(preparedFiles)
-      .then((result) => {
-        if (result === 'downloaded') {
-          saveError = 'Web Share API отсутствует в этом браузере';
-        }
-      })
       .catch((error) => {
         const name = error instanceof DOMException ? error.name : 'ShareError';
         const message = error instanceof Error ? error.message : String(error);
